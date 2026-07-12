@@ -1,0 +1,145 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'What does a PSA 10 mean?',
+    a: 'PSA 10 (Gem Mint) is the top grade on PSA’s 1-10 scale: a virtually flawless card with sharp corners, clean edges and surface, and strong centering. Because so few cards earn it, a 10 typically sells for a clear premium over the same card in a 9.',
+  },
+  {
+    q: 'Does grading always increase a card’s value?',
+    a: 'No. Grading adds a fee and a low grade can even hurt resale. Grading pays when the card is valuable and clean: the expected graded price minus the grading cost should comfortably exceed what the card sells for raw. For common or worn cards, the math rarely works.',
+  },
+  {
+    q: 'Which grading company is best - PSA, BGS, or SGC?',
+    a: 'All three are established and respected. PSA is the largest with the most liquid market for its slabs, BGS is known for subgrades and its premium Black Label designation, and SGC has a strong reputation in vintage. The best choice depends on the card and where you plan to sell it.',
+  },
+  {
+    q: 'How do graders judge a card?',
+    a: 'Graders assess four things: centering (are the borders even), corners (sharp or worn), edges (clean or chipped), and surface (scratches, print defects, creases). The card is then sealed in a tamper-evident slab with its grade and a certification number.',
+  },
+  {
+    q: 'How do I know if my card is worth grading?',
+    a: 'First establish what the card sells for raw and what graded copies sell for. CardSense helps with the first step: scan the card and see its estimated value from recent eBay sales. If the graded price minus the fee clearly beats the raw price - and the card is clean - grading is worth considering.',
+  },
+];
+---
+
+<GuideLayout
+  title="Sports Card Grading: How It Works and When It Pays"
+  metaTitle="Sports Card Grading: PSA, BGS & SGC Explained | CardSense"
+  metaDescription="Sports card grading is a professional condition assessment on a 1-10 scale. Learn how PSA, BGS, and SGC grade cards, what a slab does for value, and when grading is worth the fee."
+  path="/sports-card-grading"
+  eyebrow="Grading guide"
+  lede="A professional grade turns 'nice condition' into a certified number the whole market trusts. Here is how sports card grading works, what it costs you in practice, and when it actually pays."
+  faqs={faqs}
+  faqTitle="Sports card grading FAQ"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>Sports card grading is a professional condition assessment:</strong> a company such
+      as PSA, BGS, or SGC scores your card from 1 to 10 based on centering, corners, edges, and
+      surface, then seals it in a tamper-evident slab. Grading is worth it when the expected
+      graded price minus the grading fee clearly exceeds what the card sells for raw.
+    </p>
+  </div>
+
+  <h2>What grading actually does for a card</h2>
+  <p>
+    Condition is one of the biggest drivers of <a href="/sports-card-value">sports card value</a> -
+    and the hardest one for a buyer to judge from photos. A graded slab removes that uncertainty:
+    the buyer knows exactly what they are getting, backed by a certification number they can look
+    up. That trust is why graded cards in high grades consistently sell for more than raw copies,
+    and why the expensive end of the market is almost entirely graded.
+  </p>
+
+  <h2>The four things graders judge</h2>
+  <ul>
+    <li><strong>Centering:</strong> are the borders even left-right and top-bottom?</li>
+    <li><strong>Corners:</strong> razor sharp, or rounded and frayed?</li>
+    <li><strong>Edges:</strong> clean cuts, or chipping and roughness?</li>
+    <li><strong>Surface:</strong> scratches, print lines, stains, dents, or creases?</li>
+  </ul>
+  <p>
+    The final grade follows the weakest area more than the average - one crease can cap an
+    otherwise perfect card at a low grade. That is why an honest self-assessment matters before
+    you pay a grading fee.
+  </p>
+
+  <h2>PSA, BGS, SGC: the main graders</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Company</th>
+          <th scope="col">Known for</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>PSA</strong></td>
+          <td>
+            The largest grader with the most liquid resale market; PSA 10 "Gem Mint" is the
+            hobby's reference grade.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>BGS</strong></td>
+          <td>
+            Subgrades for each of the four criteria, plus the premium Black Label for perfect
+            10s across the board.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>SGC</strong></td>
+          <td>
+            Strong reputation in vintage cards, distinctive black slabs, and typically fast
+            turnaround times.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    All three are accepted across the market. Fees and turnaround vary by company and service
+    level, and change over time - check current pricing before you submit.
+  </p>
+
+  <h2>When grading pays - and when it does not</h2>
+  <p>Run this simple check before submitting any card:</p>
+  <ol>
+    <li><strong>What does the card sell for raw</strong> in its current condition?</li>
+    <li><strong>What do graded copies sell for</strong> in the grade you realistically expect?</li>
+    <li>
+      <strong>Subtract the grading fee.</strong> If the difference is clearly positive, grade it.
+      If it is close or negative, do not.
+    </li>
+  </ol>
+  <p>
+    In practice that means: key rookies and stars in clean condition are candidates; junk wax
+    commons, damaged cards, and low-value moderns are not - the fee costs more than the card will
+    ever return. Reading recent sold prices correctly is half the work here; our <a href="/sports-card-prices">sports card prices guide</a> covers that.
+  </p>
+
+  <AppCallout
+    title="Do the raw-value check in seconds"
+    text="Scan a card with CardSense to identify it and see its estimated value from recent eBay sales - the number you need before deciding whether a grading fee makes sense. The app also detects condition grades on cards it identifies."
+  />
+
+  <h2>Preparing a card for grading</h2>
+  <ul>
+    <li>Handle by the edges and use sleeves and top loaders or card savers for shipping.</li>
+    <li>Check centering, corners, edges, and surface under bright, angled light.</li>
+    <li>Never trim, clean, or press a card - alterations are detected and kill its value.</li>
+    <li>
+      Grade selectively: submit the cards where the math works, not the whole <a href="/sports-card-worth">collection you are valuing</a>.
+    </li>
+  </ul>
+  <p>
+    Wondering which cards in your binder clear the bar? Start with the sport-specific value
+    guides - <a href="/baseball-card-values">baseball</a>, <a href="/basketball-card-values">basketball</a>, <a href="/football-card-values">football</a>, <a href="/hockey-card-values">hockey</a>, and <a href="/soccer-card-values">soccer</a> - then scan your shortlist.
+  </p>
+</GuideLayout>

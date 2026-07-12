@@ -5,32 +5,69 @@ interface Props {
 
 const { current } = Astro.props;
 
-const guides = [
-  {
-    path: '/sports-card-value',
+const guides: Record<string, { tag: string; title: string; text: string }> = {
+  '/sports-card-value': {
     tag: 'Value guide',
     title: 'What determines a sports card&rsquo;s value?',
     text: 'Player, rookie status, rarity, condition, and demand - how the five value factors work together.',
   },
-  {
-    path: '/sports-card-prices',
+  '/sports-card-prices': {
     tag: 'Price guide',
     title: 'How to check sports card prices',
     text: 'Why sold listings beat asking prices, and how to read averages, medians, and price ranges.',
   },
-  {
-    path: '/sports-card-worth',
+  '/sports-card-worth': {
     tag: 'Worth check',
     title: 'What are my sports cards worth?',
     text: 'A three-step method to go from a shoebox of unknown cards to real market numbers.',
   },
-  {
-    path: '/baseball-card-values',
+  '/sports-card-grading': {
+    tag: 'Grading',
+    title: 'Sports card grading: when does it pay?',
+    text: 'How PSA, BGS, and SGC grade cards, and the simple math that tells you whether to submit.',
+  },
+  '/baseball-card-values': {
     tag: 'Baseball',
     title: 'Baseball card values explained',
     text: 'Vintage vs. junk wax vs. modern - which baseball cards hold value and why.',
   },
-].filter((g) => g.path !== current);
+  '/basketball-card-values': {
+    tag: 'Basketball',
+    title: 'Basketball card values explained',
+    text: 'Rookies, inserts, and parallels - how the NBA card market prices the same player many ways.',
+  },
+  '/football-card-values': {
+    tag: 'Football',
+    title: 'Football card values explained',
+    text: 'Why quarterbacks rule the market, and which NFL rookies and parallels hold value.',
+  },
+  '/hockey-card-values': {
+    tag: 'Hockey',
+    title: 'Hockey card values explained',
+    text: 'Young Guns rookies, vintage O-Pee-Chee, and where NHL card value concentrates.',
+  },
+  '/soccer-card-values': {
+    tag: 'Soccer',
+    title: 'Soccer card values explained',
+    text: 'Global icons, tournament cycles, and first cards - the fastest-growing card market.',
+  },
+};
+
+// Three most relevant guides per page.
+const related: Record<string, string[]> = {
+  '/sports-card-value': ['/sports-card-prices', '/sports-card-worth', '/sports-card-grading'],
+  '/sports-card-prices': ['/sports-card-value', '/sports-card-worth', '/sports-card-grading'],
+  '/sports-card-worth': ['/sports-card-value', '/sports-card-prices', '/sports-card-grading'],
+  '/sports-card-grading': ['/sports-card-value', '/sports-card-prices', '/sports-card-worth'],
+  '/baseball-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
+  '/basketball-card-values': ['/sports-card-worth', '/sports-card-grading', '/football-card-values'],
+  '/football-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
+  '/hockey-card-values': ['/sports-card-worth', '/sports-card-grading', '/baseball-card-values'],
+  '/soccer-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
+};
+
+const picks = (related[current] ?? Object.keys(guides).filter((p) => p !== current).slice(0, 3))
+  .map((path) => ({ path, ...guides[path] }));
 ---
 
 <section class="section section--tint">
@@ -41,7 +78,7 @@ const guides = [
     </div>
     <div class="grid grid--3">
       {
-        guides.map((g) => (
+        picks.map((g) => (
           <a class="guide-card" href={g.path}>
             <span class="eyebrow">{g.tag}</span>
             <h3 set:html={g.title} />

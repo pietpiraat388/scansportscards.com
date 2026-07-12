@@ -16,6 +16,11 @@ Built with Astro as a fully static site with zero client-side JavaScript.
 | `/sports-card-prices` | Guide targeting "sports card prices" |
 | `/sports-card-worth` | Guide targeting "sports card worth" / "what are my cards worth" |
 | `/baseball-card-values` | Guide targeting "baseball card values" |
+| `/basketball-card-values` | Guide targeting "basketball card values" |
+| `/football-card-values` | Guide targeting "football card values" |
+| `/hockey-card-values` | Guide targeting "hockey card values" |
+| `/soccer-card-values` | Guide targeting "soccer card values" |
+| `/sports-card-grading` | Guide targeting "sports card grading" / "is grading worth it" |
 
 ## SEO / GEO
 

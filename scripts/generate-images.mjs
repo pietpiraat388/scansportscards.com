@@ -79,6 +79,11 @@ const pages = [
   ['sports-card-prices', 'Sports Card Prices Explained', 'How to check real market prices'],
   ['sports-card-worth', 'What Are My Sports Cards Worth?', 'Find out in three steps'],
   ['baseball-card-values', 'Baseball Card Values', 'From junk wax to vintage grails'],
+  ['basketball-card-values', 'Basketball Card Values', 'Rookies, inserts, and parallels'],
+  ['football-card-values', 'Football Card Values', 'Rookies, RPAs, and the QB premium'],
+  ['hockey-card-values', 'Hockey Card Values', 'Young Guns to vintage O-Pee-Chee'],
+  ['soccer-card-values', 'Soccer Card Values', 'The hobby&apos;s fastest-growing market'],
+  ['sports-card-grading', 'Sports Card Grading', 'PSA, BGS & SGC - and when it pays'],
 ];
 
 for (const [slug, title, subtitle] of pages) {

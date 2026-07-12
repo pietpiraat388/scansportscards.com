@@ -1,0 +1,148 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'Are basketball cards from the 1990s worth anything?',
+    a: 'Base cards from the early 1990s were massively overprinted and are usually worth very little. The exceptions are the era’s scarce inserts and premium sets - 1990s insert cards of superstars are among the most chased basketball cards today - plus iconic rookie cards in top graded condition.',
+  },
+  {
+    q: 'What is a basketball rookie card?',
+    a: 'A rookie card is a player’s first officially licensed NBA card, usually marked with an RC logo on modern cards. Collectors treat the flagship rookie - and its scarcer parallels - as the definitive card of a player, so rookies carry the largest premium of any card of that player.',
+  },
+  {
+    q: 'Why are two basketball cards of the same player worth different amounts?',
+    a: 'Modern basketball sets are built around parallels: the same card exists in many versions with different colors, foil patterns, and print runs, from unnumbered base cards to one-of-one versions. The exact parallel, plus condition and grading, is what separates a common from a chase card.',
+  },
+  {
+    q: 'Do cards of international NBA players sell well?',
+    a: 'Yes. Basketball is the most global of the major card markets, and stars from Europe, Africa, and elsewhere attract collectors from their home regions as well as the US. Demand for a player’s cards tends to follow their on-court story wherever they are from.',
+  },
+  {
+    q: 'How do I find out what my basketball cards are worth?',
+    a: 'Identify the exact card (year, set, card number, and parallel), assess its condition, and compare recent sold prices. CardSense automates this: photograph the card and the app identifies it and shows an estimated value based on recent eBay sales.',
+  },
+];
+---
+
+<GuideLayout
+  title="Basketball Card Values: What Are Your Cards Worth?"
+  metaTitle="Basketball Card Values: What Are Your Cards Worth? | CardSense"
+  metaDescription="Basketball card values are driven by the player, rookie status, parallels, and condition. Learn which NBA cards hold value - from vintage to modern inserts - and check any card from a photo."
+  path="/basketball-card-values"
+  eyebrow="Basketball guide"
+  lede="Basketball is the hobby's most parallel-driven market: one rookie can exist in dozens of versions with wildly different values. Here is how NBA card values actually work - and how to check yours."
+  faqs={faqs}
+  faqTitle="Basketball card values FAQ"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>Basketball card values depend on the player, rookie status, the exact parallel, and
+      condition.</strong> Because modern NBA sets print the same card in many versions with
+      different scarcity, identifying the precise parallel is essential. A card's real value is
+      what buyers recently paid for that exact version in the same condition.
+    </p>
+  </div>
+
+  <h2>What makes basketball cards different</h2>
+  <p>
+    More than any other sport, basketball collecting revolves around <strong>inserts and
+    parallels</strong>. Since the 1990s, NBA sets have layered scarce chase cards on top of base
+    sets - refractors, colored parallels, serial-numbered versions, and case hits. The result: the
+    gap between a base card and its rarest parallel is enormous, and correctly identifying which
+    version you hold matters more than in baseball or football. The general rules still apply too -
+    see our <a href="/sports-card-value">sports card value guide</a> for the five factors every
+    card shares.
+  </p>
+
+  <h2>Basketball card values by era</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">Era</th>
+          <th scope="col">Years (approx.)</th>
+          <th scope="col">What it means for value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Vintage</strong></td>
+          <td>1948-1985</td>
+          <td>
+            Sparse releases and low survival rates. Star rookies from the early Topps and Fleer
+            years anchor the high end of the basketball market.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>The 1986 Fleer restart</strong></td>
+          <td>1986-1990</td>
+          <td>
+            The set that relaunched NBA cards - home of the most famous modern basketball rookie
+            cards and a permanent collector favorite.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Overproduction & insert era</strong></td>
+          <td>1990-1999</td>
+          <td>
+            Base cards were printed by the truckload and are mostly commons; the era's scarce
+            inserts of superstars became grails instead.
+          </td>
+        </tr>
+        <tr>
+          <td><strong>Modern parallel era</strong></td>
+          <td>2000-today</td>
+          <td>
+            Serial-numbered parallels, autographs, and flagship chrome-style rookies drive value.
+            The exact parallel and grade decide the price.
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>Rookies and parallels: where the value concentrates</h2>
+  <ul>
+    <li>
+      <strong>Flagship rookie cards:</strong> a star's main rookie card is the reference point for
+      their whole market, with the RC logo marking modern rookies.
+    </li>
+    <li>
+      <strong>Silver and colored parallels:</strong> the same rookie in scarcer foil or
+      serial-numbered versions multiplies the base value - the shorter the print run, the steeper
+      the premium.
+    </li>
+    <li>
+      <strong>Inserts and case hits:</strong> scarce insert sets, especially from the 1990s, carry
+      value independent of the base set they came from.
+    </li>
+    <li>
+      <strong>Autographs and patches:</strong> signed rookies and jersey-patch cards sit at the top
+      of the modern market.
+    </li>
+  </ul>
+  <p>
+    Condition decides how much of that potential you own: centering, corners, edges, and surface -
+    and for valuable cards, a professional grade. Our <a href="/sports-card-grading">sports card grading guide</a> explains when grading pays for
+    itself.
+  </p>
+
+  <AppCallout
+    title="Identify the exact parallel from a photo"
+    text="CardSense recognizes the player, year, set, card number, and rarity - including parallels, inserts, and autographs - and shows an estimated value based on recent eBay sales."
+  />
+
+  <h2>Checking a basketball card's value in practice</h2>
+  <p>
+    Because parallels look similar at a glance, the classic mistake is pricing your card against a
+    different version of it - a silver parallel against the base card, or vice versa. Work through
+    the same three steps as any card: identify exactly, judge condition honestly, then read recent
+    sold prices (average, median, and range - our <a href="/sports-card-prices">sports card prices guide</a> shows how). If you are clearing out
+    a childhood collection, start with <a href="/sports-card-worth">what are my sports cards worth?</a> - and if there is baseball or
+    football in the same box, we cover <a href="/baseball-card-values">baseball card values</a> and <a href="/football-card-values">football card values</a> too.
+  </p>
+</GuideLayout>

@@ -1,0 +1,102 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'Are football cards from the late 1980s and early 1990s worth anything?',
+    a: 'Mostly not. Like every sport, football went through the junk wax era of massive overproduction, so base cards from those years are usually commons. Star rookie cards in top graded condition and scarcer premium issues are the exceptions worth checking individually.',
+  },
+  {
+    q: 'Why are quarterback cards worth more?',
+    a: 'Quarterbacks are the face of every franchise and dominate collector demand, so their cards typically command the highest prices in football. Star players at other positions can still be valuable, but the market premium for elite quarterbacks - especially their rookie cards - is a defining feature of football collecting.',
+  },
+  {
+    q: 'What is a rookie patch auto (RPA)?',
+    a: 'An RPA is a rookie card that combines an on-card autograph with a piece of player-worn jersey or patch, usually serial-numbered to a low print run. RPAs from premium sets are the flagship chase cards of modern football collecting.',
+  },
+  {
+    q: 'Do graded football cards sell for more?',
+    a: 'Usually, yes - a professional grade removes condition uncertainty for the buyer, and high grades carry clear premiums. Whether grading is worth the fee depends on the card’s raw value and how clean it is; our grading guide walks through that decision.',
+  },
+  {
+    q: 'How do I find out what my football cards are worth?',
+    a: 'Identify the exact card (year, set, card number, and any parallel or autograph), assess its condition, and compare recent sold prices. CardSense does this from a photo: it identifies the card and shows an estimated value based on recent eBay sales.',
+  },
+];
+---
+
+<GuideLayout
+  title="Football Card Values: What Are Your Cards Worth?"
+  metaTitle="Football Card Values: What Are Your Cards Worth? | CardSense"
+  metaDescription="Football card values are driven by the player (especially quarterbacks), rookie status, parallels, and condition. Learn which NFL cards hold value and check any card from a photo."
+  path="/football-card-values"
+  eyebrow="Football guide"
+  lede="Football cards live and die with the quarterback position, rookie classes, and the exact parallel in your hand. Here is how NFL card values work - and how to check what yours are worth."
+  faqs={faqs}
+  faqTitle="Football card values FAQ"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>Football card values depend on the player and position, rookie status, the exact
+      parallel, and condition.</strong> Quarterbacks command the biggest premiums, rookie cards are
+      the most collected versions, and scarcity comes from serial-numbered parallels and
+      autographs. A card's real value is what buyers recently paid for that exact version.
+    </p>
+  </div>
+
+  <h2>What drives football card values</h2>
+  <p>
+    Football follows the same five factors as every sport - player, rookie status, scarcity,
+    condition, and demand (see the <a href="/sports-card-value">sports card value guide</a>) - with
+    two accents of its own. First, <strong>position matters</strong>: quarterbacks are the most
+    collected players by a wide margin. Second, football's season structure makes prices unusually
+    event-driven - a playoff run or a breakout season moves a player's whole card market within
+    weeks, which is why recent sold prices beat any static guide.
+  </p>
+
+  <h2>The cards that carry the football market</h2>
+  <ul>
+    <li>
+      <strong>Rookie cards:</strong> the RC-logo rookie from a flagship set is the reference card
+      for every modern player, and the version most collectors chase first.
+    </li>
+    <li>
+      <strong>Colored and numbered parallels:</strong> the same rookie exists in many print runs;
+      scarcer versions carry multiples of the base card's value.
+    </li>
+    <li>
+      <strong>Rookie patch autos (RPAs):</strong> serial-numbered rookies with an autograph and
+      jersey patch are the flagship chase cards of premium football sets.
+    </li>
+    <li>
+      <strong>Vintage stars:</strong> Hall of Fame players from the 1950s-1970s, where condition
+      and scarcity - not print-run gimmicks - set the price.
+    </li>
+  </ul>
+
+  <h2>Eras at a glance</h2>
+  <p>
+    Vintage football (roughly pre-1980) rewards surviving condition, and star cards deserve
+    individual attention. The late 1980s through early 1990s is junk wax territory: enormous print
+    runs, mostly commons. Modern football (mid-1990s onward) concentrates value in rookies,
+    parallels, and autographs from premium sets. If you are sorting a mixed collection, our <a href="/sports-card-worth">step-by-step worth guide</a> covers the full workflow, and the
+    era logic mirrors what we describe for <a href="/baseball-card-values">baseball card values</a>.
+  </p>
+
+  <AppCallout
+    title="Know the exact card before you price it"
+    text="CardSense identifies the player, team, year, set, card number, and rarity from one photo - including parallels, autographs, and memorabilia cards - and shows an estimated value from recent eBay sales."
+  />
+
+  <h2>Pricing a football card without the guesswork</h2>
+  <p>
+    Identify the exact card and parallel, judge the condition honestly (corners, edges, surface,
+    centering), then read recent sold prices for that version - the average, median, and range,
+    as explained in our <a href="/sports-card-prices">sports card prices guide</a>. For clean,
+    valuable cards, check whether a professional grade would raise the price beyond the fee - our <a href="/sports-card-grading">grading guide</a> gives you that decision framework. And if
+    your box mixes sports, the same method works for <a href="/basketball-card-values">basketball</a> and <a href="/hockey-card-values">hockey cards</a> too.
+  </p>
+</GuideLayout>

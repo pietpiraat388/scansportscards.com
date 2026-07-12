@@ -1,0 +1,104 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'Are Panini World Cup stickers worth anything?',
+    a: 'Complete vintage World Cup sticker albums in good condition are collected seriously and can be valuable; loose modern stickers usually are not. Stickers and trading cards are different markets - modern soccer card value concentrates in licensed trading card sets, parallels, and autographs.',
+  },
+  {
+    q: 'What counts as a rookie card in soccer?',
+    a: 'Soccer has no single rookie-card standard like the NBA or NFL. Collectors generally treat a player’s first cards in major licensed sets as their rookie-year cards, which is why identifying the exact set and year matters even more in soccer than in US sports.',
+  },
+  {
+    q: 'Do soccer card values spike around the World Cup?',
+    a: 'Tournament cycles clearly move the market: interest in international stars builds toward major tournaments, and breakout performances on that stage pull new collectors in. Club competitions like the Champions League drive a second rhythm across the season.',
+  },
+  {
+    q: 'Which soccer cards are most collected?',
+    a: 'The global icons of the sport dominate demand - their early cards, scarcer parallels, and autographs anchor the high end. Behind them, young stars at top clubs attract prospecting collectors hoping to hold the next generation’s key cards early.',
+  },
+  {
+    q: 'How do I find out what my soccer cards are worth?',
+    a: 'Identify the exact card (year, set, card number, parallel), assess its condition, and compare recent sold prices. CardSense identifies soccer cards from a photo and shows an estimated value based on recent eBay sales.',
+  },
+];
+---
+
+<GuideLayout
+  title="Soccer Card Values: What Are Your Cards Worth?"
+  metaTitle="Soccer Card Values: What Are Your Cards Worth? | CardSense"
+  metaDescription="Soccer card values are driven by global stars, first cards in major sets, parallels, and condition. Learn how the fastest-growing card market works and check any card from a photo."
+  path="/soccer-card-values"
+  eyebrow="Soccer guide"
+  lede="Soccer is the fastest-growing corner of the card hobby, with a truly global collector base. Here is how soccer card values work - from World Cup cycles to club sets - and how to check yours."
+  faqs={faqs}
+  faqTitle="Soccer card values FAQ"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>Soccer card values depend on the player's global star power, how early the card sits
+      in their career, the exact set and parallel, and condition.</strong> Because soccer has no
+      single rookie-card standard, identifying the precise set and year is the crucial step. The
+      real value is what buyers recently paid for that exact card.
+    </p>
+  </div>
+
+  <h2>Why soccer is the hobby's growth market</h2>
+  <p>
+    Soccer brings something no US sport can: a worldwide fan base. Collectors on every continent
+    chase the same global icons, and each major tournament introduces new collectors to the hobby.
+    The market is younger and less standardized than baseball or basketball - which creates
+    opportunity, but also makes exact identification more important. The fundamentals from our <a href="/sports-card-value">sports card value guide</a> still decide every price.
+  </p>
+
+  <h2>What drives soccer card values</h2>
+  <ul>
+    <li>
+      <strong>Global icons:</strong> the sport's legendary names anchor the high end - their early
+      cards, parallels, and autographs are the market's blue chips.
+    </li>
+    <li>
+      <strong>Early cards of young stars:</strong> with no official rookie standard, a player's
+      first cards in major licensed sets carry the rookie premium.
+    </li>
+    <li>
+      <strong>Parallels and autographs:</strong> modern soccer sets follow the same
+      scarcity playbook as US sports - colored parallels, serial numbers, and signed cards
+      multiply base values.
+    </li>
+    <li>
+      <strong>Tournament cycles:</strong> World Cups and continental championships concentrate
+      attention and move prices around breakout performances.
+    </li>
+    <li>
+      <strong>Stickers vs. cards:</strong> vintage World Cup sticker albums are a collecting world
+      of their own; modern value concentrates in trading cards.
+    </li>
+  </ul>
+
+  <h2>Club sets, international sets, and why the exact set matters</h2>
+  <p>
+    The same player appears in club-competition sets, domestic-league sets, and international
+    releases in the same season - often with near-identical photos. Those cards are not
+    interchangeable: collectors price each set differently, and parallels within each set differ
+    again. Before comparing prices, be certain which set, year, and parallel you hold; our <a href="/sports-card-prices">sports card prices guide</a> explains how to read the sold
+    prices once you know.
+  </p>
+
+  <AppCallout
+    title="Identify any soccer card from a photo"
+    text="CardSense recognizes the player, team, year, set, card number, and rarity - including parallels and autographs - and shows an estimated value based on recent eBay sales."
+  />
+
+  <h2>From binder to valuation</h2>
+  <p>
+    The same three steps as every sport: identify the exact card, judge condition honestly, and
+    compare recent sold prices. If you are working through a whole collection, the workflow in <a href="/sports-card-worth">what are my sports cards worth?</a> keeps it manageable, and for
+    clean, valuable cards our <a href="/sports-card-grading">grading guide</a> shows when a
+    professional grade pays off. Collecting US sports alongside? See <a href="/basketball-card-values">basketball card values</a> and <a href="/baseball-card-values">baseball card values</a> for those markets.
+  </p>
+</GuideLayout>

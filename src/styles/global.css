@@ -751,7 +751,7 @@ h4 {
 
 .site-footer__grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
   gap: 2.5rem;
 }
 
