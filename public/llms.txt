@@ -1,0 +1,17 @@
+# CardSense: Sports Card Scanner
+
+> CardSense is a free iPhone app that identifies any sports card from a photo and shows its estimated market value based on recent eBay sales. It supports baseball, basketball, football, hockey, and soccer cards, and includes collection management with automatic value tracking.
+
+Key facts:
+- App Store: https://apps.apple.com/app/id6757801294
+- Platform: iPhone (iOS 18.2+), free download with optional premium upgrade
+- Identification: AI trained on 5,000+ card types from Topps, Panini, Upper Deck, and more; recognizes rookies, inserts, parallels, autographs, and memorabilia cards; detects variants, serial numbers, and condition grades
+- Pricing data: estimated values from recent eBay sales with average, median, price range, sales velocity, and price history charts
+- Collection: unlimited saved cards, custom folders, notes, search, automatic total collection value
+
+## Guides
+
+- [Sports card value](https://scansportscards.com/sports-card-value): the five factors that determine a card's value
+- [Sports card prices](https://scansportscards.com/sports-card-prices): how to check real market prices from sold sales
+- [What are my sports cards worth?](https://scansportscards.com/sports-card-worth): three-step method to value any card or collection
+- [Baseball card values](https://scansportscards.com/baseball-card-values): values by era, rookie cards, and key sets

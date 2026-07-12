@@ -1,0 +1,463 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppStoreBadge from '../components/AppStoreBadge.astro';
+import Faq from '../components/Faq.astro';
+import Cta from '../components/Cta.astro';
+import { SITE_URL, faqSchema, softwareAppSchema, type FaqEntry } from '../lib/site';
+
+import shot1 from '../assets/screenshot-1.png';
+import shot2 from '../assets/screenshot-2.png';
+import shot3 from '../assets/screenshot-3.png';
+import shot4 from '../assets/screenshot-4.png';
+import shot5 from '../assets/screenshot-5.png';
+import shot6 from '../assets/screenshot-6.png';
+import shot7 from '../assets/screenshot-7.png';
+import shot8 from '../assets/screenshot-8.png';
+
+const gallery = [
+  { img: shot1, alt: 'CardSense app screenshot: a hand holds a basketball card inside the scan frame, headline reads The #1 Sports Card Scanner', caption: 'Scan any card in seconds' },
+  { img: shot2, alt: 'CardSense app screenshot: real-time card detection confirming a 1986 Fleer Michael Jordan basketball card before identification', caption: 'Real-time card detection' },
+  { img: shot3, alt: 'CardSense app screenshot: full card details for a Michael Jordan rookie card with price history chart and total collection value', caption: 'Full details for every card' },
+  { img: shot4, alt: 'CardSense app screenshot: market data screen with estimated value, demand, price range, volatility, and recent eBay sales', caption: 'Market trends and prices' },
+  { img: shot5, alt: 'CardSense app screenshot: digital collection with total value, card count, search, and filters by team, year, and value', caption: 'Your digital card vault' },
+  { img: shot6, alt: 'CardSense app screenshot: identified Michael Jordan card with player name, price range, and demand overlays', caption: 'Deep insights per card' },
+  { img: shot7, alt: 'CardSense app screenshot: folders overview with total value across baseball and soccer card folders', caption: 'Organize cards your way' },
+  { img: shot8, alt: 'CardSense app screenshot: premium unlock with unlimited scans and full market details', caption: 'Unlimited scanning power' },
+];
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'What is a sports card scanner?',
+    a: 'A sports card scanner is an app that identifies a trading card from a photo instead of a manual search. You take a picture of the card, and the app recognizes it and returns its details. CardSense identifies the player, team, year, set, card number, and rarity, and then shows an estimated market value based on recent eBay sales.',
+  },
+  {
+    q: 'How does CardSense identify my card?',
+    a: 'CardSense uses AI trained on more than 5,000 card types from brands such as Topps, Panini, and Upper Deck. It recognizes base cards as well as rookies, inserts, parallels, autographs, and memorabilia cards, and it can detect special variants, serial numbers, and condition grades.',
+  },
+  {
+    q: 'Which sports does CardSense support?',
+    a: 'CardSense works with baseball, basketball, football, hockey, and soccer cards. That covers the major card brands and sets across all five sports, from vintage cardboard to modern parallels.',
+  },
+  {
+    q: 'Does CardSense show what my card is worth?',
+    a: 'Yes. After identifying a card, CardSense shows an estimated value based on recent eBay sales, including the average, median, and price range, plus a price history chart and sales velocity so you can see how the market is trending. Read our guide on <a href="/sports-card-worth">what your sports cards are worth</a> for more background.',
+  },
+  {
+    q: 'Is CardSense free?',
+    a: 'CardSense is free to download on the App Store. A premium upgrade inside the app unlocks unlimited scans and full market details.',
+  },
+  {
+    q: 'Can I scan photos I already took?',
+    a: 'Yes. CardSense works with new photos from your camera and with existing pictures from your photo library, so you can identify cards you photographed earlier.',
+  },
+  {
+    q: 'Can I track my whole collection in the app?',
+    a: 'Yes. You can save unlimited cards to your digital collection, organize them into custom folders by team, sport, player, or rarity, add notes and condition assessments, and search across everything. CardSense tracks your total collection value automatically and shows how it grows month over month.',
+  },
+  {
+    q: 'What do I need to run CardSense?',
+    a: 'CardSense runs on iPhone with iOS 18.2 or later. The download is small (about 32 MB) and the app is rated 4+.',
+  },
+];
+
+const schema = [
+  softwareAppSchema,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'ScanSportsCards.com',
+    url: SITE_URL,
+  },
+  faqSchema(faqs),
+];
+
+const title = 'CardSense: Sports Card Scanner - Identify Cards & Check Values';
+const description =
+  'Scan any sports card with your iPhone to identify it and see its estimated value from recent eBay sales. CardSense supports baseball, basketball, football, hockey, and soccer cards. Free download.';
+---
+
+<BaseLayout title={title} description={description} path="" schema={schema}>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero__inner">
+      <div>
+        <p class="eyebrow">iPhone app for card collectors</p>
+        <h1>The sports card <span class="pill">scanner</span> that knows what your cards are worth</h1>
+        <p class="hero__lede">
+          Snap a photo of any sports card. CardSense identifies the player, team, year, set, card
+          number, and rarity, then shows an estimated value based on recent eBay sales.
+        </p>
+        <div class="hero__actions">
+          <AppStoreBadge />
+          <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+        </div>
+        <p class="hero__note">Free download · baseball, basketball, football, hockey & soccer</p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <strong>10,000+</strong>
+            <span>collectors on board</span>
+          </div>
+          <div class="hero__stat">
+            <strong>5,000+</strong>
+            <span>card types recognized</span>
+          </div>
+          <div class="hero__stat">
+            <strong>5 sports</strong>
+            <span>fully supported</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__phone">
+        <div class="scan-stage">
+          <div class="phone">
+            <Image
+              src={shot2}
+              alt="CardSense scanning a 1986 Fleer Michael Jordan card and confirming it in real time"
+              width={640}
+              widths={[320, 480, 640]}
+              sizes="(max-width: 56rem) 78vw, 21rem"
+              format="webp"
+              loading="eager"
+              fetchpriority="high"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="section" id="how-it-works">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>From cardboard to card value in three steps</h2>
+        <p>
+          No manual searching, no guessing which set your card belongs to. Point, scan, and get
+          answers.
+        </p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <h3>Snap a photo</h3>
+          <p>
+            Use the camera or pick a picture from your library. The scan frame detects the card in
+            real time - no cropping needed.
+          </p>
+        </div>
+        <div class="step">
+          <h3>AI identifies the card</h3>
+          <p>
+            CardSense recognizes the player, team, year, set, card number, and rarity - including
+            rookies, inserts, parallels, autographs, and memorabilia cards.
+          </p>
+        </div>
+        <div class="step">
+          <h3>See the market value</h3>
+          <p>
+            Get an estimated value from recent eBay sales with the average, median, and full price
+            range, then save the card to your collection.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Market data split -->
+  <section class="section section--tint">
+    <div class="wrap split">
+      <div>
+        <p class="eyebrow">Sports card prices</p>
+        <h2>Real market prices, not wishful asking prices</h2>
+        <p>
+          Sticker prices on marketplace listings say little about what a card actually trades for.
+          CardSense builds its estimates on recent eBay sales, so you see what buyers really paid.
+        </p>
+        <ul>
+          <li>Average, median, and full price range per card</li>
+          <li>Price history charts that show value changes over time</li>
+          <li>Sales velocity to spot rising or cooling demand</li>
+          <li>Demand and volatility indicators at a glance</li>
+        </ul>
+        <p>
+          New to reading card prices? Start with our <a href="/sports-card-prices">guide to checking sports card prices</a>.
+        </p>
+      </div>
+      <div class="scan-stage">
+        <div class="phone">
+          <Image
+            src={shot4}
+            alt="CardSense market data screen showing estimated value, demand, price range, volatility, and recent eBay sales"
+            width={640}
+            widths={[320, 480, 640]}
+            sizes="(max-width: 56rem) 78vw, 21rem"
+            format="webp"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collection split -->
+  <section class="section">
+    <div class="wrap split split--flip">
+      <div class="scan-stage">
+        <div class="phone">
+          <Image
+            src={shot5}
+            alt="CardSense collection screen with total collection value, card count, search, and filters"
+            width={640}
+            widths={[320, 480, 640]}
+            sizes="(max-width: 56rem) 78vw, 21rem"
+            format="webp"
+          />
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow">Collection & value tracking</p>
+        <h2>Your whole collection, valued automatically</h2>
+        <p>
+          Every scan can go straight into your digital card vault. CardSense keeps the numbers
+          current, so your collection value is never a stale spreadsheet again.
+        </p>
+        <ul>
+          <li>Save unlimited cards and see your total collection value update automatically</li>
+          <li>Custom folders by team, sport, player, or rarity - one card can live in several</li>
+          <li>Personal notes and condition assessments per card</li>
+          <li>Full-text search and month-over-month growth insights</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="section section--tint" id="screenshots">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Inside the app</p>
+        <h2>Take a look around CardSense</h2>
+        <p>The real App Store screenshots - swipe through the flow from scan to collection.</p>
+      </div>
+      <div class="gallery">
+        {
+          gallery.map((g) => (
+            <figure>
+              <Image
+                src={g.img}
+                alt={g.alt}
+                width={512}
+                widths={[256, 512]}
+                sizes="(max-width: 40rem) 62vw, 16rem"
+                format="webp"
+              />
+              <figcaption>{g.caption}</figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section" id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Features</p>
+        <h2>Everything a collector needs in one scan</h2>
+        <p>
+          CardSense combines identification, live market data, and collection management - the
+          three jobs that used to take three different tools.
+        </p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8V5a2 2 0 0 1 2-2h3M16 3h3a2 2 0 0 1 2 2v3M21 16v3a2 2 0 0 1-2 2h-3M8 21H5a2 2 0 0 1-2-2v-3" /><rect x="8" y="7" width="8" height="10" rx="1" /></svg>
+          </div>
+          <h3>Smart identification</h3>
+          <p>
+            AI trained on 5,000+ card types from Topps, Panini, Upper Deck, and more identifies the
+            player, team, year, set, and card number from one photo.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8-5-3.6-5 3.6 1.9-5.8L4 8.8h6.1z" /></svg>
+          </div>
+          <h3>Rookies, parallels & autos</h3>
+          <p>
+            Recognizes rookies, inserts, parallels, autographs, and memorabilia cards, and detects
+            special variants, serial numbers, and condition grades.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l5-6 4 4 6-8" /><path d="M15 7h4v4" /></svg>
+          </div>
+          <h3>Real-time market data</h3>
+          <p>
+            Live pricing powered by recent eBay sales: average, median, price ranges, and sales
+            velocity so you can spot trends early.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></svg>
+          </div>
+          <h3>Price history charts</h3>
+          <p>
+            See how a card's value changed over time, so you know whether you are looking at a
+            spike, a dip, or a steady climber.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /></svg>
+          </div>
+          <h3>Folders & collection vault</h3>
+          <p>
+            Organize by team, sport, player, or rarity. Assign one card to multiple folders and
+            keep the total value of every folder in view.
+          </p>
+        </div>
+        <div class="card">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="12" r="3" /><circle cx="18" cy="6" r="3" /><circle cx="18" cy="18" r="3" /><path d="M8.6 10.7l6.8-3.4M8.6 13.3l6.8 3.4" /></svg>
+          </div>
+          <h3>Share your finds</h3>
+          <p>
+            Turn a great pull or attic find into a clean social card with details and value, ready
+            for Instagram, X, and more.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sports -->
+  <section class="section section--tint" id="sports">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Supported sports</p>
+        <h2>Five sports, one scanner</h2>
+        <p>
+          From vintage baseball cardboard to modern soccer parallels - CardSense covers the cards
+          collectors actually own.
+        </p>
+      </div>
+      <div class="grid grid--3">
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">⚾</span> Baseball cards</h3>
+          <p>
+            The classic of the hobby. Identify Topps, Bowman, and Fleer cards and check <a href="/baseball-card-values">baseball card values</a> - from junk wax commons to
+            vintage rookie cards.
+          </p>
+        </div>
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">🏀</span> Basketball cards</h3>
+          <p>
+            Scan NBA rookies, inserts, and parallels. See where a card sits in today's market
+            before you buy, sell, or trade it.
+          </p>
+        </div>
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">🏈</span> Football cards</h3>
+          <p>
+            Identify NFL cards across Panini sets and beyond, including autographs and numbered
+            parallels that are hard to look up by hand.
+          </p>
+        </div>
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">🏒</span> Hockey cards</h3>
+          <p>
+            Upper Deck and vintage NHL cardboard alike - scan it to pin down the exact set, year,
+            and card number in seconds.
+          </p>
+        </div>
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">⚽</span> Soccer cards</h3>
+          <p>
+            The fastest-growing corner of the hobby. Identify international stars and club sets,
+            and track their <a href="/sports-card-value">card values</a> as the market moves.
+          </p>
+        </div>
+        <div class="card sport">
+          <h3><span class="emoji" aria-hidden="true">📈</span> One collection</h3>
+          <p>
+            Mix all five sports in one vault, organize with folders per sport, and watch your
+            combined collection value in a single view.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="section" id="guides">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Collector guides</p>
+        <h2>Learn what your cards are really worth</h2>
+        <p>
+          Plain-English guides on card values, prices, and selling decisions - written for
+          collectors.
+        </p>
+      </div>
+      <div class="grid grid--2">
+        <a class="guide-card" href="/sports-card-value">
+          <span class="eyebrow">Value guide</span>
+          <h3>What determines a sports card's value?</h3>
+          <p>
+            Player, rookie status, rarity, condition, and demand - how the five value factors work
+            together, and why two nearly identical cards can be worth wildly different amounts.
+          </p>
+          <span class="more">Read the value guide →</span>
+        </a>
+        <a class="guide-card" href="/sports-card-prices">
+          <span class="eyebrow">Price guide</span>
+          <h3>How to check sports card prices</h3>
+          <p>
+            Why sold listings beat asking prices, how to read averages, medians, and ranges, and
+            how to avoid the classic mistakes when pricing a card.
+          </p>
+          <span class="more">Read the price guide →</span>
+        </a>
+        <a class="guide-card" href="/sports-card-worth">
+          <span class="eyebrow">Worth check</span>
+          <h3>What are my sports cards worth?</h3>
+          <p>
+            Found a box of cards in the attic? A three-step method to go from unknown cardboard to
+            real market numbers - and how to decide whether to sell, grade, or keep.
+          </p>
+          <span class="more">Find out what they're worth →</span>
+        </a>
+        <a class="guide-card" href="/baseball-card-values">
+          <span class="eyebrow">Baseball</span>
+          <h3>Baseball card values explained</h3>
+          <p>
+            Vintage, junk wax, or modern? Which eras and sets hold value, what makes a rookie card
+            special, and how to check any baseball card in seconds.
+          </p>
+          <span class="more">Explore baseball card values →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--tint" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions collectors ask us</h2>
+      </div>
+      <Faq faqs={faqs} />
+    </div>
+  </section>
+
+  <Cta
+    title="Ready to scan your first card?"
+    text="Download CardSense free on the App Store and find out what the cards in your binder, shoebox, or attic are actually worth."
+  />
+</BaseLayout>

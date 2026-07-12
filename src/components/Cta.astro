@@ -1,0 +1,24 @@
+---
+import AppStoreBadge from './AppStoreBadge.astro';
+
+interface Props {
+  title?: string;
+  text?: string;
+}
+
+const {
+  title = 'Point your camera at a card. Know what it is and what it is worth.',
+  text = 'CardSense identifies the player, team, year, set, card number, and rarity, then shows an estimated value based on recent eBay sales. Free to download on iPhone.',
+} = Astro.props;
+---
+
+<section class="section section--ink cta-band">
+  <div class="wrap">
+    <h2>{title}</h2>
+    <p>{text}</p>
+    <div class="cta-band__actions">
+      <AppStoreBadge />
+    </div>
+    <p class="cta-band__note">Free download · iPhone · Works with baseball, basketball, football, hockey, and soccer cards</p>
+  </div>
+</section>

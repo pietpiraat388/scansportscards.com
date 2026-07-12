@@ -1,0 +1,24 @@
+---
+import type { FaqEntry } from '../lib/site';
+
+interface Props {
+  faqs: FaqEntry[];
+}
+
+const { faqs } = Astro.props;
+---
+
+<div class="faq">
+  {
+    faqs.map((f) => (
+      <details>
+        <summary>{f.q}</summary>
+        <div>
+          {f.a.split('\n\n').map((p) => (
+            <p set:html={p} />
+          ))}
+        </div>
+      </details>
+    ))
+  }
+</div>

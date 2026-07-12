@@ -1,0 +1,32 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import AppStoreBadge from '../components/AppStoreBadge.astro';
+---
+
+<BaseLayout
+  title="Page not found | CardSense: Sports Card Scanner"
+  description="This page could not be found. Head back to the CardSense homepage to scan and value your sports cards."
+  path="/404"
+>
+  <section class="section">
+    <div class="wrap" style="text-align: center; max-width: 42rem;">
+      <p class="eyebrow">404 · Card not found</p>
+      <h1 style="font-size: clamp(2.2rem, 5vw, 3.4rem); margin-top: 1rem;">
+        This one's not in the set
+      </h1>
+      <p style="margin-top: 1.25rem; color: var(--ink-soft); font-size: 1.15rem;">
+        The page you are looking for does not exist. Try the homepage, or jump straight into one of
+        the guides below.
+      </p>
+      <p style="margin-top: 1.5rem;">
+        <a href="/">Home</a> · <a href="/sports-card-value">Sports card value</a> ·
+        <a href="/sports-card-prices">Sports card prices</a> ·
+        <a href="/sports-card-worth">What are my cards worth?</a> ·
+        <a href="/baseball-card-values">Baseball card values</a>
+      </p>
+      <div style="margin-top: 2.5rem; display: flex; justify-content: center;">
+        <AppStoreBadge />
+      </div>
+    </div>
+  </section>
+</BaseLayout>

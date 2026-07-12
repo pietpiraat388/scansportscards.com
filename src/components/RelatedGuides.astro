@@ -1,0 +1,55 @@
+---
+interface Props {
+  current: string;
+}
+
+const { current } = Astro.props;
+
+const guides = [
+  {
+    path: '/sports-card-value',
+    tag: 'Value guide',
+    title: 'What determines a sports card&rsquo;s value?',
+    text: 'Player, rookie status, rarity, condition, and demand - how the five value factors work together.',
+  },
+  {
+    path: '/sports-card-prices',
+    tag: 'Price guide',
+    title: 'How to check sports card prices',
+    text: 'Why sold listings beat asking prices, and how to read averages, medians, and price ranges.',
+  },
+  {
+    path: '/sports-card-worth',
+    tag: 'Worth check',
+    title: 'What are my sports cards worth?',
+    text: 'A three-step method to go from a shoebox of unknown cards to real market numbers.',
+  },
+  {
+    path: '/baseball-card-values',
+    tag: 'Baseball',
+    title: 'Baseball card values explained',
+    text: 'Vintage vs. junk wax vs. modern - which baseball cards hold value and why.',
+  },
+].filter((g) => g.path !== current);
+---
+
+<section class="section section--tint">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Keep reading</p>
+      <h2>More collector guides</h2>
+    </div>
+    <div class="grid grid--3">
+      {
+        guides.map((g) => (
+          <a class="guide-card" href={g.path}>
+            <span class="eyebrow">{g.tag}</span>
+            <h3 set:html={g.title} />
+            <p>{g.text}</p>
+            <span class="more">Read the guide →</span>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</section>

@@ -1,0 +1,152 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'What makes a sports card valuable?',
+    a: 'Five factors drive sports card value: the player on the card, whether it is a rookie card, how scarce the card is (print run, parallels, serial numbering), its condition, and current collector demand. The most valuable cards score high on all five at once - a star player’s rookie card, from a short print run, in top condition, at a moment when collectors want it.',
+  },
+  {
+    q: 'Are old sports cards always valuable?',
+    a: 'No. Age alone does not create value. Cards from the late 1980s and early 1990s (the so-called junk wax era) were printed in enormous quantities, so most are worth very little despite being over 30 years old. Scarcity and demand matter far more than age.',
+  },
+  {
+    q: 'What does a PSA or grading score mean for value?',
+    a: 'Grading companies such as PSA, BGS, and SGC assess a card’s condition on a 1-10 scale and seal it in a protective slab. A higher grade generally means a higher price for the same card, because condition is one of the main value factors and a professional grade removes the buyer’s uncertainty.',
+  },
+  {
+    q: 'Do all rookie cards have value?',
+    a: 'No. A rookie card is only as valuable as the player’s career and the card’s scarcity and condition. Rookie cards of players who never became stars usually trade for very little, while rookie cards of all-time greats are among the most sought-after cards in the hobby.',
+  },
+  {
+    q: 'How do I find the value of a card when I don’t know what set it is from?',
+    a: 'Identifying the exact set and card number is the hardest part of a manual lookup. A scanner app solves this: CardSense identifies the player, team, year, set, card number, and rarity from a photo, then shows an estimated value based on recent eBay sales.',
+  },
+];
+---
+
+<GuideLayout
+  title="Sports Card Value: What Makes a Card Valuable?"
+  metaTitle="Sports Card Value Guide: What Makes a Card Valuable? | CardSense"
+  metaDescription="Sports card value comes down to five factors: player, rookie status, scarcity, condition, and demand. Learn how they work together and how to check any card's value from a photo."
+  path="/sports-card-value"
+  eyebrow="Value guide"
+  lede="Two cards can look nearly identical and be worth wildly different amounts. This guide explains the five factors that determine sports card value, and how to check the value of any card you own."
+  faqs={faqs}
+  faqTitle="Sports card value FAQ"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>Sports card value is determined by five factors:</strong> the player on the card, whether
+      it is a rookie card, how scarce it is, its condition, and current collector demand. A card's
+      actual value is what buyers recently paid for the same card in the same condition - which is
+      why recent sold prices, not asking prices, are the standard way to value sports cards.
+    </p>
+  </div>
+
+  <h2>The five factors that determine sports card value</h2>
+  <p>
+    Every valuable sports card combines several of these factors. Missing even one of them usually
+    separates a spectacular card from an ordinary one.
+  </p>
+
+  <h3>1. The player</h3>
+  <p>
+    The player is the foundation of a card's value. Superstars, Hall of Famers, and hyped young
+    talents carry demand; role players rarely do. Value also moves with a player's story: awards,
+    championships, records, and comebacks all pull collectors toward a player's cards.
+  </p>
+
+  <h3>2. Rookie status</h3>
+  <p>
+    A <strong>rookie card</strong> - a player's first officially licensed card - is usually the most
+    collected version of that player. Collectors treat it as the definitive card to own, so rookie
+    cards typically command a premium over later cards of the same player. Many modern cards carry
+    an RC logo or "Rated Rookie" style marking that makes them easy to spot.
+  </p>
+
+  <h3>3. Scarcity: print runs, parallels, and serial numbers</h3>
+  <p>
+    The fewer copies exist, the more each one can be worth. Modern sets express scarcity
+    through <strong>parallels</strong>: alternate versions of a base card with different colors, foils, or
+    patterns, often <strong>serial-numbered</strong> (for example "/99" or even "1/1"). Vintage
+    scarcity works differently - older cards survive in small numbers simply because most were
+    thrown away, played with, or damaged over the decades.
+  </p>
+
+  <h3>4. Condition and grading</h3>
+  <p>
+    Condition can multiply or destroy a card's value. Collectors look at four things: corners,
+    edges, surface, and centering. Professional grading companies such as PSA, BGS, and SGC score
+    cards from 1 to 10 and seal them in tamper-proof slabs. The same card can be worth a small
+    fraction of its top price in worn condition - which is why graded, high-grade copies dominate
+    the expensive end of the market.
+  </p>
+
+  <h3>5. Demand and timing</h3>
+  <p>
+    Value is never static. A playoff run, an MVP season, an injury, or simple hype can move a
+    card's price within weeks. That is why serious collectors track <strong>recent</strong> sales
+    rather than relying on outdated price guides: the market is what buyers are paying right now.
+  </p>
+
+  <h2>Why two nearly identical cards can have very different values</h2>
+  <p>
+    The most common valuation mistake is comparing your card to a different version of it.
+    Watch out for these differences:
+  </p>
+  <ul>
+    <li>
+      <strong>Base card vs. parallel:</strong> the same photo and card number can exist in a dozen
+      versions with vastly different print runs.
+    </li>
+    <li>
+      <strong>Reprints and tribute cards:</strong> famous vintage cards are often reprinted in
+      modern sets. A reprint is a different card with a different value.
+    </li>
+    <li>
+      <strong>Graded vs. raw:</strong> a graded copy in a high grade usually sells for more than an
+      ungraded ("raw") copy of the same card.
+    </li>
+    <li>
+      <strong>Different sets, same year:</strong> brands release many sets per season. The same
+      player's cards from the same year can differ sharply in value depending on the set.
+    </li>
+  </ul>
+
+  <h2>How to find the value of your sports card</h2>
+  <p>Valuing a card comes down to three steps:</p>
+  <ol>
+    <li>
+      <strong>Identify the exact card</strong> - player, year, set, card number, and any parallel or
+      variant markings.
+    </li>
+    <li><strong>Assess its condition</strong> - honestly, including corners, edges, surface, and centering.</li>
+    <li>
+      <strong>Compare recent sold prices</strong> for that exact card in comparable condition. See
+      our guide to <a href="/sports-card-prices">checking sports card prices</a> for how to read
+      averages, medians, and ranges.
+    </li>
+  </ol>
+
+  <AppCallout
+    title="Check any card's value from a photo"
+    text="CardSense identifies the exact card - player, year, set, card number, and rarity - and shows an estimated value based on recent eBay sales, including the average, median, and price range."
+  />
+
+  <h2>Does grading increase a card's value?</h2>
+  <p>
+    Often, but not always. Grading adds cost and takes time, so it makes sense when a card is
+    valuable enough and clean enough to earn a high grade. Grading a common card from a mass-printed
+    set usually costs more than the card will ever be worth. A sensible rule: first establish what
+    your card sells for raw and what it sells for graded, then decide whether the difference
+    justifies the grading fee.
+  </p>
+  <p>
+    Wondering what the cards in your closet would bring today? Start with <a href="/sports-card-worth">what are my sports cards worth?</a> - or scan them with CardSense
+    and get an answer in seconds. Collecting baseball? We wrote a dedicated guide to <a href="/baseball-card-values">baseball card values</a>.
+  </p>
+</GuideLayout>

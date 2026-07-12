@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import icon from '../assets/app-icon.png';
+import { APP_STORE_URL } from '../lib/site';
+
+interface Props {
+  title?: string;
+  text: string;
+}
+
+const { title = 'Skip the manual lookup with CardSense', text } = Astro.props;
+---
+
+<aside class="app-callout">
+  <Image src={icon} alt="CardSense app icon" width={112} height={112} format="webp" />
+  <div>
+    <h3>{title}</h3>
+    <p>{text}</p>
+    <a class="cta" href={APP_STORE_URL} rel="noopener">Download CardSense free on the App Store →</a>
+  </div>
+</aside>
