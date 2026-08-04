@@ -1,0 +1,224 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import AppCallout from '../components/AppCallout.astro';
+import type { FaqEntry } from '../lib/site';
+
+const faqs: FaqEntry[] = [
+  {
+    q: 'What is the best sports card scanner app?',
+    a: 'There is no single best app for everyone - it depends on what you want to do with your cards. CardSense (our app) focuses on fast identification, eBay-based values, and collection tracking on iPhone. CollX adds a full buy/sell marketplace, Ludex covers trading card games and Android, and StarSnap emphasizes grading guidance. This page compares all four on public listing data.',
+  },
+  {
+    q: 'Is there a free app to scan sports cards?',
+    a: 'Yes. All four apps in this comparison are free to download, and each offers a premium tier for heavier use. CardSense is free on the App Store; a premium unlock inside the app adds unlimited scans and full market details.',
+  },
+  {
+    q: 'How do sports card scanner apps know what a card is worth?',
+    a: 'The serious apps look at real sales rather than asking prices. CardSense builds its estimated values on recent eBay sales, showing the average, median, and price range for the identified card. Other apps use their own databases of sales and auction records. Whatever app you use, prefer sold prices over listing prices.',
+  },
+  {
+    q: 'Do sports card scanner apps work on Android?',
+    a: 'Some do. Ludex offers apps for both iOS and Android, and several other scanners have Android versions. CardSense is currently an iPhone app and requires iOS 18.2 or later.',
+  },
+  {
+    q: 'Can these apps scan Pokémon and other trading card games?',
+    a: 'CollX and Ludex both list support for trading card games such as Pokémon alongside sports cards. CardSense is built specifically for sports cards: baseball, basketball, football, hockey, and soccer.',
+  },
+  {
+    q: 'How accurate are sports card scanner apps?',
+    a: 'No scanner is perfect, and you should be skeptical of precise accuracy percentages in marketing. Identification is hardest on parallels and variants that differ only in small details. A good workflow is to let the app identify the card, then glance at the year, set, and card number it returns before trusting the value estimate.',
+  },
+];
+---
+
+<GuideLayout
+  title="Best Sports Card Scanner App: 4 Scanners Compared"
+  metaTitle="Best Sports Card Scanner App: 4 Apps Compared (2026) | CardSense"
+  metaDescription="CardSense, CollX, Ludex, and StarSnap compared on price, sports coverage, pricing data, and platforms - using each app's own public listing, with full disclosure that CardSense is ours."
+  path="/best-sports-card-scanner-app"
+  eyebrow="App comparison"
+  lede="Every scanner app promises to identify your cards and tell you what they are worth. They differ in what happens next: selling, trading card games, grading, or simply tracking a collection. Here is an honest comparison - including our own app."
+  faqs={faqs}
+  faqTitle="Sports card scanner app FAQ"
+  datePublished="2026-08-04"
+  dateModified="2026-08-04"
+>
+  <div class="answer">
+    <p class="eyebrow">Direct answer</p>
+    <p>
+      <strong>The best sports card scanner app depends on what you want after the scan.</strong> Choose
+      CardSense for fast identification, eBay-based values, and clean collection tracking on
+      iPhone. Choose CollX if you want a built-in marketplace to buy and sell. Choose Ludex if you
+      also collect trading card games or use Android. Choose StarSnap if grading guidance matters
+      most to you.
+    </p>
+  </div>
+
+  <h2>First, the disclosure</h2>
+  <p>
+    CardSense is our app - this website exists to support it. So instead of a rigged ranking, this
+    comparison sticks to what each app says about itself on its public App Store listing or
+    website (checked August 2026), and tells you honestly which type of collector each app fits.
+    Where CardSense is not the right choice, we say so.
+  </p>
+
+  <h2>The four apps at a glance</h2>
+  <div class="table-scroll">
+    <table>
+      <thead>
+        <tr>
+          <th scope="col">&nbsp;</th>
+          <th scope="col">CardSense</th>
+          <th scope="col">CollX</th>
+          <th scope="col">Ludex</th>
+          <th scope="col">StarSnap</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Focus</strong></td>
+          <td>Identify, value, and track sports cards</td>
+          <td>Scanning plus a buy/sell marketplace</td>
+          <td>Scanning plus listing cards for sale</td>
+          <td>Valuation with grading guidance</td>
+        </tr>
+        <tr>
+          <td><strong>Price model</strong></td>
+          <td>Free download; premium unlock for unlimited scans and full market details</td>
+          <td>Free; Pro $9.99/mo, Gold $24.99/mo</td>
+          <td>Free unlimited scans; premium tier</td>
+          <td>Free; premium in-app purchases</td>
+        </tr>
+        <tr>
+          <td><strong>Sports covered</strong></td>
+          <td>Baseball, basketball, football, hockey, soccer</td>
+          <td>Ten-plus sports, from baseball to MMA and golf</td>
+          <td>Baseball, basketball, football</td>
+          <td>Sports cards in general</td>
+        </tr>
+        <tr>
+          <td><strong>Trading card games</strong></td>
+          <td>No - sports cards only</td>
+          <td>Yes (Pokémon, Magic, Yu-Gi-Oh!, and more)</td>
+          <td>Yes (Pokémon)</td>
+          <td>Not listed</td>
+        </tr>
+        <tr>
+          <td><strong>Value estimates</strong></td>
+          <td>Recent eBay sales: average, median, range, price history</td>
+          <td>Own database and historical auction records</td>
+          <td>Sales data and eBay hobby trends</td>
+          <td>Market valuation per its listing</td>
+        </tr>
+        <tr>
+          <td><strong>Selling features</strong></td>
+          <td>None - by design</td>
+          <td>Built-in marketplace with buyer/seller protection</td>
+          <td>Listing builder for marketplaces</td>
+          <td>Not listed</td>
+        </tr>
+        <tr>
+          <td><strong>Platforms</strong></td>
+          <td>iPhone (iOS 18.2+)</td>
+          <td>iPhone, iPad, Mac, Vision Pro</td>
+          <td>iOS and Android</td>
+          <td>iPhone, iPad, Mac</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p>
+    <em>Source: each app's public App Store listing or official website, August 2026. Prices and
+    features change - check the current listing before you decide.</em>
+  </p>
+
+  <h2>CardSense: identify, value, and track - without the noise</h2>
+  <p>
+    CardSense (yes, ours) turns an iPhone photo into a full identification: player, team, year,
+    set, card number, and rarity, including rookies, inserts, parallels, autographs, and
+    memorabilia cards. Values come from recent eBay sales with the average, median, and full
+    price range, plus price history charts and sales velocity. Scanned cards go into a collection
+    with folders, notes, and an automatically updated total value.
+  </p>
+  <p>
+    What CardSense deliberately does not do: run a marketplace. There is no buying, selling, or
+    social feed inside the app - it is a focused tool for finding out what you own and what it is
+    worth. If you mainly want to sell through an in-app marketplace, CollX or Ludex fits that
+    goal better.
+  </p>
+
+  <h2>CollX: the marketplace heavyweight</h2>
+  <p>
+    CollX pairs its scanner with a full buy/sell marketplace, seller tools, and payment
+    protection, and its listing covers the broadest card range of the four - ten-plus sports plus
+    trading card games and non-sport cards. The trade-off is scope: it is as much a marketplace
+    and community as a scanner. If your endgame is selling cards directly from your phone, CollX
+    is the one to try first.
+  </p>
+
+  <h2>Ludex: scanning across sports and TCG, on both platforms</h2>
+  <p>
+    Ludex advertises free unlimited scans and covers baseball, basketball, and football alongside
+    Pokémon, with a listing builder that prepares cards for sale on marketplaces. It is also the
+    clear pick in this comparison for Android users, since CardSense, CollX, and StarSnap listings
+    center on Apple platforms.
+  </p>
+
+  <h2>StarSnap: valuation with grading guidance</h2>
+  <p>
+    StarSnap identifies cards and estimates values like the others, and its listing leans into
+    condition and grading guidance (Mint, Near Mint, and so on) plus educational content on
+    collecting. If you are mainly trying to learn condition assessment while you scan, that
+    emphasis may suit you. For what grading actually does to value, our <a href="/sports-card-grading">sports card grading guide</a> covers the decision in depth.
+  </p>
+
+  <h2>How to choose in 30 seconds</h2>
+  <ul>
+    <li>
+      <strong>"I found cards and want to know what they are worth":</strong> CardSense - scan,
+      see eBay-based values, done. Start with our <a href="/sports-card-worth">worth check guide</a> if the cards are a mystery box.
+    </li>
+    <li>
+      <strong>"I want to sell from my phone":</strong> CollX for a built-in marketplace, Ludex
+      for building listings to sell elsewhere.
+    </li>
+    <li>
+      <strong>"I collect Pokémon too":</strong> CollX or Ludex.
+    </li>
+    <li>
+      <strong>"I am on Android":</strong> Ludex.
+    </li>
+    <li>
+      <strong>"I want to track my collection's value over time":</strong> CardSense - unlimited
+      saved cards, folders, and month-over-month collection growth.
+    </li>
+  </ul>
+
+  <AppCallout
+    title="Try the scan yourself"
+    text="Download CardSense free, point it at any baseball, basketball, football, hockey, or soccer card, and see the identification and estimated value in seconds. If it is not for you, the comparison above tells you exactly where to go next."
+  />
+
+  <h2>What actually matters in a scanner app</h2>
+  <p>
+    Marketing aside, four things decide whether a scanner app earns a place on your home screen:
+  </p>
+  <ol>
+    <li>
+      <strong>Identification detail.</strong> Player and year are easy; set, card number, and
+      parallel are what separate a $2 card from a $200 one. Our <a href="/sports-card-value">sports card value guide</a> explains why those details move prices so much.
+    </li>
+    <li>
+      <strong>Where the prices come from.</strong> Estimates based on recent sold prices beat
+      estimates based on asking prices or stale guides - see <a href="/sports-card-prices">how to check sports card prices</a>.
+    </li>
+    <li>
+      <strong>Collection tracking.</strong> Scanning one card is a trick; keeping 500 cards
+      valued and organized is a tool.
+    </li>
+    <li>
+      <strong>An honest free tier.</strong> Every app here is free to start, so try two or three
+      on the same handful of cards and keep the one whose answers you trust.
+    </li>
+  </ol>
+</GuideLayout>

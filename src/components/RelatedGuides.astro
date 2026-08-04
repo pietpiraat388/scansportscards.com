@@ -51,6 +51,16 @@ const guides: Record<string, { tag: string; title: string; text: string }> = {
     title: 'Soccer card values explained',
     text: 'Global icons, tournament cycles, and first cards - the fastest-growing card market.',
   },
+  '/best-sports-card-scanner-app': {
+    tag: 'App comparison',
+    title: 'The best sports card scanner apps, compared',
+    text: 'CardSense, CollX, Ludex, and StarSnap side by side - with full disclosure that CardSense is ours.',
+  },
+  '/baseball-card-scanner': {
+    tag: 'Baseball scanner',
+    title: 'Scan baseball cards from a photo',
+    text: 'How a scan reads the year, set, and card number that decide what a baseball card is worth.',
+  },
 };
 
 // Three most relevant guides per page.
@@ -59,11 +69,13 @@ const related: Record<string, string[]> = {
   '/sports-card-prices': ['/sports-card-value', '/sports-card-worth', '/sports-card-grading'],
   '/sports-card-worth': ['/sports-card-value', '/sports-card-prices', '/sports-card-grading'],
   '/sports-card-grading': ['/sports-card-value', '/sports-card-prices', '/sports-card-worth'],
-  '/baseball-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
+  '/baseball-card-values': ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading'],
   '/basketball-card-values': ['/sports-card-worth', '/sports-card-grading', '/football-card-values'],
   '/football-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
   '/hockey-card-values': ['/sports-card-worth', '/sports-card-grading', '/baseball-card-values'],
   '/soccer-card-values': ['/sports-card-worth', '/sports-card-grading', '/basketball-card-values'],
+  '/best-sports-card-scanner-app': ['/sports-card-value', '/sports-card-prices', '/baseball-card-scanner'],
+  '/baseball-card-scanner': ['/baseball-card-values', '/sports-card-worth', '/best-sports-card-scanner-app'],
 };
 
 const picks = (related[current] ?? Object.keys(guides).filter((p) => p !== current).slice(0, 3))

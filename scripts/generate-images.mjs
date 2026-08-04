@@ -84,6 +84,8 @@ const pages = [
   ['hockey-card-values', 'Hockey Card Values', 'Young Guns to vintage O-Pee-Chee'],
   ['soccer-card-values', 'Soccer Card Values', 'The hobby&apos;s fastest-growing market'],
   ['sports-card-grading', 'Sports Card Grading', 'PSA, BGS & SGC - and when it pays'],
+  ['best-sports-card-scanner-app', 'Best Sports Card Scanner App', 'CardSense, CollX, Ludex & StarSnap compared'],
+  ['baseball-card-scanner', 'Baseball Card Scanner', 'Identify and value cards from a photo'],
 ];
 
 for (const [slug, title, subtitle] of pages) {
