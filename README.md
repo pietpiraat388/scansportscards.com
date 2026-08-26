@@ -21,12 +21,16 @@ Built with Astro as a fully static site with zero client-side JavaScript.
 | `/hockey-card-values` | Guide targeting "hockey card values" |
 | `/soccer-card-values` | Guide targeting "soccer card values" |
 | `/sports-card-grading` | Guide targeting "sports card grading" / "is grading worth it" |
+| `/best-sports-card-scanner-app` | Comparison: CardSense, CollX, Ludex, StarSnap |
+| `/baseball-card-scanner` | Scan baseball cards from a photo |
+| `/football-card-scanner` | Scan NFL cards from a photo |
+| `/basketball-card-scanner` | Scan NBA cards from a photo |
 
 ## SEO / GEO
 
 - Unique titles, meta descriptions, and canonical URLs per page.
-- Open Graph + Twitter cards with generated per-page OG images (`public/og/`).
-- JSON-LD: SoftwareApplication + WebSite + FAQPage (home), Article + BreadcrumbList + FAQPage (guides).
+- Open Graph + Twitter cards. Homepage uses `public/og/home.png`; guides use unique 1536x1024 feature images.
+- JSON-LD: SoftwareApplication + WebSite + FAQPage (home), Article + BreadcrumbList + FAQPage (guides), HowTo on step-shaped guides.
 - `sitemap-index.xml` via @astrojs/sitemap, `robots.txt`, and `llms.txt` for AI crawlers.
 - Direct-answer blocks at the top of every guide for featured snippets and AI overviews.
 - All app screenshots are the real App Store assets, optimized to WebP at build time.

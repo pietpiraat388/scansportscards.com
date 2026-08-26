@@ -1,13 +1,14 @@
-export const SITE_NAME = 'CardSense: Sports Card Scanner';
-export const SITE_SHORT = 'CardSense';
-export const SITE_URL = 'https://scansportscards.com';
-export const APP_STORE_URL = 'https://apps.apple.com/app/id6757801294';
-export const DEVELOPER = 'Patrick van der Ploeg';
+import { APP, home, homeFaqs } from '../data';
+import type { FaqEntry } from '../data';
 
-export interface FaqEntry {
-  q: string;
-  a: string; // plain-text answer, also rendered as HTML paragraphs split on \n\n
-}
+export type { FaqEntry };
+
+export const SITE_NAME = APP.name;
+export const SITE_SHORT = APP.shortName;
+export const SITE_URL = APP.siteUrl;
+export const APP_STORE_URL = APP.appStoreUrl;
+export const DEVELOPER = APP.developer;
+export const APP_STORE_ID = APP.appStoreId;
 
 export function faqSchema(faqs: FaqEntry[]) {
   return {
@@ -27,7 +28,9 @@ export function articleSchema(opts: {
   path: string;
   datePublished: string;
   dateModified: string;
+  image?: string;
 }) {
+  const image = opts.image ?? `${SITE_URL}/og${opts.path}.png`;
   return {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -35,7 +38,7 @@ export function articleSchema(opts: {
     description: opts.description,
     url: `${SITE_URL}${opts.path}`,
     mainEntityOfPage: `${SITE_URL}${opts.path}`,
-    image: `${SITE_URL}/og${opts.path}.png`,
+    image,
     datePublished: opts.datePublished,
     dateModified: opts.dateModified,
     author: { '@type': 'Organization', name: SITE_SHORT, url: SITE_URL },
@@ -56,21 +59,36 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
   };
 }
 
-export const softwareAppSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'SoftwareApplication',
-  name: SITE_NAME,
-  operatingSystem: 'iOS',
-  applicationCategory: 'SportsApplication',
-  description:
-    'CardSense identifies any sports card from a photo and shows its estimated market value based on recent eBay sales. Supports baseball, basketball, football, hockey, and soccer cards.',
-  url: SITE_URL,
-  image: `${SITE_URL}/og/home.png`,
-  installUrl: APP_STORE_URL,
-  offers: {
-    '@type': 'Offer',
-    price: '0',
-    priceCurrency: 'USD',
-  },
-  author: { '@type': 'Person', name: DEVELOPER },
-};
+export function softwareAppSchema() {
+  const schema: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: APP.name,
+    operatingSystem: APP.operatingSystem,
+    applicationCategory: 'SportsApplication',
+    description: home.description,
+    url: SITE_URL,
+    image: `${SITE_URL}${home.ogImage}`,
+    installUrl: APP.appStoreUrl,
+    offers: {
+      '@type': 'Offer',
+      price: APP.price,
+      priceCurrency: APP.priceCurrency,
+    },
+    author: { '@type': 'Person', name: APP.developer },
+  };
+  return schema;
+}
+
+export function websiteSchema() {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: APP.siteName,
+    url: SITE_URL,
+  };
+}
+
+export function homeJsonLd() {
+  return [softwareAppSchema(), websiteSchema(), faqSchema(homeFaqs)];
+}

@@ -1,0 +1,111 @@
+---
+import { Image } from 'astro:assets';
+import AppCallout from './AppCallout.astro';
+import type { Guide } from '../data/types';
+import shot1 from '../assets/screenshot-1.png';
+import shot2 from '../assets/screenshot-2.png';
+import shot3 from '../assets/screenshot-3.png';
+import shot4 from '../assets/screenshot-4.png';
+import shot5 from '../assets/screenshot-5.png';
+import shot6 from '../assets/screenshot-6.png';
+import shot7 from '../assets/screenshot-7.png';
+import shot8 from '../assets/screenshot-8.png';
+
+interface Props {
+  guide: Guide;
+}
+
+const { guide } = Astro.props;
+const shots: Record<number, typeof shot1> = {
+  1: shot1,
+  2: shot2,
+  3: shot3,
+  4: shot4,
+  5: shot5,
+  6: shot6,
+  7: shot7,
+  8: shot8,
+};
+---
+
+<div class="answer">
+  <p class="eyebrow">Direct answer</p>
+  <p set:html={guide.directAnswer} />
+</div>
+
+{
+  guide.sections.map((s) => (
+    <>
+      <h2>{s.h2}</h2>
+      {s.paras.map((p) => (
+        <p set:html={p} />
+      ))}
+      {s.list ? (
+        s.list.ordered ? (
+          <ol>
+            {s.list.items.map((item) => (
+              <li set:html={item} />
+            ))}
+          </ol>
+        ) : (
+          <ul>
+            {s.list.items.map((item) => (
+              <li set:html={item} />
+            ))}
+          </ul>
+        )
+      ) : null}
+      {s.table ? (
+        <div class="table-scroll">
+          <table>
+            <thead>
+              <tr>
+                {s.table.headers.map((h) => (
+                  <th scope="col">{h}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {s.table.rows.map((row) => (
+                <tr>
+                  {row.map((cell) => (
+                    <td set:html={cell} />
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      ) : null}
+      {s.figure && shots[s.figure.shot] ? (
+        <figure class="guide-figure">
+          <Image
+            src={shots[s.figure.shot]}
+            alt={s.figure.caption}
+            width={640}
+            widths={[320, 480, 640]}
+            sizes="(max-width: 46rem) 90vw, 40rem"
+            format="webp"
+          />
+          <figcaption>{s.figure.caption}</figcaption>
+        </figure>
+      ) : null}
+      {s.cta ? <AppCallout title={s.cta.title} text={s.cta.text} /> : null}
+    </>
+  ))
+}
+
+{
+  guide.sources.length > 0 ? (
+    <>
+      <h2>Sources</h2>
+      <ul>
+        {guide.sources.map((src) => (
+          <li>
+            <a href={src.url} rel="noopener">{src.name}</a>
+          </li>
+        ))}
+      </ul>
+    </>
+  ) : null
+}

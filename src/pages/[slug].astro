@@ -1,0 +1,16 @@
+---
+import GuideLayout from '../layouts/GuideLayout.astro';
+import { guides } from '../data';
+
+export function getStaticPaths() {
+  return guides.map((g) => ({ params: { slug: g.slug } }));
+}
+
+const { slug } = Astro.params;
+const guide = guides.find((g) => g.slug === slug);
+if (!guide) {
+  return new Response(null, { status: 404, statusText: 'Not Found' });
+}
+---
+
+<GuideLayout guide={guide} />

@@ -1,5 +1,6 @@
 ---
 import AppStoreBadge from './AppStoreBadge.astro';
+import { home } from '../data';
 
 interface Props {
   title?: string;
@@ -7,8 +8,8 @@ interface Props {
 }
 
 const {
-  title = 'Point your camera at a card. Know what it is and what it is worth.',
-  text = 'CardSense identifies the player, team, year, set, card number, and rarity, then shows an estimated value based on recent eBay sales. Free to download on iPhone.',
+  title = home.cta.title,
+  text = home.cta.text,
 } = Astro.props;
 ---
 
@@ -19,6 +20,6 @@ const {
     <div class="cta-band__actions">
       <AppStoreBadge />
     </div>
-    <p class="cta-band__note">Free download · iPhone · Works with baseball, basketball, football, hockey, and soccer cards</p>
+    <p class="cta-band__note">{home.cta.note}</p>
   </div>
 </section>

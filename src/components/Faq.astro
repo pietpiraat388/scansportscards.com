@@ -1,5 +1,5 @@
 ---
-import type { FaqEntry } from '../lib/site';
+import type { FaqEntry } from '../data';
 
 interface Props {
   faqs: FaqEntry[];
@@ -15,8 +15,13 @@ const { faqs } = Astro.props;
         <summary>{f.q}</summary>
         <div>
           {f.a.split('\n\n').map((p) => (
-            <p set:html={p} />
+            <p>{p}</p>
           ))}
+          {f.learnMore ? (
+            <p>
+              <a href={f.learnMore.href}>{f.learnMore.label}</a>
+            </p>
+          ) : null}
         </div>
       </details>
     ))

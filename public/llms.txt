@@ -8,6 +8,7 @@ Key facts:
 - Identification: AI trained on 5,000+ card types from Topps, Panini, Upper Deck, and more; recognizes rookies, inserts, parallels, autographs, and memorabilia cards; detects variants, serial numbers, and condition grades
 - Pricing data: estimated values from recent eBay sales with average, median, price range, sales velocity, and price history charts
 - Collection: unlimited saved cards, custom folders, notes, search, automatic total collection value
+- Android: no Google Play listing (404)
 
 ## Guides
 
@@ -20,3 +21,7 @@ Key facts:
 - [Football card values](https://scansportscards.com/football-card-values): the quarterback premium, rookies, and RPAs
 - [Hockey card values](https://scansportscards.com/hockey-card-values): Young Guns rookies and vintage O-Pee-Chee
 - [Soccer card values](https://scansportscards.com/soccer-card-values): global stars, tournament cycles, and first cards
+- [Best sports card scanner app](https://scansportscards.com/best-sports-card-scanner-app): CardSense, CollX, Ludex, and StarSnap compared
+- [Baseball card scanner](https://scansportscards.com/baseball-card-scanner): identify baseball cards from a photo
+- [Football card scanner](https://scansportscards.com/football-card-scanner): identify NFL cards from a photo
+- [Basketball card scanner](https://scansportscards.com/basketball-card-scanner): identify NBA cards from a photo

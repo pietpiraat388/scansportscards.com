@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import icon from '../assets/app-icon.png';
+import { APP } from '../data';
 import { APP_STORE_URL } from '../lib/site';
 
 const year = new Date().getFullYear();
@@ -15,8 +16,8 @@ const year = new Date().getFullYear();
           CardSense
         </a>
         <p>
-          CardSense is an AI sports card scanner for iPhone. Snap a photo of any baseball,
-          basketball, football, hockey, or soccer card to identify it and see its estimated
+          CardSense is an iPhone sports card scanner app. Snap a photo of a baseball,
+          basketball, football, hockey, or soccer card to identify it and see an estimated
           market value based on recent eBay sales.
         </p>
       </div>
@@ -34,6 +35,8 @@ const year = new Date().getFullYear();
         <h4>By sport</h4>
         <ul>
           <li><a href="/baseball-card-scanner">Baseball card scanner</a></li>
+          <li><a href="/football-card-scanner">Football card scanner</a></li>
+          <li><a href="/basketball-card-scanner">Basketball card scanner</a></li>
           <li><a href="/baseball-card-values">Baseball card values</a></li>
           <li><a href="/basketball-card-values">Basketball card values</a></li>
           <li><a href="/football-card-values">Football card values</a></li>
@@ -45,15 +48,15 @@ const year = new Date().getFullYear();
         <h4>App</h4>
         <ul>
           <li><a href="/#how-it-works">How it works</a></li>
-          <li><a href="/#features">Features</a></li>
+          <li><a href="/#download">Download</a></li>
           <li><a href="/#faq">FAQ</a></li>
           <li><a href={APP_STORE_URL} rel="noopener">Download on the App Store</a></li>
         </ul>
       </nav>
     </div>
     <div class="site-footer__legal">
-      <span>© {year} CardSense. All rights reserved.</span>
-      <span>Made for collectors of sports cards everywhere.</span>
+      <span>© {year} {APP.shortName}. All rights reserved.</span>
+      <span>Made for collectors of sports cards.</span>
     </div>
   </div>
 </footer>

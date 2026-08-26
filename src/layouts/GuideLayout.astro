@@ -3,54 +3,63 @@ import BaseLayout from './BaseLayout.astro';
 import Faq from '../components/Faq.astro';
 import Cta from '../components/Cta.astro';
 import RelatedGuides from '../components/RelatedGuides.astro';
+import GuideBody from '../components/GuideBody.astro';
 import {
   articleSchema,
   breadcrumbSchema,
   faqSchema,
-  type FaqEntry,
+  SITE_URL,
 } from '../lib/site';
+import type { Guide } from '../data/types';
 
 interface Props {
-  title: string;
-  metaTitle: string;
-  metaDescription: string;
-  path: string;
-  eyebrow: string;
-  lede: string;
-  faqs: FaqEntry[];
-  faqTitle?: string;
-  datePublished?: string;
-  dateModified?: string;
+  guide: Guide;
 }
 
-const {
-  title,
-  metaTitle,
-  metaDescription,
-  path,
-  eyebrow,
-  lede,
-  faqs,
-  faqTitle = 'Frequently asked questions',
-  datePublished = '2026-07-12',
-  dateModified = '2026-07-12',
-} = Astro.props;
+const { guide } = Astro.props;
+const imageUrl = `${SITE_URL}${guide.featureImage.src}`;
+
+const howtoSchema = guide.howto
+  ? {
+      '@context': 'https://schema.org',
+      '@type': 'HowTo',
+      name: guide.howto.name,
+      description: guide.howto.description,
+      step: guide.howto.steps.map((step, i) => ({
+        '@type': 'HowToStep',
+        position: i + 1,
+        name: step.name,
+        text: step.text,
+      })),
+    }
+  : null;
 
 const schema = [
-  articleSchema({ title, description: metaDescription, path, datePublished, dateModified }),
+  articleSchema({
+    title: guide.title,
+    description: guide.description,
+    path: guide.path,
+    datePublished: guide.datePublished,
+    dateModified: guide.dateModified,
+    image: imageUrl,
+  }),
   breadcrumbSchema([
     { name: 'Home', path: '/' },
-    { name: title, path },
+    { name: guide.title, path: guide.path },
   ]),
-  faqSchema(faqs),
+  faqSchema(guide.faqs),
+  ...(howtoSchema ? [howtoSchema] : []),
 ];
 ---
 
 <BaseLayout
-  title={metaTitle}
-  description={metaDescription}
-  path={path}
-  ogImage={`/og${path}.png`}
+  title={guide.metaTitle}
+  description={guide.description}
+  path={guide.path}
+  ogImage={guide.featureImage.src}
+  ogType="article"
+  ogWidth={guide.featureImage.width}
+  ogHeight={guide.featureImage.height}
   schema={schema}
 >
   <article>
@@ -59,19 +68,27 @@ const schema = [
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <ol>
             <li><a href="/">Home</a></li>
-            <li aria-current="page">{title}</li>
+            <li aria-current="page">{guide.title}</li>
           </ol>
         </nav>
-        <p class="eyebrow">{eyebrow}</p>
-        <h1>{title}</h1>
-        <p class="lede">{lede}</p>
+        <p class="eyebrow">{guide.eyebrow}</p>
+        <h1>{guide.title}</h1>
+        <p class="lede">{guide.lede}</p>
+        <img
+          class="article-hero__image"
+          src={guide.featureImage.src}
+          alt={guide.featureImage.alt}
+          width={guide.featureImage.width}
+          height={guide.featureImage.height}
+          fetchpriority="high"
+        />
       </div>
     </header>
 
     <div class="section">
       <div class="wrap">
         <div class="prose">
-          <slot />
+          <GuideBody guide={guide} />
         </div>
       </div>
     </div>
@@ -80,13 +97,13 @@ const schema = [
       <div class="wrap">
         <div class="section-head section-head--center">
           <p class="eyebrow">FAQ</p>
-          <h2 id="faq-title">{faqTitle}</h2>
+          <h2 id="faq-title">{guide.tag} FAQ</h2>
         </div>
-        <Faq faqs={faqs} />
+        <Faq faqs={guide.faqs} />
       </div>
     </section>
   </article>
 
-  <RelatedGuides current={path} />
+  <RelatedGuides current={guide.path} />
   <Cta />
 </BaseLayout>
