@@ -1,4 +1,5 @@
 import type { FeatureImage, Guide } from './types';
+import { rookieGuides } from './rookies';
 
 const D = '2026-08-26';
 
@@ -12,9 +13,9 @@ export const guides: Guide[] = [
     path: '/sports-card-value',
     tag: 'Value guide',
     title: 'Sports Card Value: What Makes a Card Valuable?',
-    metaTitle: 'Sports Card Value Guide: What Makes a Card Valuable? | CardSense',
+    metaTitle: 'Sports Card Value Guide: Five Factors | CardSense',
     description:
-      'Sports card value comes down to five factors: player, rookie status, scarcity, condition, and demand. Learn how they work together and how to check any card from a photo.',
+      'Sports card value comes down to five factors: player, rookie status, scarcity, condition, and demand. Learn how to check any card from a photo.',
     eyebrow: 'Value guide',
     lede: 'Two cards can look nearly identical and sell for wildly different amounts. These five factors are why, and they are what you need before you trust a number.',
     directAnswer:
@@ -29,7 +30,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/sports-card-prices', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/sports-card-prices', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'CardSense App Store listing', url: 'https://apps.apple.com/app/id6757801294' },
@@ -48,7 +49,7 @@ export const guides: Guide[] = [
       {
         h2: 'The five factors that determine sports card value',
         paras: [
-          'Every expensive card combines several of these. Missing even one of them is usually what separates a spectacular card from an ordinary one.',
+          'Every expensive card combines several of these. Missing even one of them is usually what separates a spectacular card from an ordinary one. If you are sorting a baseball stack and want a trait checklist first, see <a href="/baseball-cards-worth-money">what baseball cards are worth money</a>.',
         ],
       },
       {
@@ -60,7 +61,7 @@ export const guides: Guide[] = [
       {
         h2: 'Rookie status',
         paras: [
-          'A rookie card is a player\'s first officially licensed card. Collectors treat it as the definitive version to own, so it usually sells for more than later cards of the same player. Many modern cards carry an RC logo or a Rated Rookie style mark that makes them easy to spot. A rookie of a player who never became a star is still just a common.',
+          'A rookie card is a player\'s first officially licensed card. Collectors treat it as the definitive version to own, so it usually sells for more than later cards of the same player. Many modern cards carry an RC logo or a Rated Rookie style mark that makes them easy to spot. A rookie of a player who never became a star is still just a common. For Judge, Trout, Jordan, and Ruth, start at <a href="/rookie-card-values">rookie card values</a>.',
         ],
       },
       {
@@ -72,7 +73,7 @@ export const guides: Guide[] = [
       {
         h2: 'Condition and grading',
         paras: [
-          'Condition can multiply or destroy value. Collectors look at corners, edges, surface, and centering. PSA, BGS, and SGC score cards from 1 to 10 and seal them in slabs. The same card in worn shape can be a small fraction of its top-grade price. See <a href="/sports-card-grading">when grading pays</a> before you spend a submission fee.',
+          'Condition can multiply or destroy value. Collectors look at corners, edges, surface, and centering. PSA, BGS, and SGC score cards from 1 to 10 and seal them in slabs. The same card in worn shape can be a small fraction of its top-grade price. See <a href="/sports-card-grading#grading-cost">how much grading costs</a> before you spend a submission fee.',
         ],
       },
       {
@@ -124,7 +125,7 @@ export const guides: Guide[] = [
       {
         h2: 'What this guide is not',
         paras: [
-          'It is not a substitute for SportsCardsPro, CardLadder, or a full sold-listings search when you are pricing a high-end card to sell. Those tools exist because the market is a database problem at scale. This page is the method: name the five factors, name the exact version, then go get comps. A scanner app is a faster way through the naming step, not a different theory of value.',
+          'It is not a substitute for SportsCardsPro, CardLadder, or a full sold-listings search when you are pricing a high-end card to sell. Those tools exist because the market is a database problem at scale. This page is the method: name the five factors, name the exact version, then go get comps. A <a href="/best-sports-card-scanner-app">sports card scanner app</a> is a faster way through the naming step, not a different theory of value. Baseball stacks can start at <a href="/baseball-card-scanner">scan baseball cards</a>.',
         ],
       },
     ],
@@ -134,9 +135,9 @@ export const guides: Guide[] = [
     path: '/sports-card-prices',
     tag: 'Price guide',
     title: 'Sports Card Prices: How to Check What Cards Really Sell For',
-    metaTitle: 'Sports Card Prices: How to Check Real Market Prices | CardSense',
+    metaTitle: 'Sports Card Prices: Check Real Market Prices | CardSense',
     description:
-      'Sports card prices are set by recent sold sales, not asking prices. Learn where prices come from, how to read averages and ranges, and how to check a card from a photo.',
+      'Sports card prices are set by recent sold sales, not asking prices. Learn how to read averages and ranges, then check a card from a photo.',
     eyebrow: 'Price guide',
     lede: 'Listed prices tell you what sellers hope for. Sold prices tell you what cards trade for. Here is how to read the second number.',
     directAnswer:
@@ -229,7 +230,7 @@ export const guides: Guide[] = [
       {
         h2: 'When a scanner helps, and when it does not',
         paras: [
-          'A scanner earns its keep when you do not know the set. It is weaker when the card is so rare that three sales exist in a year, or when the photo is a bad crop of a foil that fools the model. In those cases, do the manual sold search anyway. The app is a first pass, not a closing price for an auction house lot.',
+          'A scanner earns its keep when you do not know the set. It is weaker when the card is so rare that three sales exist in a year, or when the photo is a bad crop of a foil that fools the model. In those cases, do the manual sold search anyway. The app is a first pass, not a closing price for an auction house lot. Compare tools on the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> page, or <a href="/baseball-card-scanner">scan baseball cards</a> if that is the stack in front of you.',
         ],
       },
     ],
@@ -239,9 +240,9 @@ export const guides: Guide[] = [
     path: '/sports-card-worth',
     tag: 'Worth check',
     title: 'What Are My Sports Cards Worth? Find Out in 3 Steps',
-    metaTitle: 'What Are My Sports Cards Worth? Find Out in 3 Steps | CardSense',
+    metaTitle: 'What Are My Sports Cards Worth? 3 Steps | CardSense',
     description:
-      'Your sports cards are worth what buyers recently paid for the same cards in the same condition. Identify the card, assess condition, then compare recent sold prices.',
+      'Your sports cards are worth what buyers recently paid for the same cards in the same condition. Identify, assess condition, then compare sold prices.',
     eyebrow: 'Worth check',
     lede: 'A shoebox in the attic or a binder from childhood: here is a three-step method to get from unknown cardboard to a real market number.',
     directAnswer:
@@ -256,7 +257,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-grading'],
+    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-grading', '/baseball-cards-worth-money'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'PSA grading overview', url: 'https://www.psacard.com/' },
@@ -321,7 +322,7 @@ export const guides: Guide[] = [
           ordered: true,
           items: [
             '<strong>Sort by era.</strong> The back usually shows a copyright year. Pre-1980 cards deserve individual attention; 1987-1993 cards are mostly mass-printed.',
-            '<strong>Pull the obvious candidates:</strong> stars, rookies, autographs, serial numbers, anything that looks premium.',
+            '<strong>Pull the obvious candidates:</strong> stars, rookies, autographs, serial numbers, anything that looks premium. For baseball, the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist names the same traits.',
             '<strong>Scan the candidates</strong> and let the estimates tell you where to spend time. Save them into a folder so you build an inventory.',
             '<strong>Do not toss the rest carelessly.</strong> Sentimental value is real, and bulk lots of commons still find buyers.',
           ],
@@ -342,7 +343,7 @@ export const guides: Guide[] = [
         h2: 'How to find the value of sports cards you cannot name',
         paras: [
           'This is the actual attic problem. You do not know the set. The back is in a language you do not collect. The foil pattern does not match the two sets you remember from childhood. Manual lookup here means flipping through checklists until something matches the photo, which is how people spend an evening and still price the wrong parallel.',
-          'Work in batches. Photograph a stack in decent light. Identify each card. Save anything with a real number attached. Leave the rest in a "look later" pile instead of throwing it out. Junk-wax commons are still easier to move as a bulk lot than as 400 individual listings.',
+          'Work in batches. Photograph a stack in decent light. Identify each card. Save anything with a real number attached. Leave the rest in a "look later" pile instead of throwing it out. Junk-wax commons are still easier to move as a bulk lot than as 400 individual listings. <a href="/baseball-card-scanner">Scan baseball cards</a> when the box is mostly Topps; the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> page is the pick if you still need to choose a tool.',
           'If a card comes back with a wide range, that is information. Wide range usually means thin trading, mixed condition in the comps, or a variant the market does not agree on. Do not pick the high end because it feels better. Pick the median and move on unless the card is valuable enough to justify a longer search.',
         ],
       },
@@ -353,9 +354,9 @@ export const guides: Guide[] = [
     path: '/sports-card-grading',
     tag: 'Grading',
     title: 'Sports Card Grading: How It Works and When It Pays',
-    metaTitle: 'Sports Card Grading: PSA, BGS & SGC Explained | CardSense',
+    metaTitle: 'Card Grading Cost 2026: PSA, SGC & CGC Fees | CardSense',
     description:
-      'Sports card grading is a professional condition assessment on a 1-10 scale. Learn how PSA, BGS, and SGC grade cards, what a slab does for value, and when the fee is worth it.',
+      'What it costs to get baseball cards graded at PSA, SGC and CGC, per card and per tier, plus when the fee is worth it. Prices from official fee pages.',
     eyebrow: 'Grading guide',
     lede: 'A professional grade turns "nice condition" into a number the market trusts. Here is how it works, what it costs you, and when the math actually works.',
     directAnswer:
@@ -369,12 +370,37 @@ export const guides: Guide[] = [
       'White-gloved hand holding a slabbed silhouette baseball card next to a bent raw copy on a white table',
     ),
     datePublished: '2026-07-12',
-    dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-worth'],
+    dateModified: '2026-10-22',
+    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-worth', '/baseball-cards-worth-money'],
     sources: [
-      { name: 'PSA', url: 'https://www.psacard.com/' },
-      { name: 'Beckett Grading Services', url: 'https://www.beckett.com/grading' },
-      { name: 'SGC', url: 'https://www.gosgc.com/' },
+      {
+        name: 'PSA trading card grading fees (checked October 22, 2026)',
+        url: 'https://www.psacard.com/services/tradingcardgrading',
+      },
+      {
+        name: 'PSA pricing page (checked October 22, 2026)',
+        url: 'https://www.psacard.com/services/pricing',
+      },
+      {
+        name: 'PSA service-level update, May 28, 2026 (Value tiers paused June 2, 2026)',
+        url: 'https://www.psacard.com/articles/articleview/15210/service-level-update-may-2026',
+      },
+      {
+        name: 'PSA Standard service level and name changes, September 9, 2026',
+        url: 'https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level',
+      },
+      {
+        name: 'CGC Cards services and fees, US Collector submissions (checked October 22, 2026)',
+        url: 'https://www.cgccards.com/submit/services-fees/cgc-grading/',
+      },
+      {
+        name: 'SGC services and pricing (official page; live fees could not be read on October 22, 2026)',
+        url: 'https://gosgc.com/card-grading/services-pricing',
+      },
+      {
+        name: 'Beckett card grading (checked October 22, 2026)',
+        url: 'https://www.beckett.com/grading',
+      },
     ],
     faqs: [
       {
@@ -384,6 +410,26 @@ export const guides: Guide[] = [
       {
         q: 'Does grading always increase a card\'s value?',
         a: 'No. Grading adds a fee, and a low grade can hurt resale. It pays when the card is valuable and clean: expected graded price minus fee should beat the raw price. For common or worn cards, the math rarely works.',
+      },
+      {
+        q: 'How much does PSA charge to grade a card?',
+        a: 'On October 22, 2026, PSA\'s open trading-card tiers on its official grading page started at Standard for $59.99 per card (max insured value $1,000, estimated 90-100 business days). Value Bulk, Value, Value Plus, and Value Max were paused. Faster tiers cost more. Confirm the live page before you submit.',
+      },
+      {
+        q: 'What is the cheapest way to get cards graded?',
+        a: 'Among fees we could read on official pages on October 22, 2026, CGC Bulk was $17 per card with a 25-card minimum, and CGC Economy was $20. PSA\'s cheapest open tier was Standard at $59.99. SGC\'s official pricing page did not return readable numbers, so this page does not quote an SGC fee. Shipping and memberships sit on top of the per-card fee.',
+      },
+      {
+        q: 'How long does grading take?',
+        a: 'It depends on the company and the tier. On the check date, CGC Economy listed 90 working days and CGC Bulk 150; PSA Standard listed 90-100 business days. Faster CGC and PSA tiers listed as little as a few working days. Those times are estimates, not guarantees, and they start after the order is entered.',
+      },
+      {
+        q: 'Do I pay shipping on top of the grading fee?',
+        a: 'Yes. You typically pay to ship cards in and to get slabs back, plus insurance that follows the declared value. Memberships can change the per-card fee. Add those costs before you decide the grade is worth it.',
+      },
+      {
+        q: 'Is it worth grading a card worth $20?',
+        a: 'Usually no. If a card sells raw for about $20, even a cheap open tier plus shipping often eats the spread, and a mid grade can leave you behind the raw price. Grade when a realistic graded sold price, minus fee and shipping, clearly beats the raw sold price.',
       },
     ],
     sections: [
@@ -396,7 +442,7 @@ export const guides: Guide[] = [
       {
         h2: 'PSA, BGS, and SGC',
         paras: [
-          'PSA is the largest and usually the most liquid market for slabs. BGS is known for subgrades and its Black Label. SGC has a strong vintage reputation. The "best" company depends on the card and where you plan to sell it, not a universal ranking.',
+          'PSA is the largest and usually the most liquid market for slabs. CGC publishes a full US fee table. BGS is known for subgrades and its Black Label. SGC has a strong vintage reputation. The "best" company depends on the card and where you plan to sell it, not a universal ranking.',
         ],
         figure: {
           shot: 3,
@@ -405,6 +451,8 @@ export const guides: Guide[] = [
       },
       {
         h2: 'The simple math before you submit',
+        answer:
+          'Grading only pays when the graded sale price, minus the fee and shipping, clearly beats the raw sale price. Check what the card sells for raw, then what it sells for in the grade you honestly expect. Most modern base cards and junk-wax commons don\'t clear that bar.',
         paras: [
           'Take the recent sold price of the card raw. Take the recent sold price of the same card in the grade you honestly expect. Subtract the grading fee and shipping. If there is not a clear margin, keep it raw. Grading a junk-wax common almost never pays.',
         ],
@@ -427,10 +475,145 @@ export const guides: Guide[] = [
         ],
       },
       {
-        h2: 'Fees, queues, and the cards that never pay',
+        h2: 'How much does it cost to get cards graded?',
+        id: 'grading-cost',
+        answer:
+          'Grading a baseball card costs roughly $17 to $60 per card at the cheapest open tiers in late 2026: CGC Bulk is $17 (25-card minimum), CGC Economy $20, and PSA Standard $59.99. Faster tiers cost $100 to $600 or more. Shipping and insurance come on top, and the fee depends on the card\'s declared value.',
         paras: [
-          'Grading is not free, and it is not instant. Economy tiers are cheaper and slower. Express tiers cost more. You also pay shipping both ways and, on some services, a special handling fee for older cardboard. Add those up before you compare raw and graded comps.',
-          'Mass-printed commons, damaged vintage, and modern base cards of role players almost never clear that hurdle. A $12 raw card that might be $25 in a 10 still loses if the fee is $20 and the card comes back a 9. Grade the cards where a single point on the scale is hundreds of dollars, not the cards where it is three.',
+          'Figures below are what the official PSA and CGC pages showed on October 22, 2026. SGC\'s official pricing page loaded as a JavaScript app and did not expose readable fees, so SGC is omitted from the table. Beckett\'s grading page was live, but several BGS rows were too ambiguous to tabulate. Always re-open the source URL before you submit.',
+        ],
+        table: {
+          headers: ['Company', 'Tier', 'Fee per card', 'Max declared value', 'Est. turnaround', 'Source (checked October 22, 2026)'],
+          rows: [
+            [
+              'PSA',
+              'Value Bulk / Value / Value Plus / Value Max',
+              'Paused',
+              '$500 on Value Bulk and Value (other Value caps not shown on the live page)',
+              'Paused since June 2, 2026',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15210/service-level-update-may-2026" rel="noopener">May 2026 update</a>',
+            ],
+            [
+              'PSA',
+              'Standard',
+              '$59.99',
+              '$1,000 max insured',
+              '90-100 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Priority',
+              '$79.99',
+              '$1,500 max insured',
+              '70-80 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level" rel="noopener">Sep 2026 names</a>',
+            ],
+            [
+              'PSA',
+              'Express',
+              '$199',
+              '$2,500 max insured',
+              '20-30 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Super Express',
+              '$349',
+              '$5,000 max insured',
+              '10-15 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Premier',
+              '$599',
+              '$10,000 max insured',
+              '7-10 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level" rel="noopener">Sep 2026 names</a>',
+            ],
+            [
+              'CGC',
+              'Bulk (25-card minimum)',
+              '$17',
+              '$500',
+              '150 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Economy',
+              '$20',
+              '$1,000',
+              '90 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Standard',
+              '$55',
+              '$3,000',
+              '10 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Express',
+              '$100',
+              '$10,000',
+              '5 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'WalkThrough',
+              '$300',
+              '$100,000',
+              '2 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Unlimited Value',
+              '$300 + 1% FMV',
+              'Unlimited',
+              '2 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+          ],
+        },
+        h3s: [
+          {
+            h3: 'PSA',
+            paras: [
+              'PSA Value tiers (Value Bulk, Value, Value Plus, and Value Max) have been paused to new submissions since June 2, 2026. On September 14, 2026 PSA opened Standard at $59.99 and renamed Regular to Priority ($79.99) and Walk-Through to Premier ($599). Express is $199. Higher walk-through-style tiers above Premier appeared on the live page without names clear enough to tabulate, so they are left out.',
+            ],
+          },
+          {
+            h3: 'SGC',
+            paras: [
+              'SGC\'s official services and pricing page is a JavaScript app. On October 22, 2026 it did not return readable tier names or fees, so this table does not list SGC numbers and does not use third-party reports. Check <a href="https://gosgc.com/card-grading/services-pricing" rel="noopener">gosgc.com/card-grading/services-pricing</a> before you submit.',
+            ],
+          },
+          {
+            h3: 'CGC',
+            paras: [
+              'CGC\'s US Collector fee table listed Bulk at $17 (25-card minimum), Economy at $20, Standard at $55, Express at $100, WalkThrough at $300, and Unlimited Value at $300 plus 1% of fair market value. Associate and Premium members save 10% on grading; Elite members save 20%. If CGC finds the fair market value is above the declared value, it moves the card to a higher tier and charges the difference.',
+            ],
+          },
+          {
+            h3: 'Costs on top of the fee',
+            paras: [
+              'Return shipping, insurance, and inbound postage sit on top of the per-card fee. A higher declared value can bump the tier, which is how CGC describes its declared-value policy. PSA and CGC memberships can change what you pay. Beckett\'s page was live and showed a Base fee of $14.95 (Sold Out, 75+ business days) and Priority at $124.95 (5 business days); other BGS rows mixed prices without a clear declared-value cap, so they are not in the table. Check <a href="https://www.beckett.com/grading" rel="noopener">beckett.com/grading</a>.',
+            ],
+          },
+          {
+            h3: 'Worked example',
+            paras: [
+              'Say a card sells raw for $12 and recent comps for a 10 are about $25. CGC Economy, the cheapest single-card CGC tier we could read, is $20. After the fee you have $5 before shipping, which is worse than selling it raw. If the card comes back a 9, the spread is worse. That is why a $12 common is the wrong card to mail. Use <a href="/sports-card-prices">sold prices</a> for both the raw and the graded version before you pick a tier.',
+            ],
+          },
         ],
       },
     ],
@@ -442,7 +625,7 @@ export const guides: Guide[] = [
     title: 'Baseball Card Values: What Are Your Cards Worth?',
     metaTitle: 'Baseball Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Baseball card values depend on era, player, rookie status, scarcity, and condition. From junk wax to vintage: learn which baseball cards hold value and how to check yours.',
+      'Baseball card values depend on era, player, rookie status, scarcity, and condition. Learn which cards hold value and how to check yours.',
     eyebrow: 'Baseball guide',
     lede: 'Baseball is where card collecting began, and it is still the deepest market. Era sets the stage; player, rookie status, scarcity, and condition do the rest.',
     directAnswer:
@@ -457,7 +640,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money', '/rookie-card-values'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'SportsCardsPro baseball prices', url: 'https://www.sportscardspro.com/category/baseball-cards' },
@@ -500,7 +683,7 @@ export const guides: Guide[] = [
         list: {
           items: [
             '<strong>First Bowman Chrome:</strong> often issued years before an MLB debut. The modern chase card.',
-            '<strong>Flagship Topps RC:</strong> the licensed rookie most casual collectors recognize.',
+            '<strong>Flagship Topps RC:</strong> the licensed rookie most casual collectors recognize. Player-by-player notes live on <a href="/rookie-card-values">rookie card values</a>.',
             '<strong>Vintage flagship rookies:</strong> the cards that built the hobby, where grade gaps are enormous.',
           ],
         },
@@ -516,7 +699,7 @@ export const guides: Guide[] = [
       {
         h2: 'Junk wax vs vintage, in practice',
         paras: [
-          'If your box is full of 1988-1992 glossy rookies in rubber-banded stacks, assume common until a scan says otherwise. The print runs from those years are the reason "old" and "valuable" parted ways. A Hall of Fame rookie from that window can still be real money in a high grade. The same player\'s 15th card from the same year is usually not.',
+          'If your box is full of 1988-1992 glossy rookies in rubber-banded stacks, assume common until a scan says otherwise. The print runs from those years are the reason "old" and "valuable" parted ways. A Hall of Fame rookie from that window can still be real money in a high grade. The same player\'s 15th card from the same year is usually not. For a trait-by-trait pass before you price anything, use <a href="/baseball-cards-worth-money">what baseball cards are worth money</a>.',
           'Vintage is the opposite problem: survival. A 1950s or 1960s star that spent 40 years in an attic may be the right card and still be a low-grade copy. Do not sandbag yourself by comparing it to a PSA 8 auction result you saw on a highlight reel. Compare it to other worn copies of the same number.',
         ],
       },
@@ -524,7 +707,7 @@ export const guides: Guide[] = [
         h2: 'How to check a baseball card you cannot name',
         paras: [
           'Read the copyright line and the card number on the back. Note any RC mark, any foil pattern, any serial stamp. If the back is bilingual, you may be holding an O-Pee-Chee-style issue even on a baseball card from a shared design language, so do not assume Topps. Then either search those details as sold listings or photograph the card and let the scanner propose the set.',
-          'Once you have the exact name, jump to <a href="/baseball-card-scanner">scanning baseball cards</a> if you have a pile, or stay on sold comps if you have one card and already know the set. The <a href="/sports-card-worth">three-step worth method</a> is the same here as in any other sport. Baseball just has more lookalikes.',
+          'Once you have the exact name, jump to <a href="/baseball-card-scanner">scanning baseball cards</a> if you have a pile, or stay on sold comps if you have one card and already know the set. The <a href="/sports-card-worth">three-step worth method</a> is the same here as in any other sport. Baseball just has more lookalikes. If you are still choosing a tool, start with the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> comparison.',
         ],
       },
     ],
@@ -534,9 +717,9 @@ export const guides: Guide[] = [
     path: '/basketball-card-values',
     tag: 'Basketball',
     title: 'Basketball Card Values: What Are Your Cards Worth?',
-    metaTitle: 'Basketball Card Values: What Are Your Cards Worth? | CardSense',
+    metaTitle: 'Basketball Card Values: What Are Yours Worth? | CardSense',
     description:
-      'Basketball card values are driven by the player, rookie status, parallels, and condition. Learn which NBA cards hold value and how to check any card from a photo.',
+      'Basketball card values are driven by the player, rookie status, parallels, and condition. Learn which NBA cards hold value and how to check yours.',
     eyebrow: 'Basketball guide',
     lede: 'Basketball is the most parallel-driven major card market. One rookie can exist in dozens of versions with wildly different prices.',
     directAnswer:
@@ -551,7 +734,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/basketball-card-scanner', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/basketball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/rookie-card-values/michael-jordan'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'CardSense App Store listing', url: 'https://apps.apple.com/app/id6757801294' },
@@ -570,7 +753,7 @@ export const guides: Guide[] = [
       {
         h2: 'What makes basketball cards different',
         paras: [
-          'Since the 1990s, NBA sets have layered scarce chase cards on top of base sets: refractors, colored parallels, serial-numbered versions, case hits. The gap between a base card and its rarest parallel is enormous. The five general factors still apply; see the <a href="/sports-card-value">sports card value guide</a>.',
+          'Since the 1990s, NBA sets have layered scarce chase cards on top of base sets: refractors, colored parallels, serial-numbered versions, case hits. The gap between a base card and its rarest parallel is enormous. The five general factors still apply; see the <a href="/sports-card-value">sports card value guide</a>. For the 1986 Fleer Jordan rookie specifically, see <a href="/rookie-card-values/michael-jordan">Michael Jordan rookie card</a>.',
         ],
       },
       {
@@ -604,7 +787,7 @@ export const guides: Guide[] = [
         h2: 'How to check an NBA card from a photo',
         paras: [
           'Fill the frame so borders and foil are visible. Confirm the set line on the back against whatever the scanner returns. Then read the estimate as a range, not a promise. International stars often have demand from more than one country, which can make comps noisier, not cleaner.',
-          'For a binder, scan rookies and anything that looks like a parallel first. Leave base commons for last. Details on the camera flow live on the <a href="/basketball-card-scanner">basketball card scanner</a> page.',
+          'For a binder, scan rookies and anything that looks like a parallel first. Leave base commons for last. Details on the camera flow live on the <a href="/basketball-card-scanner">basketball card scanner</a> page. Still picking a tool? Read the <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison.',
         ],
       },
       {
@@ -624,7 +807,7 @@ export const guides: Guide[] = [
     title: 'Football Card Values: What Are Your Cards Worth?',
     metaTitle: 'Football Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Football card values are driven by the player (especially quarterbacks), rookie status, parallels, and condition. Learn which NFL cards hold value and how to check yours.',
+      'Football card values are driven by the player, especially quarterbacks, plus rookie status, parallels, and condition. Learn how to check yours.',
     eyebrow: 'Football guide',
     lede: 'Football cards live and die with the quarterback position, rookie classes, and the exact parallel in your hand.',
     directAnswer:
@@ -687,7 +870,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check an NFL card you just found',
         paras: [
-          'Look for an RC logo, a serial stamp, a patch window, and an autograph. Those four marks do more than the player name. Photograph the card in light that does not blow out the foil. Confirm year, set, and number. Then read comps for that exact version. The camera walkthrough is on <a href="/football-card-scanner">football card scanner</a>.',
+          'Look for an RC logo, a serial stamp, a patch window, and an autograph. Those four marks do more than the player name. Photograph the card in light that does not blow out the foil. Confirm year, set, and number. Then read comps for that exact version. The camera walkthrough is on <a href="/football-card-scanner">football card scanner</a>. Still choosing? The <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison is the next page.',
         ],
       },
       {
@@ -707,7 +890,7 @@ export const guides: Guide[] = [
     title: 'Hockey Card Values: What Are Your Cards Worth?',
     metaTitle: 'Hockey Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Hockey card values are driven by the player, rookie cards like Young Guns, scarcity, and condition. Learn which NHL cards hold value, from vintage O-Pee-Chee to modern rookies.',
+      'Hockey card values are driven by the player, Young Guns rookies, scarcity, and condition. Learn which NHL cards hold value, from vintage to modern.',
     eyebrow: 'Hockey guide',
     lede: 'From vintage O-Pee-Chee cardboard to modern Young Guns rookies, hockey has one of the hobby\'s most loyal collector bases.',
     directAnswer:
@@ -770,7 +953,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check hockey cards in a mixed box',
         paras: [
-          'Sort Young Guns and anything that looks like a premium rookie into one stack. Sort older cardboard into another and check the back language. Scan the first stack. For the second, identification matters as much as condition because the wrong brand version will send you to the wrong sales.',
+          'Sort Young Guns and anything that looks like a premium rookie into one stack. Sort older cardboard into another and check the back language. Scan the first stack. For the second, identification matters as much as condition because the wrong brand version will send you to the wrong sales. There is no hockey-only scanner page. Start on the <a href="/">sports card scanner</a> homepage or the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> comparison.',
           'Hockey demand is loyal and thinner than football or basketball on many names. A wide range on an estimate often means few sales, not a broken tool. Read the underlying listings when the number would change a keep-or-sell decision.',
         ],
       },
@@ -791,7 +974,7 @@ export const guides: Guide[] = [
     title: 'Soccer Card Values: What Are Your Cards Worth?',
     metaTitle: 'Soccer Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Soccer card values are driven by global stars, first cards in major sets, parallels, and condition. Learn how the market works and check any card from a photo.',
+      'Soccer card values are driven by global stars, first cards in major sets, parallels, and condition. Learn how the market works and how to check a card.',
     eyebrow: 'Soccer guide',
     lede: 'Soccer brings a worldwide collector base and tournament cycles that US sports do not have. Identification of the exact set matters even more here.',
     directAnswer:
@@ -850,7 +1033,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check a soccer card from a photo',
         paras: [
-          'Club crest, national-team kit, set name, and year are the identifiers. Photograph the front and glance at the back for the set line. Confirm that the scanner\'s set matches that line. Then read the eBay range. If the player is global, comps may include more than one country\'s listings; shipping and currency will scatter the range.',
+          'Club crest, national-team kit, set name, and year are the identifiers. Photograph the front and glance at the back for the set line. Confirm that the scanner\'s set matches that line. Then read the eBay range. If the player is global, comps may include more than one country\'s listings; shipping and currency will scatter the range. There is no soccer-only scanner page. Use the <a href="/">sports card scanner</a> homepage or the <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison.',
         ],
       },
       {
@@ -867,15 +1050,15 @@ export const guides: Guide[] = [
     slug: 'best-sports-card-scanner-app',
     path: '/best-sports-card-scanner-app',
     tag: 'App comparison',
-    title: 'Best Sports Card Scanner App: 4 Scanners Compared',
-    metaTitle: 'Best Sports Card Scanner App: 4 Apps Compared (2026) | CardSense',
+    title: 'Best Sports Card Scanner App: 4 Apps Compared',
+    metaTitle: 'Best Sports Card Scanner App (2026): 4 Compared',
     description:
-      'CardSense, CollX, Ludex, and StarSnap compared on price, sports coverage, pricing data, and platforms, using each app\'s public listing. CardSense is ours; the page says so.',
+      'CardSense, CollX, Ludex and StarSnap compared on price, sports, pricing data and platforms. Which free sports card scanner app fits how you collect?',
     eyebrow: 'App comparison',
     lede: 'Every scanner promises to identify your cards and tell you what they are worth. They differ in what happens next: selling, TCG, grading, or tracking a collection.',
     directAnswer:
-      '<strong>The best sports card scanner app depends on what you want after the scan.</strong> Choose CardSense for identification, eBay-based values, and collection tracking on iPhone. Choose CollX for a built-in marketplace. Choose Ludex if you also collect trading card games or use Android. Choose StarSnap if grading guidance matters most.',
-    cardTitle: 'The best sports card scanner apps, compared',
+      'The best sports card scanner app depends on what you do after the scan. CardSense fits iPhone collectors who want identification, values from recent eBay sales and a collection vault. CollX adds a built-in marketplace. Ludex covers trading card games and Android. StarSnap leans toward grading guidance.',
+    cardTitle: 'best sports card scanner app',
     cardText:
       'CardSense, CollX, Ludex, and StarSnap side by side on price, sports coverage, and pricing data. CardSense is ours; the page says so.',
     featuredOnHome: true,
@@ -884,49 +1067,87 @@ export const guides: Guide[] = [
       'Four black phones face-down on a white table with a baseball, basketball, football, hockey puck, and a blank card',
     ),
     datePublished: '2026-08-04',
-    dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/baseball-card-scanner'],
+    dateModified: '2026-10-22',
+    related: ['/sports-card-prices', '/sports-card-value', '/sports-card-grading', '/baseball-card-scanner'],
     sources: [
-      { name: 'CardSense on the App Store', url: 'https://apps.apple.com/app/id6757801294' },
-      { name: 'CollX', url: 'https://collx.app/' },
-      { name: 'Ludex', url: 'https://www.ludex.com/' },
+      { name: 'CardSense on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/app/id6757801294' },
+      { name: 'CollX on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/collx-sports-card-scanner/id1581164444' },
+      { name: 'CollX on Google Play (checked October 22, 2026)', url: 'https://play.google.com/store/apps/details?id=app.collx.android' },
+      { name: 'CollX website', url: 'https://collx.app/' },
+      { name: 'Ludex on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/ludex-sports-card-scanner-tcg/id1616691213' },
+      { name: 'Ludex on Google Play (checked October 22, 2026)', url: 'https://play.google.com/store/apps/details?id=com.ludexmobile' },
+      { name: 'Ludex website', url: 'https://www.ludex.com/' },
+      { name: 'StarSnap on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/sports-card-scanner-starsnap/id6752947519' },
     ],
     faqs: [
       {
-        q: 'Do sports card scanner apps work on Android?',
-        a: 'Some do. Ludex lists iOS and Android. CardSense is an iPhone app (iOS 18.2+) and has no Play Store listing.',
+        q: 'What is the best free sports card scanner app?',
+        a: 'All four apps here are free to download. CardSense is free on iPhone, with an optional premium unlock for unlimited scans and full market details. Ludex lists a free membership with unlimited scans, up to 60 saved cards, and up to 5 eBay listings a month. CollX and StarSnap are free to download with paid upgrades. Pick the free app whose paid upgrade matches the job you actually need.',
       },
       {
-        q: 'Can these apps scan Pokémon and other trading card games?',
-        a: 'CollX and Ludex both list support for trading card games such as Pokémon alongside sports cards. CardSense is built for sports cards: baseball, basketball, football, hockey, and soccer.',
+        q: 'Is there a sports card scanner app for Android?',
+        a: 'Yes. Ludex lists iOS and Android, and CollX has a Google Play listing. CardSense is an iPhone app (iOS 18.2+) with no Play Store listing. StarSnap lists iPhone and iPad on the App Store; a Play listing was not found on October 22, 2026.',
+      },
+      {
+        q: 'How accurate are sports card scanner apps?',
+        a: 'No independent lab publishes an accuracy percentage for these apps, and this page will not invent one. Parallels that differ in a thin foil line are the hard case. Scan the card, then check the year, set, and card number the app returns before you trust the estimate.',
+      },
+      {
+        q: 'Do card scanner apps use sold prices or asking prices?',
+        a: 'It depends on the app. CardSense builds estimates from recent eBay sales. Ludex lists values from eBay completed sales and other marketplaces. CollX says it uses historical auction prices for an average market value. StarSnap lists market price estimates without naming the source. Sold prices beat asking prices either way.',
+        learnMore: { href: '/sports-card-prices', label: 'How to check sports card prices' },
+      },
+      {
+        q: 'Can a scanner app grade my card?',
+        a: 'No. A scanner can identify a card and, in StarSnap\'s case, suggest a condition label such as Mint or Near Mint. That is not a PSA, SGC, CGC, or BGS grade. Professional grading still means sending the card to a grading company.',
+        learnMore: { href: '/sports-card-grading', label: 'When sports card grading pays' },
       },
     ],
     sections: [
       {
-        h2: 'First, the disclosure',
+        h2: 'Disclosure: CardSense is ours',
         paras: [
-          'CardSense is our app. This site exists to support it. Instead of a rigged ranking, this comparison sticks to what each app says about itself on its public listing or website (checked August 2026) and says which collector each one fits. Where CardSense is not the right choice, it says so.',
+          'CardSense is our app. This site exists to support it. Instead of a rigged ranking, this comparison sticks to what each app says about itself on its public listing or website (checked October 22, 2026) and says which collector each one fits. Where CardSense is not the right choice, it says so.',
         ],
       },
       {
         h2: 'The four apps at a glance',
-        paras: [],
+        paras: [
+          'Facts in this table come from each app\'s App Store listing, Play listing, or official site, re-checked on October 22, 2026. Limits and prices change; open the listing before you pay.',
+        ],
         table: {
           headers: ['', 'CardSense', 'CollX', 'Ludex', 'StarSnap'],
           rows: [
             ['Focus', 'Identify, value, track sports cards', 'Scan plus buy/sell marketplace', 'Sports cards and TCG', 'Scan with grading guidance'],
-            ['Platform', 'iPhone, iOS 18.2+', 'iPhone (marketplace in-app)', 'iOS and Android', 'iPhone'],
-            ['Pricing data', 'Recent eBay sales', 'Own sales database', 'Price guide plus TCG', 'Market data plus grade hints'],
-            ['Sports', 'Baseball, basketball, football, hockey, soccer', 'Sports cards broadly', 'Sports plus TCG', 'Sports cards'],
-            ['Download', 'Free, premium for unlimited scans', 'Free with marketplace features', 'Free with premium tier', 'Free with premium tier'],
+            ['Platform', 'iPhone, iOS 18.2+', 'iPhone, iPad, and Android', 'iOS and Android', 'iPhone and iPad'],
+            ['Pricing data', 'Recent eBay sales', 'Historical auction prices; average market value', 'eBay completed sales and other marketplaces', 'Market price estimates plus grade hints'],
+            ['Sports', 'Baseball, basketball, football, hockey, soccer', 'Sports, TCG, and non-sport cards', 'Sports plus TCG', 'Sports cards'],
+            ['Download', 'Free, with a premium unlock', 'Free, with CollX Pro', 'Free membership, plus paid plans', 'Free, with Premium'],
+            [
+              'Free tier: what\'s free',
+              'Free download on iPhone. Premium unlocks unlimited scans and full market details. The listing does not state a free scan cap.',
+              'Free download. Scan, average market value, collection, and marketplace. CollX Pro ($10/month or $100/year) adds unlimited collection size, marketplace credit, CollX AI, CSV export, and more. The listing does not state a free collection cap.',
+              'Free membership: unlimited scans, up to 60 saved cards, and up to 5 eBay listings a month.',
+              'Free download. Premium adds unlimited identifications, in-depth market reports, and priority support. The listing does not state a free identification cap.',
+            ],
           ],
         },
       },
       {
+        h2: 'Best free sports card scanner app',
+        answer:
+          'All four apps are free to download. CardSense is free on iPhone, and an optional premium unlock adds unlimited scans and full market details. Check each app\'s listing for what its free tier includes, because limits change. Pick the free app whose paid upgrade matches the job you actually need.',
+        paras: [
+          'CardSense is free on the App Store for iPhone. The listing describes an in-app premium unlock for unlimited scans and full market details. It does not publish a free-tier scan number, so this page does not invent one.',
+          'CollX is free to download on the App Store and on Google Play. The listing covers scanning, an average market value, a collection, and a buy/sell marketplace. CollX Pro is listed at $10/month or $100/year and names extras such as unlimited collection size, a $10 monthly marketplace credit, CollX AI, EasyPrice, CSV export, and printable checklists.',
+          'Ludex is free to download on the App Store and Google Play. Its listing spells out a Free Membership: unlimited scans across sports and TCG categories, up to 60 cards in the collection, and up to 5 eBay listings a month. Paid Lite, Standard, and Pro plans raise collection and listing limits.',
+          'StarSnap is free to download on the App Store. Its listing offers identification, market price estimates, condition suggestions, and collection tools. Premium is described as unlimited identifications, in-depth market reports, and priority support. A Google Play listing was not found on the check date.',
+        ],
+      },
+      {
         h2: 'How to choose',
         paras: [
-          'If you want a marketplace in the same app, CollX is built for that. If you collect Pokémon as well as sports, or you need Android, Ludex fits better. If you are trying to decide whether to submit for grading, StarSnap leans that way. If you want a fast ID, an eBay-based number, and a vault on iPhone, that is CardSense.',
-          'No scanner is perfect. Identification is hardest on parallels that differ in small details. Let the app ID the card, then glance at the year, set, and number it returns before you trust the estimate.',
+          'Match the app to the job after the scan. If you want a marketplace in the same app, CollX is built for that. If you collect Pokémon as well as sports, or you need Android, Ludex fits, and CollX also lists Android. If you are trying to decide whether a card even looks like a grading candidate, StarSnap leans toward condition labels such as Mint, Near Mint, and Excellent. If you want identification, values from recent eBay sales, and a collection vault on iPhone, that is CardSense.',
         ],
         cta: {
           title: 'Try CardSense free',
@@ -934,17 +1155,18 @@ export const guides: Guide[] = [
         },
       },
       {
-        h2: 'What "best" cannot mean',
+        h2: 'What "best" cannot mean, plus accuracy and the hardware red herring',
         paras: [
           'Google for this query is a pile of App Store listings, Reddit threads, and each company\'s own site. There is no independent lab score. Accuracy claims in marketing copy are not something this page will repeat as fact. A useful comparison is jobs: marketplace, TCG, grading guidance, or a clean identify-and-track loop on iPhone.',
-          'CardSense does not buy or sell cards, does not scan Pokémon, and does not run on Android. If those are requirements, pick the app that lists them. If you want eBay-based comps and a vault after the scan, stay. The rest of this site is the method behind the numbers: <a href="/sports-card-prices">sold prices</a>, <a href="/sports-card-value">the five value factors</a>, and sport-specific pages when the cardboard is baseball-heavy.',
+          'CardSense does not buy or sell cards, does not scan Pokémon, and does not run on Android. If those are requirements, pick the app that lists them. If you want eBay-based comps and a vault after the scan, stay. The rest of this site is the method behind the numbers: <a href="/sports-card-prices">sold prices</a>, <a href="/sports-card-value">the five value factors</a>, and <a href="/sports-card-grading">when grading pays</a>.',
+          'Identification is hardest on parallels that differ in a thin foil line. The workable habit is: scan, read the set line, then trust the comps. Reddit threads about "fastest scanner" are useful for software feel and less useful for a single accuracy percentage.',
+          'Google also ranks physical document scanners for this query. Those machines digitize a collection. They do not identify a 1986 Fleer from a living-room photo. If you wanted a Fujitsu, you are on the wrong page. If you wanted a phone app, compare the four above and download the one whose after-scan job matches yours.',
         ],
       },
       {
-        h2: 'Accuracy, platforms, and the hardware red herring',
+        h2: 'More guides',
         paras: [
-          'Reddit threads about "fastest scanner" are useful for software feel and less useful for a single accuracy percentage. Parallels that differ in a thin foil line will fool every camera app some of the time. The workable habit is: scan, read the set line, then trust the comps.',
-          'Google also ranks physical document scanners for this query. Those machines digitize a collection. They do not identify a 1986 Fleer from a living-room photo. If you wanted a Fujitsu, you are on the wrong page. If you wanted an iPhone app, compare the four above and download the one whose after-scan job matches yours.',
+          'After you pick a scanner, the method still matters. Read <a href="/sports-card-prices">how to check sports card prices</a>, <a href="/sports-card-value">what determines sports card value</a>, and <a href="/sports-card-grading">when grading pays</a>. Sport-specific capture steps live on the <a href="/baseball-card-scanner">baseball card scanner</a>, <a href="/basketball-card-scanner">basketball card scanner</a>, and <a href="/football-card-scanner">football card scanner</a> pages.',
         ],
       },
     ],
@@ -956,7 +1178,7 @@ export const guides: Guide[] = [
     title: 'Baseball Card Scanner: Identify and Value Cards from a Photo',
     metaTitle: 'Baseball Card Scanner: Identify & Value Any Card | CardSense',
     description:
-      'Scan baseball cards with your iPhone. CardSense identifies the player, year, set, and card number from a photo and shows an estimated value from recent eBay sales.',
+      'Scan baseball cards with your iPhone. CardSense identifies the player, year, set, and card number, then shows a value from recent eBay sales.',
     eyebrow: 'Baseball scanner',
     lede: 'Seventy years of Topps, junk-wax mountains, and Bowman prospects that all look alike. Baseball is the sport where scanning beats searching by hand.',
     directAnswer:
@@ -1063,9 +1285,9 @@ export const guides: Guide[] = [
     path: '/football-card-scanner',
     tag: 'Football scanner',
     title: 'Football Card Scanner: Identify NFL Cards from a Photo',
-    metaTitle: 'Football Card Scanner: Identify NFL Cards from a Photo | CardSense',
+    metaTitle: 'Football Card Scanner: Identify NFL Cards | CardSense',
     description:
-      'Scan football cards with your iPhone. CardSense identifies NFL rookies, parallels, and autographs from a photo and shows an estimated value from recent eBay sales.',
+      'Scan football cards with your iPhone. CardSense identifies NFL rookies, parallels, and autographs, then shows a value from recent eBay sales.',
     eyebrow: 'Football scanner',
     lede: 'Quarterbacks, rookie classes, and numbered parallels that look like the base card until you catch the foil. A photo is faster than guessing the set from memory.',
     directAnswer:
@@ -1153,9 +1375,9 @@ export const guides: Guide[] = [
     path: '/basketball-card-scanner',
     tag: 'Basketball scanner',
     title: 'Basketball Card Scanner: Identify NBA Cards from a Photo',
-    metaTitle: 'Basketball Card Scanner: Identify NBA Cards from a Photo | CardSense',
+    metaTitle: 'Basketball Card Scanner: Identify NBA Cards | CardSense',
     description:
-      'Scan basketball cards with your iPhone. CardSense identifies NBA rookies, inserts, and parallels from a photo and shows an estimated value from recent eBay sales.',
+      'Scan basketball cards with your iPhone. CardSense identifies NBA rookies, inserts, and parallels, then shows a value from recent eBay sales.',
     eyebrow: 'Basketball scanner',
     lede: 'The same rookie photo can be a base card, a colored parallel, or a 1/1. A scan is how you find out which one you are holding.',
     directAnswer:
@@ -1233,6 +1455,135 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'baseball-cards-worth-money',
+    path: '/baseball-cards-worth-money',
+    tag: 'Baseball checklist',
+    title: 'What Baseball Cards Are Worth Money? A Checklist',
+    metaTitle: 'What Baseball Cards Are Worth Money? 7 Signs to Check',
+    description:
+      'Not every old card is valuable. Check these signs, from rookie cards to condition, then scan the card to see what it actually sold for on eBay.',
+    eyebrow: 'Baseball checklist',
+    lede: 'A pile of cards is not a price list. These seven signs tell you which baseball cards deserve a sold-price lookup, and which ones are usually commons.',
+    directAnswer:
+      'Baseball cards are most likely to be worth money when they are rookie cards of star players, in excellent condition, from older or low-print sets, autographed, serial-numbered, or professionally graded high. Most mass-produced cards from the late 1980s and early 1990s are worth little. To know for sure, check what the same card recently sold for.',
+    cardTitle: 'What baseball cards are worth money?',
+    cardText:
+      'Seven signs a baseball card may be valuable, from rookies and condition to serial numbers, then how to check sold prices.',
+    featuredOnHome: true,
+    featureImage: feat(
+      'baseball-cards-worth-money',
+      'Checklist-style illustration of baseball cards and a scan frame on a navy and green field',
+    ),
+    datePublished: '2026-10-22',
+    dateModified: '2026-10-22',
+    related: ['/baseball-card-values', '/sports-card-worth', '/baseball-card-scanner', '/sports-card-grading'],
+    sources: [
+      { name: 'CardSense App Store listing (checked October 22, 2026)', url: 'https://apps.apple.com/app/id6757801294' },
+      { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
+    ],
+    faqs: [
+      {
+        q: 'Are baseball cards from the 1980s and 1990s worth anything?',
+        a: 'Most mass-produced cards from the late 1980s and early 1990s, often called the junk wax era, are worth little because so many copies were printed. Exceptions are key rookies of stars in excellent condition, plus scarcer premium issues. Age alone is not a value signal.',
+      },
+      {
+        q: 'How do I know if my baseball card is rare?',
+        a: 'Look for a serial number, a short-print or parallel mark, an autograph or memorabilia swatch, or an older issue that did not survive in large numbers. A common from a mass-produced set is not rare just because it is old. Confirm the exact set and number, then check how often that version actually sells.',
+      },
+      {
+        q: 'Is it worth getting my baseball cards graded?',
+        a: 'Only when the expected graded sale price, minus the fee and shipping, clearly beats the raw sale price. Most modern base cards and junk-wax commons do not clear that bar. Price the card raw first, then read the grading cost section before you submit.',
+        learnMore: { href: '/sports-card-grading#grading-cost', label: 'How much card grading costs' },
+      },
+      {
+        q: 'Where can I see what a baseball card sold for?',
+        a: 'Look at completed sales of the same card in similar condition, not asking prices. CardSense identifies the card from a photo and shows an estimate from recent eBay sales, with average, median, range, and price history.',
+        learnMore: { href: '/sports-card-prices', label: 'How to check sports card prices' },
+      },
+      {
+        q: 'What basketball cards are worth money?',
+        a: 'The same signs apply: star rookies, strong condition, scarce parallels, autographs, and high grades. Modern NBA sets print the same photo many ways, so the exact parallel matters even more. This page stays on baseball; the basketball values guide covers NBA cardboard.',
+        learnMore: { href: '/basketball-card-values', label: 'Basketball card values' },
+      },
+    ],
+    sections: [
+      {
+        h2: '7 signs a baseball card may be worth money',
+        paras: [
+          'None of these signs is a sale price. They are a filter so you spend time on the cards that might actually trade, then you check recent sold listings for that exact version.',
+        ],
+        h3s: [
+          {
+            h3: '1. Rookie card of a star or Hall of Famer',
+            paras: [
+              'A rookie card is a player\'s first widely collected licensed issue. Collectors treat it as the version to own, so a star\'s rookie usually outruns later cards of the same player. A rookie of a player who never became a star is still often a common. See <a href="/rookie-card-values">rookie card values</a> for how to name the real rookie. CardSense can flag rookie status from a photo; you still confirm the set line.',
+            ],
+          },
+          {
+            h3: '2. Condition (centering, corners, edges, surface)',
+            paras: [
+              'Condition can multiply or destroy value. Check centering, corners, edges, and surface. A star card that is creased, stained, or badly off-center often sells like a lesser card. Be strict: "looks fine in a toploader" is not a grade.',
+            ],
+          },
+          {
+            h3: '3. Era and print run',
+            paras: [
+              'Older vintage issues, especially from before the hobby\'s mass-production boom, survived in smaller numbers. Cards from the late 1980s and early 1990s, often called the junk wax era, were printed in huge quantities, so most are worth little even when they show a famous name. This page does not invent print-run numbers. Era is a hint, not a price.',
+            ],
+          },
+          {
+            h3: '4. Autographs and memorabilia (relic) cards',
+            paras: [
+              'On-card or sticker autographs and cards with a jersey or relic swatch are a different product from the base photo. They usually need their own sold comps. CardSense lists autographs and memorabilia among the variants it identifies. Confirm the signature or swatch is on the card you are pricing.',
+            ],
+          },
+          {
+            h3: '5. Serial-numbered parallels and short prints',
+            paras: [
+              'A gold foil or /99 stamp can make two cards that share a photo live in different markets. Short prints and numbered parallels need comps for that exact version, not the unnumbered base card. If you skip the parallel, you will look up the wrong sales.',
+            ],
+          },
+          {
+            h3: '6. Graded high',
+            paras: [
+              'A high professional grade (PSA, SGC, CGC, or BGS) can lift a card that already has demand. Grading a common rarely pays. See <a href="/sports-card-grading#grading-cost">how much it costs to get cards graded</a> before you mail anything; this checklist does not repeat those fees.',
+            ],
+          },
+          {
+            h3: '7. Demand: recent sales, not asking prices',
+            paras: [
+              'A listing price is a wish. A sold price is a data point. Demand moves with seasons, awards, and hype, so last year\'s screenshot can be wrong. If nobody is buying that version, the other six signs do not invent a market.',
+            ],
+          },
+        ],
+      },
+      {
+        h2: 'Cards that usually aren\'t worth much',
+        paras: [
+          'Base commons from the late 1980s and early 1990s junk wax era are the usual miss: famous names, huge print runs, little scarcity. Damaged cards (heavy creases, writing, water stains, missing corners) of even good players often sit at the low end. Reprints and tributes that copy a vintage photo are a different card. When a stack is all of those, treat it as a bulk lot unless a scan flags something else.',
+        ],
+      },
+      {
+        h2: 'How to check what your card sold for',
+        paras: [
+          'Identify the exact card (player, year, set, number, parallel). Judge condition honestly. Then compare recent sold prices for that version, reading the average, median, and range instead of one outlier. <a href="/sports-card-prices">How to check sports card prices</a> walks through those numbers.',
+          'If you would rather skip the manual search, <a href="/baseball-card-scanner">scan baseball cards</a> with CardSense. The app reads player, team, year, set, card number, and rarity, including rookies, inserts, parallels, autographs, and memorabilia, then shows an estimate from recent eBay sales.',
+        ],
+        cta: {
+          title: 'Scan the card to see live eBay value',
+          text: 'Photograph a baseball card. CardSense identifies it and shows an estimate from recent eBay sales, with average, median, range, and price history.',
+        },
+      },
+      {
+        h2: 'What about basketball cards?',
+        paras: [
+          'The same signs apply to NBA cardboard: star rookies, condition, scarce parallels, autographs, high grades, and recent sold demand. Modern basketball sets print the same rookie many ways, so the parallel is often the whole job. This page stays a baseball checklist. For NBA-specific eras and inserts, use the <a href="/basketball-card-values">basketball card values</a> guide.',
+        ],
+      },
+    ],
+  },
+  ...rookieGuides,
 ];
 
 export const relatedByPath: Record<string, string[]> = Object.fromEntries(

@@ -26,9 +26,7 @@ const guideCards = homeGuideCards();
     <div class="wrap hero__inner">
       <div>
         <p class="eyebrow">{home.hero.eyebrow}</p>
-        <h1>
-          {home.hero.h1Before}<span class="pill">{home.hero.h1Pill}</span>{home.hero.h1After}
-        </h1>
+        <h1>{home.hero.h1}</h1>
         <p class="hero__lede">{home.hero.lede}</p>
         <div class="hero__actions">
           <AppStoreBadge />
@@ -51,7 +49,7 @@ const guideCards = homeGuideCards();
           <div class="phone">
             <Image
               src={shot2}
-              alt="Confirm Card screen with a 1986 Fleer Michael Jordan card ready for identification"
+              alt="Sports card scanner Confirm Card screen with a 1986 Fleer Michael Jordan card ready for identification"
               width={640}
               widths={[320, 480, 640]}
               sizes="(max-width: 56rem) 78vw, 21rem"
@@ -61,6 +59,19 @@ const guideCards = homeGuideCards();
             />
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="what-a-sports-card-scanner-does">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">{home.what.eyebrow}</p>
+        <h2>{home.what.h2}</h2>
+      </div>
+      <div class="answer">
+        <p class="eyebrow">Direct answer</p>
+        <p>{home.what.answer}</p>
       </div>
     </div>
   </section>
@@ -224,7 +235,12 @@ const guideCards = homeGuideCards();
       <div class="section-head">
         <p class="eyebrow">{home.guides.eyebrow}</p>
         <h2>{home.guides.h2}</h2>
-        <p>{home.guides.lede}</p>
+        <p>
+          {home.guides.lede} For a side-by-side pick, start with the
+          <a href="/best-sports-card-scanner-app">best sports card scanner app</a> comparison.
+          New checklists cover <a href="/baseball-cards-worth-money">what baseball cards are worth money</a>
+          and <a href="/rookie-card-values">rookie card values</a>.
+        </p>
       </div>
       <div class="grid grid--3">
         {

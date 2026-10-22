@@ -1,0 +1,18 @@
+---
+import GuideLayout from '../../layouts/GuideLayout.astro';
+import { guides } from '../../data';
+
+export function getStaticPaths() {
+  return guides
+    .filter((g) => g.slug.startsWith('rookie-card-values/'))
+    .map((g) => ({ params: { player: g.slug.split('/')[1] } }));
+}
+
+const { player } = Astro.params;
+const guide = guides.find((g) => g.slug === `rookie-card-values/${player}`);
+if (!guide) {
+  return new Response(null, { status: 404, statusText: 'Not Found' });
+}
+---
+
+<GuideLayout guide={guide} />
