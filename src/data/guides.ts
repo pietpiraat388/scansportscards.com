@@ -29,7 +29,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/sports-card-prices', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/sports-card-prices', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'CardSense App Store listing', url: 'https://apps.apple.com/app/id6757801294' },
@@ -48,7 +48,7 @@ export const guides: Guide[] = [
       {
         h2: 'The five factors that determine sports card value',
         paras: [
-          'Every expensive card combines several of these. Missing even one of them is usually what separates a spectacular card from an ordinary one.',
+          'Every expensive card combines several of these. Missing even one of them is usually what separates a spectacular card from an ordinary one. If you are sorting a baseball stack and want a trait checklist first, see <a href="/baseball-cards-worth-money">what baseball cards are worth money</a>.',
         ],
       },
       {
@@ -256,7 +256,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-grading'],
+    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-grading', '/baseball-cards-worth-money'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'PSA grading overview', url: 'https://www.psacard.com/' },
@@ -321,7 +321,7 @@ export const guides: Guide[] = [
           ordered: true,
           items: [
             '<strong>Sort by era.</strong> The back usually shows a copyright year. Pre-1980 cards deserve individual attention; 1987-1993 cards are mostly mass-printed.',
-            '<strong>Pull the obvious candidates:</strong> stars, rookies, autographs, serial numbers, anything that looks premium.',
+            '<strong>Pull the obvious candidates:</strong> stars, rookies, autographs, serial numbers, anything that looks premium. For baseball, the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist names the same traits.',
             '<strong>Scan the candidates</strong> and let the estimates tell you where to spend time. Save them into a folder so you build an inventory.',
             '<strong>Do not toss the rest carelessly.</strong> Sentimental value is real, and bulk lots of commons still find buyers.',
           ],
@@ -457,7 +457,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'SportsCardsPro baseball prices', url: 'https://www.sportscardspro.com/category/baseball-cards' },
@@ -516,7 +516,7 @@ export const guides: Guide[] = [
       {
         h2: 'Junk wax vs vintage, in practice',
         paras: [
-          'If your box is full of 1988-1992 glossy rookies in rubber-banded stacks, assume common until a scan says otherwise. The print runs from those years are the reason "old" and "valuable" parted ways. A Hall of Fame rookie from that window can still be real money in a high grade. The same player\'s 15th card from the same year is usually not.',
+          'If your box is full of 1988-1992 glossy rookies in rubber-banded stacks, assume common until a scan says otherwise. The print runs from those years are the reason "old" and "valuable" parted ways. A Hall of Fame rookie from that window can still be real money in a high grade. The same player\'s 15th card from the same year is usually not. For a trait-by-trait pass before you price anything, use <a href="/baseball-cards-worth-money">what baseball cards are worth money</a>.',
           'Vintage is the opposite problem: survival. A 1950s or 1960s star that spent 40 years in an attic may be the right card and still be a low-grade copy. Do not sandbag yourself by comparing it to a PSA 8 auction result you saw on a highlight reel. Compare it to other worn copies of the same number.',
         ],
       },
@@ -1268,6 +1268,134 @@ export const guides: Guide[] = [
           'Vintage NBA cardboard is a different session: fewer issues, nastier condition problems, bigger grade gaps. Identify first. Then decide whether the copy is even close to the comps you saw for clean examples. A scanner names the card. It does not magically restore corners.',
           'If you collect both modern parallels and 90s inserts, keep them in different folders. The vault total is more useful when a spike in one era does not hide a pile of commons in the other. Scan, confirm the set line, save the hits. Leave the rest of the base rainbow for a rainy Saturday.',
           'CardSense is iPhone-only. If you need Android or a built-in marketplace, pick another app from the <a href="/best-sports-card-scanner-app">scanner comparison</a>. This page is the capture step for NBA cardboard: photo, confirm, read the parallel, then decide keep, sell, or grade.',
+        ],
+      },
+    ],
+  },
+  {
+    slug: 'baseball-cards-worth-money',
+    path: '/baseball-cards-worth-money',
+    tag: 'Baseball checklist',
+    title: 'What Baseball Cards Are Worth Money? A Checklist',
+    metaTitle: 'What Baseball Cards Are Worth Money? 7 Signs to Check',
+    description:
+      'Not every old card is valuable. Check these signs, from rookie cards to condition, then scan the card to see what it actually sold for on eBay.',
+    eyebrow: 'Baseball checklist',
+    lede: 'A pile of cards is not a price list. These seven signs tell you which baseball cards deserve a sold-price lookup, and which ones are usually commons.',
+    directAnswer:
+      'Baseball cards are most likely to be worth money when they are rookie cards of star players, in excellent condition, from older or low-print sets, autographed, serial-numbered, or professionally graded high. Most mass-produced cards from the late 1980s and early 1990s are worth little. To know for sure, check what the same card recently sold for.',
+    cardTitle: 'What baseball cards are worth money?',
+    cardText:
+      'Seven signs a baseball card may be valuable, from rookies and condition to serial numbers, then how to check sold prices.',
+    featuredOnHome: true,
+    featureImage: feat(
+      'baseball-cards-worth-money',
+      'Checklist-style illustration of baseball cards and a scan frame on a navy and green field',
+    ),
+    datePublished: '2026-10-22',
+    dateModified: '2026-10-22',
+    related: ['/baseball-card-values', '/sports-card-worth', '/baseball-card-scanner', '/sports-card-grading'],
+    sources: [
+      { name: 'CardSense App Store listing (checked October 22, 2026)', url: 'https://apps.apple.com/app/id6757801294' },
+      { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
+    ],
+    faqs: [
+      {
+        q: 'Are baseball cards from the 1980s and 1990s worth anything?',
+        a: 'Most mass-produced cards from the late 1980s and early 1990s, often called the junk wax era, are worth little because so many copies were printed. Exceptions are key rookies of stars in excellent condition, plus scarcer premium issues. Age alone is not a value signal.',
+      },
+      {
+        q: 'How do I know if my baseball card is rare?',
+        a: 'Look for a serial number, a short-print or parallel mark, an autograph or memorabilia swatch, or an older issue that did not survive in large numbers. A common from a mass-produced set is not rare just because it is old. Confirm the exact set and number, then check how often that version actually sells.',
+      },
+      {
+        q: 'Is it worth getting my baseball cards graded?',
+        a: 'Only when the expected graded sale price, minus the fee and shipping, clearly beats the raw sale price. Most modern base cards and junk-wax commons do not clear that bar. Price the card raw first, then read the grading cost section before you submit.',
+        learnMore: { href: '/sports-card-grading#grading-cost', label: 'How much card grading costs' },
+      },
+      {
+        q: 'Where can I see what a baseball card sold for?',
+        a: 'Look at completed sales of the same card in similar condition, not asking prices. CardSense identifies the card from a photo and shows an estimate from recent eBay sales, with average, median, range, and price history.',
+        learnMore: { href: '/sports-card-prices', label: 'How to check sports card prices' },
+      },
+      {
+        q: 'What basketball cards are worth money?',
+        a: 'The same signs apply: star rookies, strong condition, scarce parallels, autographs, and high grades. Modern NBA sets print the same photo many ways, so the exact parallel matters even more. This page stays on baseball; the basketball values guide covers NBA cardboard.',
+        learnMore: { href: '/basketball-card-values', label: 'Basketball card values' },
+      },
+    ],
+    sections: [
+      {
+        h2: '7 signs a baseball card may be worth money',
+        paras: [
+          'None of these signs is a sale price. They are a filter so you spend time on the cards that might actually trade, then you check recent sold listings for that exact version.',
+        ],
+        h3s: [
+          {
+            h3: '1. Rookie card of a star or Hall of Famer',
+            paras: [
+              'A rookie card is a player\'s first widely collected licensed issue. Collectors treat it as the version to own, so a star\'s rookie usually outruns later cards of the same player. A rookie of a player who never became a star is still often a common. CardSense can flag rookie status from a photo; you still confirm the set line.',
+            ],
+          },
+          {
+            h3: '2. Condition (centering, corners, edges, surface)',
+            paras: [
+              'Condition can multiply or destroy value. Check centering, corners, edges, and surface. A star card that is creased, stained, or badly off-center often sells like a lesser card. Be strict: "looks fine in a toploader" is not a grade.',
+            ],
+          },
+          {
+            h3: '3. Era and print run',
+            paras: [
+              'Older vintage issues, especially from before the hobby\'s mass-production boom, survived in smaller numbers. Cards from the late 1980s and early 1990s, often called the junk wax era, were printed in huge quantities, so most are worth little even when they show a famous name. This page does not invent print-run numbers. Era is a hint, not a price.',
+            ],
+          },
+          {
+            h3: '4. Autographs and memorabilia (relic) cards',
+            paras: [
+              'On-card or sticker autographs and cards with a jersey or relic swatch are a different product from the base photo. They usually need their own sold comps. CardSense lists autographs and memorabilia among the variants it identifies. Confirm the signature or swatch is on the card you are pricing.',
+            ],
+          },
+          {
+            h3: '5. Serial-numbered parallels and short prints',
+            paras: [
+              'A gold foil or /99 stamp can make two cards that share a photo live in different markets. Short prints and numbered parallels need comps for that exact version, not the unnumbered base card. If you skip the parallel, you will look up the wrong sales.',
+            ],
+          },
+          {
+            h3: '6. Graded high',
+            paras: [
+              'A high professional grade (PSA, SGC, CGC, or BGS) can lift a card that already has demand. Grading a common rarely pays. See <a href="/sports-card-grading#grading-cost">how much it costs to get cards graded</a> before you mail anything; this checklist does not repeat those fees.',
+            ],
+          },
+          {
+            h3: '7. Demand: recent sales, not asking prices',
+            paras: [
+              'A listing price is a wish. A sold price is a data point. Demand moves with seasons, awards, and hype, so last year\'s screenshot can be wrong. If nobody is buying that version, the other six signs do not invent a market.',
+            ],
+          },
+        ],
+      },
+      {
+        h2: 'Cards that usually aren\'t worth much',
+        paras: [
+          'Base commons from the late 1980s and early 1990s junk wax era are the usual miss: famous names, huge print runs, little scarcity. Damaged cards (heavy creases, writing, water stains, missing corners) of even good players often sit at the low end. Reprints and tributes that copy a vintage photo are a different card. When a stack is all of those, treat it as a bulk lot unless a scan flags something else.',
+        ],
+      },
+      {
+        h2: 'How to check what your card sold for',
+        paras: [
+          'Identify the exact card (player, year, set, number, parallel). Judge condition honestly. Then compare recent sold prices for that version, reading the average, median, and range instead of one outlier. <a href="/sports-card-prices">How to check sports card prices</a> walks through those numbers.',
+          'If you would rather skip the manual search, <a href="/baseball-card-scanner">scan baseball cards</a> with CardSense. The app reads player, team, year, set, card number, and rarity, including rookies, inserts, parallels, autographs, and memorabilia, then shows an estimate from recent eBay sales.',
+        ],
+        cta: {
+          title: 'Scan the card to see live eBay value',
+          text: 'Photograph a baseball card. CardSense identifies it and shows an estimate from recent eBay sales, with average, median, range, and price history.',
+        },
+      },
+      {
+        h2: 'What about basketball cards?',
+        paras: [
+          'The same signs apply to NBA cardboard: star rookies, condition, scarce parallels, autographs, high grades, and recent sold demand. Modern basketball sets print the same rookie many ways, so the parallel is often the whole job. This page stays a baseball checklist. For NBA-specific eras and inserts, use the <a href="/basketball-card-values">basketball card values</a> guide.',
         ],
       },
     ],

@@ -116,7 +116,7 @@ export const home = {
       {
         emoji: '⚾',
         h3: 'Baseball cards',
-        html: 'The classic of the hobby. <a href="/baseball-card-scanner">Scan baseball cards</a> to identify Topps, Bowman, and Fleer issues, then check <a href="/baseball-card-values">baseball card values</a>.',
+        html: 'The classic of the hobby. <a href="/baseball-card-scanner">Scan baseball cards</a> to identify Topps, Bowman, and Fleer issues, then check <a href="/baseball-card-values">baseball card values</a> or the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist.',
       },
       {
         emoji: '🏀',
