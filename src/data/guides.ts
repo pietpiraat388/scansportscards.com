@@ -72,7 +72,7 @@ export const guides: Guide[] = [
       {
         h2: 'Condition and grading',
         paras: [
-          'Condition can multiply or destroy value. Collectors look at corners, edges, surface, and centering. PSA, BGS, and SGC score cards from 1 to 10 and seal them in slabs. The same card in worn shape can be a small fraction of its top-grade price. See <a href="/sports-card-grading">when grading pays</a> before you spend a submission fee.',
+          'Condition can multiply or destroy value. Collectors look at corners, edges, surface, and centering. PSA, BGS, and SGC score cards from 1 to 10 and seal them in slabs. The same card in worn shape can be a small fraction of its top-grade price. See <a href="/sports-card-grading#grading-cost">how much grading costs</a> before you spend a submission fee.',
         ],
       },
       {
@@ -353,9 +353,9 @@ export const guides: Guide[] = [
     path: '/sports-card-grading',
     tag: 'Grading',
     title: 'Sports Card Grading: How It Works and When It Pays',
-    metaTitle: 'Sports Card Grading: PSA, BGS & SGC Explained | CardSense',
+    metaTitle: 'Card Grading Cost 2026: PSA, SGC & CGC Fees | CardSense',
     description:
-      'Sports card grading is a professional condition assessment on a 1-10 scale. Learn how PSA, BGS, and SGC grade cards, what a slab does for value, and when the fee is worth it.',
+      'What it costs to get baseball cards graded at PSA, SGC and CGC, per card and per tier, plus when the fee is worth it. Prices from official fee pages.',
     eyebrow: 'Grading guide',
     lede: 'A professional grade turns "nice condition" into a number the market trusts. Here is how it works, what it costs you, and when the math actually works.',
     directAnswer:
@@ -369,12 +369,37 @@ export const guides: Guide[] = [
       'White-gloved hand holding a slabbed silhouette baseball card next to a bent raw copy on a white table',
     ),
     datePublished: '2026-07-12',
-    dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-worth'],
+    dateModified: '2026-10-22',
+    related: ['/sports-card-value', '/sports-card-prices', '/sports-card-worth', '/baseball-cards-worth-money'],
     sources: [
-      { name: 'PSA', url: 'https://www.psacard.com/' },
-      { name: 'Beckett Grading Services', url: 'https://www.beckett.com/grading' },
-      { name: 'SGC', url: 'https://www.gosgc.com/' },
+      {
+        name: 'PSA trading card grading fees (checked October 22, 2026)',
+        url: 'https://www.psacard.com/services/tradingcardgrading',
+      },
+      {
+        name: 'PSA pricing page (checked October 22, 2026)',
+        url: 'https://www.psacard.com/services/pricing',
+      },
+      {
+        name: 'PSA service-level update, May 28, 2026 (Value tiers paused June 2, 2026)',
+        url: 'https://www.psacard.com/articles/articleview/15210/service-level-update-may-2026',
+      },
+      {
+        name: 'PSA Standard service level and name changes, September 9, 2026',
+        url: 'https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level',
+      },
+      {
+        name: 'CGC Cards services and fees, US Collector submissions (checked October 22, 2026)',
+        url: 'https://www.cgccards.com/submit/services-fees/cgc-grading/',
+      },
+      {
+        name: 'SGC services and pricing (official page; live fees could not be read on October 22, 2026)',
+        url: 'https://gosgc.com/card-grading/services-pricing',
+      },
+      {
+        name: 'Beckett card grading (checked October 22, 2026)',
+        url: 'https://www.beckett.com/grading',
+      },
     ],
     faqs: [
       {
@@ -384,6 +409,26 @@ export const guides: Guide[] = [
       {
         q: 'Does grading always increase a card\'s value?',
         a: 'No. Grading adds a fee, and a low grade can hurt resale. It pays when the card is valuable and clean: expected graded price minus fee should beat the raw price. For common or worn cards, the math rarely works.',
+      },
+      {
+        q: 'How much does PSA charge to grade a card?',
+        a: 'On October 22, 2026, PSA\'s open trading-card tiers on its official grading page started at Standard for $59.99 per card (max insured value $1,000, estimated 90-100 business days). Value Bulk, Value, Value Plus, and Value Max were paused. Faster tiers cost more. Confirm the live page before you submit.',
+      },
+      {
+        q: 'What is the cheapest way to get cards graded?',
+        a: 'Among fees we could read on official pages on October 22, 2026, CGC Bulk was $17 per card with a 25-card minimum, and CGC Economy was $20. PSA\'s cheapest open tier was Standard at $59.99. SGC\'s official pricing page did not return readable numbers, so this page does not quote an SGC fee. Shipping and memberships sit on top of the per-card fee.',
+      },
+      {
+        q: 'How long does grading take?',
+        a: 'It depends on the company and the tier. On the check date, CGC Economy listed 90 working days and CGC Bulk 150; PSA Standard listed 90-100 business days. Faster CGC and PSA tiers listed as little as a few working days. Those times are estimates, not guarantees, and they start after the order is entered.',
+      },
+      {
+        q: 'Do I pay shipping on top of the grading fee?',
+        a: 'Yes. You typically pay to ship cards in and to get slabs back, plus insurance that follows the declared value. Memberships can change the per-card fee. Add those costs before you decide the grade is worth it.',
+      },
+      {
+        q: 'Is it worth grading a card worth $20?',
+        a: 'Usually no. If a card sells raw for about $20, even a cheap open tier plus shipping often eats the spread, and a mid grade can leave you behind the raw price. Grade when a realistic graded sold price, minus fee and shipping, clearly beats the raw sold price.',
       },
     ],
     sections: [
@@ -396,7 +441,7 @@ export const guides: Guide[] = [
       {
         h2: 'PSA, BGS, and SGC',
         paras: [
-          'PSA is the largest and usually the most liquid market for slabs. BGS is known for subgrades and its Black Label. SGC has a strong vintage reputation. The "best" company depends on the card and where you plan to sell it, not a universal ranking.',
+          'PSA is the largest and usually the most liquid market for slabs. CGC publishes a full US fee table. BGS is known for subgrades and its Black Label. SGC has a strong vintage reputation. The "best" company depends on the card and where you plan to sell it, not a universal ranking.',
         ],
         figure: {
           shot: 3,
@@ -405,6 +450,8 @@ export const guides: Guide[] = [
       },
       {
         h2: 'The simple math before you submit',
+        answer:
+          'Grading only pays when the graded sale price, minus the fee and shipping, clearly beats the raw sale price. Check what the card sells for raw, then what it sells for in the grade you honestly expect. Most modern base cards and junk-wax commons don\'t clear that bar.',
         paras: [
           'Take the recent sold price of the card raw. Take the recent sold price of the same card in the grade you honestly expect. Subtract the grading fee and shipping. If there is not a clear margin, keep it raw. Grading a junk-wax common almost never pays.',
         ],
@@ -427,10 +474,145 @@ export const guides: Guide[] = [
         ],
       },
       {
-        h2: 'Fees, queues, and the cards that never pay',
+        h2: 'How much does it cost to get cards graded?',
+        id: 'grading-cost',
+        answer:
+          'Grading a baseball card costs roughly $17 to $60 per card at the cheapest open tiers in late 2026: CGC Bulk is $17 (25-card minimum), CGC Economy $20, and PSA Standard $59.99. Faster tiers cost $100 to $600 or more. Shipping and insurance come on top, and the fee depends on the card\'s declared value.',
         paras: [
-          'Grading is not free, and it is not instant. Economy tiers are cheaper and slower. Express tiers cost more. You also pay shipping both ways and, on some services, a special handling fee for older cardboard. Add those up before you compare raw and graded comps.',
-          'Mass-printed commons, damaged vintage, and modern base cards of role players almost never clear that hurdle. A $12 raw card that might be $25 in a 10 still loses if the fee is $20 and the card comes back a 9. Grade the cards where a single point on the scale is hundreds of dollars, not the cards where it is three.',
+          'Figures below are what the official PSA and CGC pages showed on October 22, 2026. SGC\'s official pricing page loaded as a JavaScript app and did not expose readable fees, so SGC is omitted from the table. Beckett\'s grading page was live, but several BGS rows were too ambiguous to tabulate. Always re-open the source URL before you submit.',
+        ],
+        table: {
+          headers: ['Company', 'Tier', 'Fee per card', 'Max declared value', 'Est. turnaround', 'Source (checked October 22, 2026)'],
+          rows: [
+            [
+              'PSA',
+              'Value Bulk / Value / Value Plus / Value Max',
+              'Paused',
+              '$500 on Value Bulk and Value (other Value caps not shown on the live page)',
+              'Paused since June 2, 2026',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15210/service-level-update-may-2026" rel="noopener">May 2026 update</a>',
+            ],
+            [
+              'PSA',
+              'Standard',
+              '$59.99',
+              '$1,000 max insured',
+              '90-100 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Priority',
+              '$79.99',
+              '$1,500 max insured',
+              '70-80 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level" rel="noopener">Sep 2026 names</a>',
+            ],
+            [
+              'PSA',
+              'Express',
+              '$199',
+              '$2,500 max insured',
+              '20-30 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Super Express',
+              '$349',
+              '$5,000 max insured',
+              '10-15 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>',
+            ],
+            [
+              'PSA',
+              'Premier',
+              '$599',
+              '$10,000 max insured',
+              '7-10 business days',
+              '<a href="https://www.psacard.com/services/tradingcardgrading" rel="noopener">PSA grading</a>; <a href="https://www.psacard.com/articles/articleview/15763/psa-new-standard-service-level" rel="noopener">Sep 2026 names</a>',
+            ],
+            [
+              'CGC',
+              'Bulk (25-card minimum)',
+              '$17',
+              '$500',
+              '150 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Economy',
+              '$20',
+              '$1,000',
+              '90 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Standard',
+              '$55',
+              '$3,000',
+              '10 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Express',
+              '$100',
+              '$10,000',
+              '5 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'WalkThrough',
+              '$300',
+              '$100,000',
+              '2 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+            [
+              'CGC',
+              'Unlimited Value',
+              '$300 + 1% FMV',
+              'Unlimited',
+              '2 working days',
+              '<a href="https://www.cgccards.com/submit/services-fees/cgc-grading/" rel="noopener">CGC services and fees</a>',
+            ],
+          ],
+        },
+        h3s: [
+          {
+            h3: 'PSA',
+            paras: [
+              'PSA Value tiers (Value Bulk, Value, Value Plus, and Value Max) have been paused to new submissions since June 2, 2026. On September 14, 2026 PSA opened Standard at $59.99 and renamed Regular to Priority ($79.99) and Walk-Through to Premier ($599). Express is $199. Higher walk-through-style tiers above Premier appeared on the live page without names clear enough to tabulate, so they are left out.',
+            ],
+          },
+          {
+            h3: 'SGC',
+            paras: [
+              'SGC\'s official services and pricing page is a JavaScript app. On October 22, 2026 it did not return readable tier names or fees, so this table does not list SGC numbers and does not use third-party reports. Check <a href="https://gosgc.com/card-grading/services-pricing" rel="noopener">gosgc.com/card-grading/services-pricing</a> before you submit.',
+            ],
+          },
+          {
+            h3: 'CGC',
+            paras: [
+              'CGC\'s US Collector fee table listed Bulk at $17 (25-card minimum), Economy at $20, Standard at $55, Express at $100, WalkThrough at $300, and Unlimited Value at $300 plus 1% of fair market value. Associate and Premium members save 10% on grading; Elite members save 20%. If CGC finds the fair market value is above the declared value, it moves the card to a higher tier and charges the difference.',
+            ],
+          },
+          {
+            h3: 'Costs on top of the fee',
+            paras: [
+              'Return shipping, insurance, and inbound postage sit on top of the per-card fee. A higher declared value can bump the tier, which is how CGC describes its declared-value policy. PSA and CGC memberships can change what you pay. Beckett\'s page was live and showed a Base fee of $14.95 (Sold Out, 75+ business days) and Priority at $124.95 (5 business days); other BGS rows mixed prices without a clear declared-value cap, so they are not in the table. Check <a href="https://www.beckett.com/grading" rel="noopener">beckett.com/grading</a>.',
+            ],
+          },
+          {
+            h3: 'Worked example',
+            paras: [
+              'Say a card sells raw for $12 and recent comps for a 10 are about $25. CGC Economy, the cheapest single-card CGC tier we could read, is $20. After the fee you have $5 before shipping, which is worse than selling it raw. If the card comes back a 9, the spread is worse. That is why a $12 common is the wrong card to mail. Use <a href="/sports-card-prices">sold prices</a> for both the raw and the graded version before you pick a tier.',
+            ],
+          },
         ],
       },
     ],
