@@ -36,7 +36,13 @@ const shots: Record<number, typeof shot1> = {
 {
   guide.sections.map((s) => (
     <>
-      <h2>{s.h2}</h2>
+      {s.id ? <h2 id={s.id}>{s.h2}</h2> : <h2>{s.h2}</h2>}
+      {s.answer ? (
+        <div class="answer">
+          <p class="eyebrow">Direct answer</p>
+          <p set:html={s.answer} />
+        </div>
+      ) : null}
       {s.paras.map((p) => (
         <p set:html={p} />
       ))}
@@ -77,6 +83,29 @@ const shots: Record<number, typeof shot1> = {
           </table>
         </div>
       ) : null}
+      {s.h3s?.map((block) => (
+        <>
+          <h3>{block.h3}</h3>
+          {block.paras.map((p) => (
+            <p set:html={p} />
+          ))}
+          {block.list ? (
+            block.list.ordered ? (
+              <ol>
+                {block.list.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ol>
+            ) : (
+              <ul>
+                {block.list.items.map((item) => (
+                  <li set:html={item} />
+                ))}
+              </ul>
+            )
+          ) : null}
+        </>
+      ))}
       {s.figure && shots[s.figure.shot] ? (
         <figure class="guide-figure">
           <Image

@@ -13,9 +13,20 @@ export interface FeatureImage {
   height: number;
 }
 
+export interface GuideHeadingBlock {
+  h3: string;
+  paras: string[];
+  list?: { ordered?: boolean; items: string[] };
+}
+
 export interface GuideSection {
   h2: string;
+  /** Optional fragment id, e.g. grading-cost. */
+  id?: string;
+  /** 40-60 word answer block placed directly under the H2. */
+  answer?: string;
   paras: string[];
+  h3s?: GuideHeadingBlock[];
   list?: { ordered?: boolean; items: string[] };
   table?: { headers: string[]; rows: string[][] };
   cta?: { title: string; text: string };

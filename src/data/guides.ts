@@ -867,15 +867,15 @@ export const guides: Guide[] = [
     slug: 'best-sports-card-scanner-app',
     path: '/best-sports-card-scanner-app',
     tag: 'App comparison',
-    title: 'Best Sports Card Scanner App: 4 Scanners Compared',
-    metaTitle: 'Best Sports Card Scanner App: 4 Apps Compared (2026) | CardSense',
+    title: 'Best Sports Card Scanner App: 4 Apps Compared',
+    metaTitle: 'Best Sports Card Scanner App (2026): 4 Compared',
     description:
-      'CardSense, CollX, Ludex, and StarSnap compared on price, sports coverage, pricing data, and platforms, using each app\'s public listing. CardSense is ours; the page says so.',
+      'CardSense, CollX, Ludex and StarSnap compared on price, sports, pricing data and platforms. Which free sports card scanner app fits how you collect?',
     eyebrow: 'App comparison',
     lede: 'Every scanner promises to identify your cards and tell you what they are worth. They differ in what happens next: selling, TCG, grading, or tracking a collection.',
     directAnswer:
-      '<strong>The best sports card scanner app depends on what you want after the scan.</strong> Choose CardSense for identification, eBay-based values, and collection tracking on iPhone. Choose CollX for a built-in marketplace. Choose Ludex if you also collect trading card games or use Android. Choose StarSnap if grading guidance matters most.',
-    cardTitle: 'The best sports card scanner apps, compared',
+      'The best sports card scanner app depends on what you do after the scan. CardSense fits iPhone collectors who want identification, values from recent eBay sales and a collection vault. CollX adds a built-in marketplace. Ludex covers trading card games and Android. StarSnap leans toward grading guidance.',
+    cardTitle: 'best sports card scanner app',
     cardText:
       'CardSense, CollX, Ludex, and StarSnap side by side on price, sports coverage, and pricing data. CardSense is ours; the page says so.',
     featuredOnHome: true,
@@ -884,49 +884,87 @@ export const guides: Guide[] = [
       'Four black phones face-down on a white table with a baseball, basketball, football, hockey puck, and a blank card',
     ),
     datePublished: '2026-08-04',
-    dateModified: D,
-    related: ['/sports-card-value', '/sports-card-prices', '/baseball-card-scanner'],
+    dateModified: '2026-10-22',
+    related: ['/sports-card-prices', '/sports-card-value', '/sports-card-grading', '/baseball-card-scanner'],
     sources: [
-      { name: 'CardSense on the App Store', url: 'https://apps.apple.com/app/id6757801294' },
-      { name: 'CollX', url: 'https://collx.app/' },
-      { name: 'Ludex', url: 'https://www.ludex.com/' },
+      { name: 'CardSense on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/app/id6757801294' },
+      { name: 'CollX on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/collx-sports-card-scanner/id1581164444' },
+      { name: 'CollX on Google Play (checked October 22, 2026)', url: 'https://play.google.com/store/apps/details?id=app.collx.android' },
+      { name: 'CollX website', url: 'https://collx.app/' },
+      { name: 'Ludex on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/ludex-sports-card-scanner-tcg/id1616691213' },
+      { name: 'Ludex on Google Play (checked October 22, 2026)', url: 'https://play.google.com/store/apps/details?id=com.ludexmobile' },
+      { name: 'Ludex website', url: 'https://www.ludex.com/' },
+      { name: 'StarSnap on the App Store (checked October 22, 2026)', url: 'https://apps.apple.com/us/app/sports-card-scanner-starsnap/id6752947519' },
     ],
     faqs: [
       {
-        q: 'Do sports card scanner apps work on Android?',
-        a: 'Some do. Ludex lists iOS and Android. CardSense is an iPhone app (iOS 18.2+) and has no Play Store listing.',
+        q: 'What is the best free sports card scanner app?',
+        a: 'All four apps here are free to download. CardSense is free on iPhone, with an optional premium unlock for unlimited scans and full market details. Ludex lists a free membership with unlimited scans, up to 60 saved cards, and up to 5 eBay listings a month. CollX and StarSnap are free to download with paid upgrades. Pick the free app whose paid upgrade matches the job you actually need.',
       },
       {
-        q: 'Can these apps scan Pokémon and other trading card games?',
-        a: 'CollX and Ludex both list support for trading card games such as Pokémon alongside sports cards. CardSense is built for sports cards: baseball, basketball, football, hockey, and soccer.',
+        q: 'Is there a sports card scanner app for Android?',
+        a: 'Yes. Ludex lists iOS and Android, and CollX has a Google Play listing. CardSense is an iPhone app (iOS 18.2+) with no Play Store listing. StarSnap lists iPhone and iPad on the App Store; a Play listing was not found on October 22, 2026.',
+      },
+      {
+        q: 'How accurate are sports card scanner apps?',
+        a: 'No independent lab publishes an accuracy percentage for these apps, and this page will not invent one. Parallels that differ in a thin foil line are the hard case. Scan the card, then check the year, set, and card number the app returns before you trust the estimate.',
+      },
+      {
+        q: 'Do card scanner apps use sold prices or asking prices?',
+        a: 'It depends on the app. CardSense builds estimates from recent eBay sales. Ludex lists values from eBay completed sales and other marketplaces. CollX says it uses historical auction prices for an average market value. StarSnap lists market price estimates without naming the source. Sold prices beat asking prices either way.',
+        learnMore: { href: '/sports-card-prices', label: 'How to check sports card prices' },
+      },
+      {
+        q: 'Can a scanner app grade my card?',
+        a: 'No. A scanner can identify a card and, in StarSnap\'s case, suggest a condition label such as Mint or Near Mint. That is not a PSA, SGC, CGC, or BGS grade. Professional grading still means sending the card to a grading company.',
+        learnMore: { href: '/sports-card-grading', label: 'When sports card grading pays' },
       },
     ],
     sections: [
       {
-        h2: 'First, the disclosure',
+        h2: 'Disclosure: CardSense is ours',
         paras: [
-          'CardSense is our app. This site exists to support it. Instead of a rigged ranking, this comparison sticks to what each app says about itself on its public listing or website (checked August 2026) and says which collector each one fits. Where CardSense is not the right choice, it says so.',
+          'CardSense is our app. This site exists to support it. Instead of a rigged ranking, this comparison sticks to what each app says about itself on its public listing or website (checked October 22, 2026) and says which collector each one fits. Where CardSense is not the right choice, it says so.',
         ],
       },
       {
         h2: 'The four apps at a glance',
-        paras: [],
+        paras: [
+          'Facts in this table come from each app\'s App Store listing, Play listing, or official site, re-checked on October 22, 2026. Limits and prices change; open the listing before you pay.',
+        ],
         table: {
           headers: ['', 'CardSense', 'CollX', 'Ludex', 'StarSnap'],
           rows: [
             ['Focus', 'Identify, value, track sports cards', 'Scan plus buy/sell marketplace', 'Sports cards and TCG', 'Scan with grading guidance'],
-            ['Platform', 'iPhone, iOS 18.2+', 'iPhone (marketplace in-app)', 'iOS and Android', 'iPhone'],
-            ['Pricing data', 'Recent eBay sales', 'Own sales database', 'Price guide plus TCG', 'Market data plus grade hints'],
-            ['Sports', 'Baseball, basketball, football, hockey, soccer', 'Sports cards broadly', 'Sports plus TCG', 'Sports cards'],
-            ['Download', 'Free, premium for unlimited scans', 'Free with marketplace features', 'Free with premium tier', 'Free with premium tier'],
+            ['Platform', 'iPhone, iOS 18.2+', 'iPhone, iPad, and Android', 'iOS and Android', 'iPhone and iPad'],
+            ['Pricing data', 'Recent eBay sales', 'Historical auction prices; average market value', 'eBay completed sales and other marketplaces', 'Market price estimates plus grade hints'],
+            ['Sports', 'Baseball, basketball, football, hockey, soccer', 'Sports, TCG, and non-sport cards', 'Sports plus TCG', 'Sports cards'],
+            ['Download', 'Free, with a premium unlock', 'Free, with CollX Pro', 'Free membership, plus paid plans', 'Free, with Premium'],
+            [
+              'Free tier: what\'s free',
+              'Free download on iPhone. Premium unlocks unlimited scans and full market details. The listing does not state a free scan cap.',
+              'Free download. Scan, average market value, collection, and marketplace. CollX Pro ($10/month or $100/year) adds unlimited collection size, marketplace credit, CollX AI, CSV export, and more. The listing does not state a free collection cap.',
+              'Free membership: unlimited scans, up to 60 saved cards, and up to 5 eBay listings a month.',
+              'Free download. Premium adds unlimited identifications, in-depth market reports, and priority support. The listing does not state a free identification cap.',
+            ],
           ],
         },
       },
       {
+        h2: 'Best free sports card scanner app',
+        answer:
+          'All four apps are free to download. CardSense is free on iPhone, and an optional premium unlock adds unlimited scans and full market details. Check each app\'s listing for what its free tier includes, because limits change. Pick the free app whose paid upgrade matches the job you actually need.',
+        paras: [
+          'CardSense is free on the App Store for iPhone. The listing describes an in-app premium unlock for unlimited scans and full market details. It does not publish a free-tier scan number, so this page does not invent one.',
+          'CollX is free to download on the App Store and on Google Play. The listing covers scanning, an average market value, a collection, and a buy/sell marketplace. CollX Pro is listed at $10/month or $100/year and names extras such as unlimited collection size, a $10 monthly marketplace credit, CollX AI, EasyPrice, CSV export, and printable checklists.',
+          'Ludex is free to download on the App Store and Google Play. Its listing spells out a Free Membership: unlimited scans across sports and TCG categories, up to 60 cards in the collection, and up to 5 eBay listings a month. Paid Lite, Standard, and Pro plans raise collection and listing limits.',
+          'StarSnap is free to download on the App Store. Its listing offers identification, market price estimates, condition suggestions, and collection tools. Premium is described as unlimited identifications, in-depth market reports, and priority support. A Google Play listing was not found on the check date.',
+        ],
+      },
+      {
         h2: 'How to choose',
         paras: [
-          'If you want a marketplace in the same app, CollX is built for that. If you collect Pokémon as well as sports, or you need Android, Ludex fits better. If you are trying to decide whether to submit for grading, StarSnap leans that way. If you want a fast ID, an eBay-based number, and a vault on iPhone, that is CardSense.',
-          'No scanner is perfect. Identification is hardest on parallels that differ in small details. Let the app ID the card, then glance at the year, set, and number it returns before you trust the estimate.',
+          'Match the app to the job after the scan. If you want a marketplace in the same app, CollX is built for that. If you collect Pokémon as well as sports, or you need Android, Ludex fits, and CollX also lists Android. If you are trying to decide whether a card even looks like a grading candidate, StarSnap leans toward condition labels such as Mint, Near Mint, and Excellent. If you want identification, values from recent eBay sales, and a collection vault on iPhone, that is CardSense.',
         ],
         cta: {
           title: 'Try CardSense free',
@@ -934,17 +972,18 @@ export const guides: Guide[] = [
         },
       },
       {
-        h2: 'What "best" cannot mean',
+        h2: 'What "best" cannot mean, plus accuracy and the hardware red herring',
         paras: [
           'Google for this query is a pile of App Store listings, Reddit threads, and each company\'s own site. There is no independent lab score. Accuracy claims in marketing copy are not something this page will repeat as fact. A useful comparison is jobs: marketplace, TCG, grading guidance, or a clean identify-and-track loop on iPhone.',
-          'CardSense does not buy or sell cards, does not scan Pokémon, and does not run on Android. If those are requirements, pick the app that lists them. If you want eBay-based comps and a vault after the scan, stay. The rest of this site is the method behind the numbers: <a href="/sports-card-prices">sold prices</a>, <a href="/sports-card-value">the five value factors</a>, and sport-specific pages when the cardboard is baseball-heavy.',
+          'CardSense does not buy or sell cards, does not scan Pokémon, and does not run on Android. If those are requirements, pick the app that lists them. If you want eBay-based comps and a vault after the scan, stay. The rest of this site is the method behind the numbers: <a href="/sports-card-prices">sold prices</a>, <a href="/sports-card-value">the five value factors</a>, and <a href="/sports-card-grading">when grading pays</a>.',
+          'Identification is hardest on parallels that differ in a thin foil line. The workable habit is: scan, read the set line, then trust the comps. Reddit threads about "fastest scanner" are useful for software feel and less useful for a single accuracy percentage.',
+          'Google also ranks physical document scanners for this query. Those machines digitize a collection. They do not identify a 1986 Fleer from a living-room photo. If you wanted a Fujitsu, you are on the wrong page. If you wanted a phone app, compare the four above and download the one whose after-scan job matches yours.',
         ],
       },
       {
-        h2: 'Accuracy, platforms, and the hardware red herring',
+        h2: 'More guides',
         paras: [
-          'Reddit threads about "fastest scanner" are useful for software feel and less useful for a single accuracy percentage. Parallels that differ in a thin foil line will fool every camera app some of the time. The workable habit is: scan, read the set line, then trust the comps.',
-          'Google also ranks physical document scanners for this query. Those machines digitize a collection. They do not identify a 1986 Fleer from a living-room photo. If you wanted a Fujitsu, you are on the wrong page. If you wanted an iPhone app, compare the four above and download the one whose after-scan job matches yours.',
+          'After you pick a scanner, the method still matters. Read <a href="/sports-card-prices">how to check sports card prices</a>, <a href="/sports-card-value">what determines sports card value</a>, and <a href="/sports-card-grading">when grading pays</a>. Sport-specific capture steps live on the <a href="/baseball-card-scanner">baseball card scanner</a>, <a href="/basketball-card-scanner">basketball card scanner</a>, and <a href="/football-card-scanner">football card scanner</a> pages.',
         ],
       },
     ],
