@@ -13,9 +13,9 @@ export const guides: Guide[] = [
     path: '/sports-card-value',
     tag: 'Value guide',
     title: 'Sports Card Value: What Makes a Card Valuable?',
-    metaTitle: 'Sports Card Value Guide: What Makes a Card Valuable? | CardSense',
+    metaTitle: 'Sports Card Value Guide: Five Factors | CardSense',
     description:
-      'Sports card value comes down to five factors: player, rookie status, scarcity, condition, and demand. Learn how they work together and how to check any card from a photo.',
+      'Sports card value comes down to five factors: player, rookie status, scarcity, condition, and demand. Learn how to check any card from a photo.',
     eyebrow: 'Value guide',
     lede: 'Two cards can look nearly identical and sell for wildly different amounts. These five factors are why, and they are what you need before you trust a number.',
     directAnswer:
@@ -125,7 +125,7 @@ export const guides: Guide[] = [
       {
         h2: 'What this guide is not',
         paras: [
-          'It is not a substitute for SportsCardsPro, CardLadder, or a full sold-listings search when you are pricing a high-end card to sell. Those tools exist because the market is a database problem at scale. This page is the method: name the five factors, name the exact version, then go get comps. A scanner app is a faster way through the naming step, not a different theory of value.',
+          'It is not a substitute for SportsCardsPro, CardLadder, or a full sold-listings search when you are pricing a high-end card to sell. Those tools exist because the market is a database problem at scale. This page is the method: name the five factors, name the exact version, then go get comps. A <a href="/best-sports-card-scanner-app">sports card scanner app</a> is a faster way through the naming step, not a different theory of value. Baseball stacks can start at <a href="/baseball-card-scanner">scan baseball cards</a>.',
         ],
       },
     ],
@@ -135,9 +135,9 @@ export const guides: Guide[] = [
     path: '/sports-card-prices',
     tag: 'Price guide',
     title: 'Sports Card Prices: How to Check What Cards Really Sell For',
-    metaTitle: 'Sports Card Prices: How to Check Real Market Prices | CardSense',
+    metaTitle: 'Sports Card Prices: Check Real Market Prices | CardSense',
     description:
-      'Sports card prices are set by recent sold sales, not asking prices. Learn where prices come from, how to read averages and ranges, and how to check a card from a photo.',
+      'Sports card prices are set by recent sold sales, not asking prices. Learn how to read averages and ranges, then check a card from a photo.',
     eyebrow: 'Price guide',
     lede: 'Listed prices tell you what sellers hope for. Sold prices tell you what cards trade for. Here is how to read the second number.',
     directAnswer:
@@ -230,7 +230,7 @@ export const guides: Guide[] = [
       {
         h2: 'When a scanner helps, and when it does not',
         paras: [
-          'A scanner earns its keep when you do not know the set. It is weaker when the card is so rare that three sales exist in a year, or when the photo is a bad crop of a foil that fools the model. In those cases, do the manual sold search anyway. The app is a first pass, not a closing price for an auction house lot.',
+          'A scanner earns its keep when you do not know the set. It is weaker when the card is so rare that three sales exist in a year, or when the photo is a bad crop of a foil that fools the model. In those cases, do the manual sold search anyway. The app is a first pass, not a closing price for an auction house lot. Compare tools on the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> page, or <a href="/baseball-card-scanner">scan baseball cards</a> if that is the stack in front of you.',
         ],
       },
     ],
@@ -240,9 +240,9 @@ export const guides: Guide[] = [
     path: '/sports-card-worth',
     tag: 'Worth check',
     title: 'What Are My Sports Cards Worth? Find Out in 3 Steps',
-    metaTitle: 'What Are My Sports Cards Worth? Find Out in 3 Steps | CardSense',
+    metaTitle: 'What Are My Sports Cards Worth? 3 Steps | CardSense',
     description:
-      'Your sports cards are worth what buyers recently paid for the same cards in the same condition. Identify the card, assess condition, then compare recent sold prices.',
+      'Your sports cards are worth what buyers recently paid for the same cards in the same condition. Identify, assess condition, then compare sold prices.',
     eyebrow: 'Worth check',
     lede: 'A shoebox in the attic or a binder from childhood: here is a three-step method to get from unknown cardboard to a real market number.',
     directAnswer:
@@ -343,7 +343,7 @@ export const guides: Guide[] = [
         h2: 'How to find the value of sports cards you cannot name',
         paras: [
           'This is the actual attic problem. You do not know the set. The back is in a language you do not collect. The foil pattern does not match the two sets you remember from childhood. Manual lookup here means flipping through checklists until something matches the photo, which is how people spend an evening and still price the wrong parallel.',
-          'Work in batches. Photograph a stack in decent light. Identify each card. Save anything with a real number attached. Leave the rest in a "look later" pile instead of throwing it out. Junk-wax commons are still easier to move as a bulk lot than as 400 individual listings.',
+          'Work in batches. Photograph a stack in decent light. Identify each card. Save anything with a real number attached. Leave the rest in a "look later" pile instead of throwing it out. Junk-wax commons are still easier to move as a bulk lot than as 400 individual listings. <a href="/baseball-card-scanner">Scan baseball cards</a> when the box is mostly Topps; the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> page is the pick if you still need to choose a tool.',
           'If a card comes back with a wide range, that is information. Wide range usually means thin trading, mixed condition in the comps, or a variant the market does not agree on. Do not pick the high end because it feels better. Pick the median and move on unless the card is valuable enough to justify a longer search.',
         ],
       },
@@ -625,7 +625,7 @@ export const guides: Guide[] = [
     title: 'Baseball Card Values: What Are Your Cards Worth?',
     metaTitle: 'Baseball Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Baseball card values depend on era, player, rookie status, scarcity, and condition. From junk wax to vintage: learn which baseball cards hold value and how to check yours.',
+      'Baseball card values depend on era, player, rookie status, scarcity, and condition. Learn which cards hold value and how to check yours.',
     eyebrow: 'Baseball guide',
     lede: 'Baseball is where card collecting began, and it is still the deepest market. Era sets the stage; player, rookie status, scarcity, and condition do the rest.',
     directAnswer:
@@ -707,7 +707,7 @@ export const guides: Guide[] = [
         h2: 'How to check a baseball card you cannot name',
         paras: [
           'Read the copyright line and the card number on the back. Note any RC mark, any foil pattern, any serial stamp. If the back is bilingual, you may be holding an O-Pee-Chee-style issue even on a baseball card from a shared design language, so do not assume Topps. Then either search those details as sold listings or photograph the card and let the scanner propose the set.',
-          'Once you have the exact name, jump to <a href="/baseball-card-scanner">scanning baseball cards</a> if you have a pile, or stay on sold comps if you have one card and already know the set. The <a href="/sports-card-worth">three-step worth method</a> is the same here as in any other sport. Baseball just has more lookalikes.',
+          'Once you have the exact name, jump to <a href="/baseball-card-scanner">scanning baseball cards</a> if you have a pile, or stay on sold comps if you have one card and already know the set. The <a href="/sports-card-worth">three-step worth method</a> is the same here as in any other sport. Baseball just has more lookalikes. If you are still choosing a tool, start with the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> comparison.',
         ],
       },
     ],
@@ -717,9 +717,9 @@ export const guides: Guide[] = [
     path: '/basketball-card-values',
     tag: 'Basketball',
     title: 'Basketball Card Values: What Are Your Cards Worth?',
-    metaTitle: 'Basketball Card Values: What Are Your Cards Worth? | CardSense',
+    metaTitle: 'Basketball Card Values: What Are Yours Worth? | CardSense',
     description:
-      'Basketball card values are driven by the player, rookie status, parallels, and condition. Learn which NBA cards hold value and how to check any card from a photo.',
+      'Basketball card values are driven by the player, rookie status, parallels, and condition. Learn which NBA cards hold value and how to check yours.',
     eyebrow: 'Basketball guide',
     lede: 'Basketball is the most parallel-driven major card market. One rookie can exist in dozens of versions with wildly different prices.',
     directAnswer:
@@ -787,7 +787,7 @@ export const guides: Guide[] = [
         h2: 'How to check an NBA card from a photo',
         paras: [
           'Fill the frame so borders and foil are visible. Confirm the set line on the back against whatever the scanner returns. Then read the estimate as a range, not a promise. International stars often have demand from more than one country, which can make comps noisier, not cleaner.',
-          'For a binder, scan rookies and anything that looks like a parallel first. Leave base commons for last. Details on the camera flow live on the <a href="/basketball-card-scanner">basketball card scanner</a> page.',
+          'For a binder, scan rookies and anything that looks like a parallel first. Leave base commons for last. Details on the camera flow live on the <a href="/basketball-card-scanner">basketball card scanner</a> page. Still picking a tool? Read the <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison.',
         ],
       },
       {
@@ -807,7 +807,7 @@ export const guides: Guide[] = [
     title: 'Football Card Values: What Are Your Cards Worth?',
     metaTitle: 'Football Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Football card values are driven by the player (especially quarterbacks), rookie status, parallels, and condition. Learn which NFL cards hold value and how to check yours.',
+      'Football card values are driven by the player, especially quarterbacks, plus rookie status, parallels, and condition. Learn how to check yours.',
     eyebrow: 'Football guide',
     lede: 'Football cards live and die with the quarterback position, rookie classes, and the exact parallel in your hand.',
     directAnswer:
@@ -870,7 +870,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check an NFL card you just found',
         paras: [
-          'Look for an RC logo, a serial stamp, a patch window, and an autograph. Those four marks do more than the player name. Photograph the card in light that does not blow out the foil. Confirm year, set, and number. Then read comps for that exact version. The camera walkthrough is on <a href="/football-card-scanner">football card scanner</a>.',
+          'Look for an RC logo, a serial stamp, a patch window, and an autograph. Those four marks do more than the player name. Photograph the card in light that does not blow out the foil. Confirm year, set, and number. Then read comps for that exact version. The camera walkthrough is on <a href="/football-card-scanner">football card scanner</a>. Still choosing? The <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison is the next page.',
         ],
       },
       {
@@ -890,7 +890,7 @@ export const guides: Guide[] = [
     title: 'Hockey Card Values: What Are Your Cards Worth?',
     metaTitle: 'Hockey Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Hockey card values are driven by the player, rookie cards like Young Guns, scarcity, and condition. Learn which NHL cards hold value, from vintage O-Pee-Chee to modern rookies.',
+      'Hockey card values are driven by the player, Young Guns rookies, scarcity, and condition. Learn which NHL cards hold value, from vintage to modern.',
     eyebrow: 'Hockey guide',
     lede: 'From vintage O-Pee-Chee cardboard to modern Young Guns rookies, hockey has one of the hobby\'s most loyal collector bases.',
     directAnswer:
@@ -953,7 +953,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check hockey cards in a mixed box',
         paras: [
-          'Sort Young Guns and anything that looks like a premium rookie into one stack. Sort older cardboard into another and check the back language. Scan the first stack. For the second, identification matters as much as condition because the wrong brand version will send you to the wrong sales.',
+          'Sort Young Guns and anything that looks like a premium rookie into one stack. Sort older cardboard into another and check the back language. Scan the first stack. For the second, identification matters as much as condition because the wrong brand version will send you to the wrong sales. There is no hockey-only scanner page. Start on the <a href="/">sports card scanner</a> homepage or the <a href="/best-sports-card-scanner-app">best sports card scanner app</a> comparison.',
           'Hockey demand is loyal and thinner than football or basketball on many names. A wide range on an estimate often means few sales, not a broken tool. Read the underlying listings when the number would change a keep-or-sell decision.',
         ],
       },
@@ -974,7 +974,7 @@ export const guides: Guide[] = [
     title: 'Soccer Card Values: What Are Your Cards Worth?',
     metaTitle: 'Soccer Card Values: What Are Your Cards Worth? | CardSense',
     description:
-      'Soccer card values are driven by global stars, first cards in major sets, parallels, and condition. Learn how the market works and check any card from a photo.',
+      'Soccer card values are driven by global stars, first cards in major sets, parallels, and condition. Learn how the market works and how to check a card.',
     eyebrow: 'Soccer guide',
     lede: 'Soccer brings a worldwide collector base and tournament cycles that US sports do not have. Identification of the exact set matters even more here.',
     directAnswer:
@@ -1033,7 +1033,7 @@ export const guides: Guide[] = [
       {
         h2: 'How to check a soccer card from a photo',
         paras: [
-          'Club crest, national-team kit, set name, and year are the identifiers. Photograph the front and glance at the back for the set line. Confirm that the scanner\'s set matches that line. Then read the eBay range. If the player is global, comps may include more than one country\'s listings; shipping and currency will scatter the range.',
+          'Club crest, national-team kit, set name, and year are the identifiers. Photograph the front and glance at the back for the set line. Confirm that the scanner\'s set matches that line. Then read the eBay range. If the player is global, comps may include more than one country\'s listings; shipping and currency will scatter the range. There is no soccer-only scanner page. Use the <a href="/">sports card scanner</a> homepage or the <a href="/best-sports-card-scanner-app">sports card scanner app</a> comparison.',
         ],
       },
       {
@@ -1178,7 +1178,7 @@ export const guides: Guide[] = [
     title: 'Baseball Card Scanner: Identify and Value Cards from a Photo',
     metaTitle: 'Baseball Card Scanner: Identify & Value Any Card | CardSense',
     description:
-      'Scan baseball cards with your iPhone. CardSense identifies the player, year, set, and card number from a photo and shows an estimated value from recent eBay sales.',
+      'Scan baseball cards with your iPhone. CardSense identifies the player, year, set, and card number, then shows a value from recent eBay sales.',
     eyebrow: 'Baseball scanner',
     lede: 'Seventy years of Topps, junk-wax mountains, and Bowman prospects that all look alike. Baseball is the sport where scanning beats searching by hand.',
     directAnswer:
@@ -1285,9 +1285,9 @@ export const guides: Guide[] = [
     path: '/football-card-scanner',
     tag: 'Football scanner',
     title: 'Football Card Scanner: Identify NFL Cards from a Photo',
-    metaTitle: 'Football Card Scanner: Identify NFL Cards from a Photo | CardSense',
+    metaTitle: 'Football Card Scanner: Identify NFL Cards | CardSense',
     description:
-      'Scan football cards with your iPhone. CardSense identifies NFL rookies, parallels, and autographs from a photo and shows an estimated value from recent eBay sales.',
+      'Scan football cards with your iPhone. CardSense identifies NFL rookies, parallels, and autographs, then shows a value from recent eBay sales.',
     eyebrow: 'Football scanner',
     lede: 'Quarterbacks, rookie classes, and numbered parallels that look like the base card until you catch the foil. A photo is faster than guessing the set from memory.',
     directAnswer:
@@ -1375,9 +1375,9 @@ export const guides: Guide[] = [
     path: '/basketball-card-scanner',
     tag: 'Basketball scanner',
     title: 'Basketball Card Scanner: Identify NBA Cards from a Photo',
-    metaTitle: 'Basketball Card Scanner: Identify NBA Cards from a Photo | CardSense',
+    metaTitle: 'Basketball Card Scanner: Identify NBA Cards | CardSense',
     description:
-      'Scan basketball cards with your iPhone. CardSense identifies NBA rookies, inserts, and parallels from a photo and shows an estimated value from recent eBay sales.',
+      'Scan basketball cards with your iPhone. CardSense identifies NBA rookies, inserts, and parallels, then shows a value from recent eBay sales.',
     eyebrow: 'Basketball scanner',
     lede: 'The same rookie photo can be a base card, a colored parallel, or a 1/1. A scan is how you find out which one you are holding.',
     directAnswer:

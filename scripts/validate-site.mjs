@@ -13,6 +13,15 @@ function fail(msg) {
   console.error('FAIL', msg);
 }
 
+function decode(s) {
+  return s
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+}
+
 function ok(msg) {
   console.log('OK  ', msg);
 }
@@ -44,7 +53,17 @@ function locToFile(loc) {
   return join(dist, path.replace(/^\//, ''), 'index.html');
 }
 
-const htmlFiles = await walkHtml(dist);
+function isRedirectHtml(html) {
+  return /http-equiv=["']refresh["']/i.test(html);
+}
+
+const allHtml = await walkHtml(dist);
+const htmlFiles = [];
+for (const file of allHtml) {
+  const html = await readFile(file, 'utf8');
+  if (isRedirectHtml(html)) continue;
+  htmlFiles.push(file);
+}
 if (htmlFiles.length === 0) {
   fail('no HTML in dist/');
   process.exit(1);
@@ -58,6 +77,24 @@ for (const file of htmlFiles) {
   const rel = file.slice(dist.length);
   const h1s = html.match(/<h1\b[^>]*>/g) || [];
   if (h1s.length !== 1) fail(`${rel} has ${h1s.length} H1s`);
+
+  const levels = [...html.matchAll(/<h([1-6])\b/gi)].map((m) => Number(m[1]));
+  let prev = 0;
+  for (const lvl of levels) {
+    if (prev && lvl > prev + 1) {
+      fail(`${rel} skipped heading level h${prev} -> h${lvl}`);
+      break;
+    }
+    prev = lvl;
+  }
+
+  const title = decode((html.match(/<title>([^<]*)<\/title>/i) || [])[1] || '');
+  if (!title) fail(`${rel} missing title`);
+  else if ([...title].length > 60) fail(`${rel} title ${[...title].length} > 60: ${title}`);
+
+  const meta = decode((html.match(/<meta name="description" content="([^"]*)"/i) || [])[1] || '');
+  if (!meta) fail(`${rel} missing meta description`);
+  else if ([...meta].length > 155) fail(`${rel} meta ${[...meta].length} > 155: ${meta}`);
 
   const canon = html.match(/<link rel="canonical" href="([^"]+)"/);
   if (!canon) fail(`${rel} missing canonical`);
@@ -75,7 +112,7 @@ for (const file of htmlFiles) {
   if (html.includes('\u2014')) fail(`${rel} contains em dash`);
 }
 
-ok(`${htmlFiles.length} HTML files: one H1, canonical, JSON-LD parse, no em dash`);
+ok(`${htmlFiles.length} HTML files: one H1, heading order, title <=60, meta <=155, canonical, JSON-LD parse, no em dash`);
 
 const summaries = [...homeHtml.matchAll(/<summary>([^<]+)<\/summary>/g)].map((m) => m[1].trim());
 const faqBlock = [...homeHtml.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
@@ -119,7 +156,24 @@ for (const loc of locs) {
   const disk = locToFile(loc);
   if (!(await exists(disk))) fail(`sitemap loc missing file ${loc}`);
 }
+const requiredLocs = [
+  `${site}/baseball-cards-worth-money`,
+  `${site}/rookie-card-values`,
+  `${site}/rookie-card-values/aaron-judge`,
+  `${site}/rookie-card-values/mike-trout`,
+  `${site}/rookie-card-values/michael-jordan`,
+  `${site}/rookie-card-values/babe-ruth`,
+];
+for (const loc of requiredLocs) {
+  if (!locs.includes(loc)) fail(`sitemap missing ${loc}`);
+}
 ok(`sitemap ${locs.length} locs exist on disk`);
+
+const astroCfg = await readFile(join(root, 'astro.config.mjs'), 'utf8');
+const vercelCfg = await readFile(join(root, 'vercel.json'), 'utf8');
+if (!astroCfg.includes("'/sitemap.xml'")) fail('astro.config.mjs missing /sitemap.xml redirect');
+if (!vercelCfg.includes('/sitemap.xml')) fail('vercel.json missing /sitemap.xml redirect');
+else ok('/sitemap.xml redirects to /sitemap-index.xml');
 
 if (!(await exists(join(dist, 'robots.txt')))) fail('robots.txt missing');
 else ok('robots.txt present');
