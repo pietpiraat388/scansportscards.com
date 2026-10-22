@@ -116,12 +116,12 @@ export const home = {
       {
         emoji: '⚾',
         h3: 'Baseball cards',
-        html: 'The classic of the hobby. <a href="/baseball-card-scanner">Scan baseball cards</a> to identify Topps, Bowman, and Fleer issues, then check <a href="/baseball-card-values">baseball card values</a> or the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist.',
+        html: 'The classic of the hobby. <a href="/baseball-card-scanner">Scan baseball cards</a> to identify Topps, Bowman, and Fleer issues, then check <a href="/baseball-card-values">baseball card values</a>, the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist, or <a href="/rookie-card-values">rookie card values</a>.',
       },
       {
         emoji: '🏀',
         h3: 'Basketball cards',
-        html: 'Scan NBA rookies, inserts, and parallels. <a href="/basketball-card-scanner">Basketball card scanner</a> notes, plus <a href="/basketball-card-values">basketball card values</a> before you buy, sell, or trade.',
+        html: 'Scan NBA rookies, inserts, and parallels. <a href="/basketball-card-scanner">Basketball card scanner</a> notes, plus <a href="/basketball-card-values">basketball card values</a> and the <a href="/rookie-card-values/michael-jordan">Michael Jordan rookie card</a> guide.',
       },
       {
         emoji: '🏈',

@@ -11,6 +11,7 @@ import {
   SITE_URL,
 } from '../lib/site';
 import type { Guide } from '../data/types';
+import { guides } from '../data';
 
 interface Props {
   guide: Guide;
@@ -18,6 +19,14 @@ interface Props {
 
 const { guide } = Astro.props;
 const imageUrl = `${SITE_URL}${guide.featureImage.src}`;
+const crumbs: { name: string; path: string }[] = [{ name: 'Home', path: '/' }];
+const segments = guide.path.split('/').filter(Boolean);
+if (segments.length > 1) {
+  const parentPath = `/${segments[0]}`;
+  const parent = guides.find((g) => g.path === parentPath);
+  crumbs.push({ name: parent?.title ?? segments[0], path: parentPath });
+}
+crumbs.push({ name: guide.title, path: guide.path });
 
 const howtoSchema = guide.howto
   ? {
@@ -43,10 +52,7 @@ const schema = [
     dateModified: guide.dateModified,
     image: imageUrl,
   }),
-  breadcrumbSchema([
-    { name: 'Home', path: '/' },
-    { name: guide.title, path: guide.path },
-  ]),
+  breadcrumbSchema(crumbs),
   faqSchema(guide.faqs),
   ...(howtoSchema ? [howtoSchema] : []),
 ];
@@ -67,7 +73,11 @@ const schema = [
       <div class="wrap">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
           <ol>
-            <li><a href="/">Home</a></li>
+            {crumbs.slice(0, -1).map((c) => (
+              <li>
+                <a href={c.path === '/' ? '/' : c.path}>{c.name}</a>
+              </li>
+            ))}
             <li aria-current="page">{guide.title}</li>
           </ol>
         </nav>

@@ -68,6 +68,46 @@ const pages = [
     c2: '#1F6B3A',
     motif: cardMotif,
   },
+  {
+    slug: 'rookie-card-values',
+    title: 'Rookie Card Values',
+    subtitle: 'Identify the real rookie, then check sold prices',
+    c1: '#0B3BD6',
+    c2: '#A97B1F',
+    motif: cardMotif,
+  },
+  {
+    slug: 'aaron-judge-rookie',
+    title: 'Aaron Judge Rookie Card',
+    subtitle: '2017 Bowman, Chrome, Topps, and Update',
+    c1: '#0A1A33',
+    c2: '#1554F0',
+    motif: cardMotif,
+  },
+  {
+    slug: 'mike-trout-rookie',
+    title: 'Mike Trout Rookie Card',
+    subtitle: '2009 Bowman Chrome Draft and 2011 rookies',
+    c1: '#8C1D18',
+    c2: '#0B3BD6',
+    motif: cardMotif,
+  },
+  {
+    slug: 'michael-jordan-rookie',
+    title: 'Michael Jordan Rookie Card',
+    subtitle: '1986 Fleer #57, and how to spot fakes',
+    c1: '#1A1A1A',
+    c2: '#B91C1C',
+    motif: cardMotif,
+  },
+  {
+    slug: 'babe-ruth-rookie',
+    title: 'Babe Ruth Rookie Card',
+    subtitle: 'Sporting News rookie vs Baltimore News',
+    c1: '#4A3728',
+    c2: '#8B6914',
+    motif: cardMotif,
+  },
 ];
 
 for (const page of pages) {

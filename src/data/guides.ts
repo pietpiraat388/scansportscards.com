@@ -1,4 +1,5 @@
 import type { FeatureImage, Guide } from './types';
+import { rookieGuides } from './rookies';
 
 const D = '2026-08-26';
 
@@ -60,7 +61,7 @@ export const guides: Guide[] = [
       {
         h2: 'Rookie status',
         paras: [
-          'A rookie card is a player\'s first officially licensed card. Collectors treat it as the definitive version to own, so it usually sells for more than later cards of the same player. Many modern cards carry an RC logo or a Rated Rookie style mark that makes them easy to spot. A rookie of a player who never became a star is still just a common.',
+          'A rookie card is a player\'s first officially licensed card. Collectors treat it as the definitive version to own, so it usually sells for more than later cards of the same player. Many modern cards carry an RC logo or a Rated Rookie style mark that makes them easy to spot. A rookie of a player who never became a star is still just a common. For Judge, Trout, Jordan, and Ruth, start at <a href="/rookie-card-values">rookie card values</a>.',
         ],
       },
       {
@@ -639,7 +640,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money'],
+    related: ['/baseball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/baseball-cards-worth-money', '/rookie-card-values'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'SportsCardsPro baseball prices', url: 'https://www.sportscardspro.com/category/baseball-cards' },
@@ -682,7 +683,7 @@ export const guides: Guide[] = [
         list: {
           items: [
             '<strong>First Bowman Chrome:</strong> often issued years before an MLB debut. The modern chase card.',
-            '<strong>Flagship Topps RC:</strong> the licensed rookie most casual collectors recognize.',
+            '<strong>Flagship Topps RC:</strong> the licensed rookie most casual collectors recognize. Player-by-player notes live on <a href="/rookie-card-values">rookie card values</a>.',
             '<strong>Vintage flagship rookies:</strong> the cards that built the hobby, where grade gaps are enormous.',
           ],
         },
@@ -733,7 +734,7 @@ export const guides: Guide[] = [
     ),
     datePublished: '2026-07-12',
     dateModified: D,
-    related: ['/basketball-card-scanner', '/sports-card-worth', '/sports-card-grading'],
+    related: ['/basketball-card-scanner', '/sports-card-worth', '/sports-card-grading', '/rookie-card-values/michael-jordan'],
     sources: [
       { name: 'eBay sports card price guide', url: 'https://pages.ebay.com/price-guide/' },
       { name: 'CardSense App Store listing', url: 'https://apps.apple.com/app/id6757801294' },
@@ -752,7 +753,7 @@ export const guides: Guide[] = [
       {
         h2: 'What makes basketball cards different',
         paras: [
-          'Since the 1990s, NBA sets have layered scarce chase cards on top of base sets: refractors, colored parallels, serial-numbered versions, case hits. The gap between a base card and its rarest parallel is enormous. The five general factors still apply; see the <a href="/sports-card-value">sports card value guide</a>.',
+          'Since the 1990s, NBA sets have layered scarce chase cards on top of base sets: refractors, colored parallels, serial-numbered versions, case hits. The gap between a base card and its rarest parallel is enormous. The five general factors still apply; see the <a href="/sports-card-value">sports card value guide</a>. For the 1986 Fleer Jordan rookie specifically, see <a href="/rookie-card-values/michael-jordan">Michael Jordan rookie card</a>.',
         ],
       },
       {
@@ -1516,7 +1517,7 @@ export const guides: Guide[] = [
           {
             h3: '1. Rookie card of a star or Hall of Famer',
             paras: [
-              'A rookie card is a player\'s first widely collected licensed issue. Collectors treat it as the version to own, so a star\'s rookie usually outruns later cards of the same player. A rookie of a player who never became a star is still often a common. CardSense can flag rookie status from a photo; you still confirm the set line.',
+              'A rookie card is a player\'s first widely collected licensed issue. Collectors treat it as the version to own, so a star\'s rookie usually outruns later cards of the same player. A rookie of a player who never became a star is still often a common. See <a href="/rookie-card-values">rookie card values</a> for how to name the real rookie. CardSense can flag rookie status from a photo; you still confirm the set line.',
             ],
           },
           {
@@ -1582,6 +1583,7 @@ export const guides: Guide[] = [
       },
     ],
   },
+  ...rookieGuides,
 ];
 
 export const relatedByPath: Record<string, string[]> = Object.fromEntries(
