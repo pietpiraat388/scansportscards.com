@@ -322,7 +322,7 @@ export const guides: Guide[] = [
           ordered: true,
           items: [
             '<strong>Sort by era.</strong> The back usually shows a copyright year. Pre-1980 cards deserve individual attention; 1987-1993 cards are mostly mass-printed.',
-            '<strong>Pull the obvious candidates:</strong> stars, rookies, autographs, serial numbers, anything that looks premium. For baseball, the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist names the same traits.',
+            '<strong>Pull the obvious candidates:</strong> stars, <a href="/rookie-card-values">rookies</a>, autographs, serial numbers, anything that looks premium. For baseball, the <a href="/baseball-cards-worth-money">what baseball cards are worth money</a> checklist names the same traits.',
             '<strong>Scan the candidates</strong> and let the estimates tell you where to spend time. Save them into a folder so you build an inventory.',
             '<strong>Do not toss the rest carelessly.</strong> Sentimental value is real, and bulk lots of commons still find buyers.',
           ],
@@ -794,7 +794,7 @@ export const guides: Guide[] = [
         h2: 'International demand and thin comps',
         paras: [
           'NBA cards travel. A European or African star can have collectors at home and in the US looking at the same parallel, which sometimes tightens a market and sometimes just adds messy foreign listings to the sold feed. When the range is wide, open two or three actual sales and see whether you are looking at the same grade and the same parallel.',
-          'Vintage basketball is thinner. Early Topps and Fleer star rookies are the high end because so few copies survived in high grade, not because every 1970s basketball card is a grail. Most of a mixed box from that era will still be commons once you name the set. Name it first, then decide whether condition is even worth an argument.',
+          'Vintage basketball is thinner. Early Topps and Fleer <a href="/rookie-card-values">star rookies</a> are the high end because so few copies survived in high grade, not because every 1970s basketball card is a grail. Most of a mixed box from that era will still be commons once you name the set. Name it first, then decide whether condition is even worth an argument.',
           'If you are pricing to sell, pull comps from the last 60 days when you can. A Jordan-adjacent insert from the 90s can have a long tape. A current parallel of a role player may have three sales and a prayer. The range is the honest output. A single screenshot of someone else\'s asking price is not.',
         ],
       },
@@ -849,7 +849,7 @@ export const guides: Guide[] = [
         paras: [],
         list: {
           items: [
-            '<strong>Rookie cards:</strong> the RC from a flagship set is the reference card.',
+            '<strong><a href="/rookie-card-values">Rookie cards</a>:</strong> the RC from a flagship set is the reference card.',
             '<strong>Colored and numbered parallels:</strong> scarcer versions of the same rookie.',
             '<strong>Rookie patch autos:</strong> serial-numbered rookies with an autograph and patch.',
             '<strong>Vintage stars:</strong> 1950s-1970s Hall of Famers, where condition and scarcity set the price.',
@@ -932,7 +932,7 @@ export const guides: Guide[] = [
         paras: [],
         list: {
           items: [
-            '<strong>Young Guns rookies</strong> and their parallels.',
+            '<strong><a href="/rookie-card-values">Young Guns rookies</a></strong> and their parallels.',
             '<strong>High-end rookie autographs and patches</strong> from premium releases.',
             '<strong>Vintage stars</strong> from the Original Six era through the 1980s, in clean condition.',
             '<strong>O-Pee-Chee variants</strong>, collected and priced on their own.',
@@ -1027,7 +1027,7 @@ export const guides: Guide[] = [
         h2: 'Stickers, first cards, and tournament noise',
         paras: [
           'A World Cup sticker album is not a Panini Prizm parallel. People mix those hobbies because both involve soccer and cardboard. Vintage complete albums can be collected seriously. Loose modern stickers usually are not the same market as serial-numbered trading cards. If you are pricing a trading card, stay in trading-card comps.',
-          'Because soccer has no single RC standard, "rookie" is an argument. Collectors still pay a premium for early licensed cards of a star. Your job is to name the set and the year, not to win the argument. Tournament years add noise: a breakout at a World Cup can reprice a young player for a few months. Use recent sales, not a peak tweet.',
+          'Because soccer has no single RC standard, "<a href="/rookie-card-values">rookie</a>" is an argument. Collectors still pay a premium for early licensed cards of a star. Your job is to name the set and the year, not to win the argument. Tournament years add noise: a breakout at a World Cup can reprice a young player for a few months. Use recent sales, not a peak tweet.',
         ],
       },
       {
@@ -1274,7 +1274,7 @@ export const guides: Guide[] = [
       {
         h2: 'Bowman, flagship Topps, and the back of the card',
         paras: [
-          'Prospect cards often predate an MLB debut. The back of a Bowman issue and the back of a flagship Topps rookie are different set names even when the player is the same kid. Scan both if you have both. Do not assume the first card you find is the "real" rookie the market wants; baseball collectors argue about that, and the sold listings settle it better than a forum thread.',
+          'Prospect cards often predate an MLB debut. The back of a Bowman issue and the back of a <a href="/rookie-card-values">flagship Topps rookie</a> are different set names even when the player is the same kid. Scan both if you have both. Do not assume the first card you find is the "real" rookie the market wants; baseball collectors argue about that, and the sold listings settle it better than a forum thread.',
           'Always read the copyright line. A tribute or reprint can share a photo with a vintage card and share almost none of the value. If the scanner returns a modern set and the cardboard feels 50 years old, stop and look again. The confirm step is there for that mismatch.',
         ],
       },
@@ -1357,7 +1357,7 @@ export const guides: Guide[] = [
         h2: 'Foil, patches, and light',
         paras: [
           'Football cards hide information in gloss. A serial number in a corner disappears in glare. A patch window looks like a color blob if you shoot from too high and too close to a lamp. Tilt the card, fill the frame, and use even light. The Confirm Card screen exists so you can retake before you spend a scan.',
-          'After identification, match the result to the physical card: year, set, number, parallel, autograph. Then read the eBay range. If you are pricing an RPA, comps for the base rookie are the wrong comps. The <a href="/football-card-values">football values page</a> is the market context; this page is the capture step.',
+          'After identification, match the result to the physical card: year, set, number, parallel, autograph. Then read the eBay range. If you are pricing an RPA, comps for the <a href="/rookie-card-values">base rookie</a> are the wrong comps. The <a href="/football-card-values">football values page</a> is the market context; this page is the capture step.',
         ],
       },
       {
@@ -1426,7 +1426,7 @@ export const guides: Guide[] = [
       {
         h2: 'A practical scan session',
         paras: [
-          'Start with rookies, anything with an RC logo, and anything that looks like a parallel. Confirm the ID against the tiny set line on the back. Then look at the estimate. If you are triaging a binder, save the hits and leave the base commons for last.',
+          'Start with <a href="/rookie-card-values">rookies</a>, anything with an RC logo, and anything that looks like a parallel. Confirm the ID against the tiny set line on the back. Then look at the estimate. If you are triaging a binder, save the hits and leave the base commons for last.',
         ],
         figure: {
           shot: 5,
